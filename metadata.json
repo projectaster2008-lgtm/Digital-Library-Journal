@@ -1,0 +1,6 @@
+{
+  "name": "The Archive — Personal Journal Universe",
+  "description": "An introspective digital sanctuary, personal archive, and interactive devotional journal with environmental 3D spaces, Scripture connections, reflections, and life timeline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
