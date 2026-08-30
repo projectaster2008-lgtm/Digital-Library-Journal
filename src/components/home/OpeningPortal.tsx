@@ -12,6 +12,10 @@ export const OpeningPortal: React.FC<OpeningPortalProps> = ({ onEnter }) => {
 
   const handleEnterClick = () => {
     setIsExiting(true);
+    // Trigger mobile audio autoplay
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('trigger-audio-autoplay'));
+    }
     setTimeout(() => {
       onEnter();
     }, 900);

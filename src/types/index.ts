@@ -38,6 +38,9 @@ export interface ArchiveEntry {
   isFeatured?: boolean;
   isTranscribedOriginal?: boolean; // From handwritten notebook
   memoNumber?: string; // e.g. "Memo No. 1"
+  author?: string; // e.g. "Clint Aldwin Maurin"
+  collection?: string; // e.g. "Personal Devotions"
+  devotionNumber?: string; // e.g. "Devotion I"
 }
 
 export interface Topic {

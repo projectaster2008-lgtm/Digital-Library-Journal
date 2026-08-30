@@ -279,22 +279,553 @@ And Just like ni David, we had our own Goliaths or Giants nga atong gina face ev
     month: 'July',
     day: 20,
     isTranscribedOriginal: true,
-    scriptures: ['1 Thessalonians 5:9'],
-    scriptureVerseText: '— For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ.',
-    topics: ['salvation', 'grace', 'destiny', 'peace', 'hope'],
+    scriptures: ['1 Thessalonians 5:9', 'John 3:16', 'Luke 15:4-7', 'John 19:30'],
+    scriptureVerseText: '— For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ. (1 Thessalonians 5:9) · "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life." (John 3:16)',
+    topics: ['salvation', 'grace', 'destiny', 'peace', 'hope', 'eternal security'],
     mood: 'Peaceful',
-    excerpt: 'It was never our destiny from the wrath sa Ginoo, but ang kaluwasan nga gikan ni Jesus Christ. We are already secured and saved by amazing grace...',
-    openingThought: 'The bedrock truth of our ultimate security: we are marked for salvation, not wrath.',
-    content: `— By reading this, It was never our destiny from the wrath sa Ginoo, but ang kalwasan nga gikan ni Jesus Christ.
+    excerpt: 'It was never our destiny from the wrath sa Ginoo, but ang kaluwasan nga gikan ni Jesus Christ. We are already secured and saved by amazing grace: Once saved, always saved...',
+    openingThought: 'The bedrock truth of our ultimate security: we are marked for salvation, not wrath. Even when we wander like a lost sheep, the Good Shepherd seeks us out.',
+    content: `— By reading this, It was never our destiny from the wrath sa Ginoo, but ang kaluwasan nga gikan ni Jesus Christ.
 
-This tells us nga we are already secured and save, by the amazing grace of Jesus Christ, pinaagi sa iyang blood, we are saved, And that word destined, it means nga before pa sa atong life, before pa nga wala ta nidawat ni Jesus Christ that he is our Savior and God.... we are already saved, because kita nga anak sa Ginoo, Once saved, always saved... It's like a lost sheep nga whenever nga we are lost...
+This tells us nga we are already secured and saved, by the amazing grace of Jesus Christ, pinaagi sa iyang blood, we are saved. And that word "destined", it means nga before pa sa atong life, before pa nga wala ta nidawat ni Jesus Christ that he is our Savior and God.... we are already saved, because kita nga anak sa Ginoo, Once saved, always saved... It's like a lost sheep nga whenever nga we are lost, God is always nga mangita sa iyang sheep.
 
-Our destiny nga ma kuan sa wrath of God but kaluwasan :)`,
-    lesson: 'Our eternal home and identity are anchored in Christ’s finished work. We are destined for life, not destruction.',
-    prayer: 'Lord Jesus, thank You for the eternal security found in Your sacrifice. In moments of doubt, anchor my soul in this truth.',
-    closingThought: 'Not destined for wrath, but to obtain salvation through our Lord Jesus Christ.',
+And all the time in life, sometimes mag reflect ta about sa mga bad things nga atong nahimo, and eventually nidagan ta like a lost sheep, because we are ashamed of God about sa mga bati nga atong nabuhat. But then our conscience guides us, for real..... because amidst sa mga trials, we believe ni God. Although we ran away, the amazing part is we believe!
+
+And it already tells us sa John 3:16 — "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life." Once saved always saved, because... if you think nga ang salvation is ma-lost nimo, remember that the Holy Spirit is guiding! He is there na gadan-ag kanimo, telling you: "I am here."
+
+He is the living connection between God the Father and Jesus Christ. And because of Jesus on the cross, "It is finished" (John 19:30) — the mission was successful, the perfect sacrifice is complete. And by then, pag-first palang nga unsay nahitabo:
+
+It was never our destiny to receive the wrath of God, but to obtain eternal salvation through our Lord Jesus Christ! :)`,
+    lesson: 'Our eternal identity is anchored in Christ’s finished sacrifice. Even when guilt tempts us to flee like a lost sheep, the Holy Spirit continually guides us back to the assurance of grace.',
+    prayer: 'Lord Jesus, thank You that my destiny is sealed in Your salvation and love, not in wrath. When shame makes me want to hide, remind me that You sought me out and that Your grace holds me forever. Amen.',
+    closingThought: 'For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // PERSONAL DEVOTIONS: A JOURNAL OF SCRIPTURE AND REFLECTION
+  // Written by Clint Aldwin Maurin (Complete 12-Chapter Devotional Collection)
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ─── DEVOTION I: RELEASED FROM THE LAW ───
+  {
+    id: 'devotion-1-released-from-the-law',
+    slug: 'devotion-1-released-from-the-law',
+    title: 'Released From the Law',
+    devotionNumber: 'Devotion I',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-01-08',
+    year: 2026,
+    month: 'January',
+    day: 8,
+    isTranscribedOriginal: true,
+    scriptures: ['Romans 7:5-6', 'Romans 7:8', 'Romans 7:10', 'Romans 6:23'],
+    scriptureVerseText: '“For while we were living in the flesh, our sinful passions, aroused by the law, were at work in our members to bear fruit for death. But now we are released from the law, having died to that which held us captive, so that we serve in the new way of the Spirit and not in the old way of the written code.” — Romans 7:5-6',
+    topics: ['law and grace', 'salvation', 'freedom', 'grace', 'living hope'],
+    mood: 'Hopeful',
+    excerpt: 'This verse reminds us that wala juy pag-asa, because kita is naa sin flesh nga makakasala... But the good news and answer all of this is Jesus Christ: he came to release us from the law...',
+    openingThought: 'A deep exploration of the chasm between human flesh and God’s holy law, and how Christ fulfilled the law as our perfect sacrifice.',
+    content: `“For while we were living in the flesh, our sinful passions, aroused by the law, were at work in our members to bear fruit for death. But now we are released from the law, having died to that which held us captive, so that we serve in the new way of the Spirit and not in the old way of the written code.”
+
+This verse reminds us that wala juy pag-asa, because kita is naa sin flesh nga makakasala, even if we obey the law, and the worst part is the sin itself seizing an opportunity sa law, to make it sin (Romans 7:8) and even si Paul niingon as a flesh nga instead ang law may magpaluwas nato it became death na (Romans 7:10) because sa kani nga certain parts “First the law and the commandment is holy or spiritual, but kita dili man ta spiritual cuz naa ta sa flesh....”
+
+Which means grabe kaayo ang chasm nato between the law and us, kung unsa man atong buhaton, or how much we tried to obey, the law is not enough... The law is holy because it comes from God and us are not holy....
+
+It's sad right? There's no hope, the chasm is big... But the good news and answer all of this is Jesus Christ, he came not to abolish the [law] but to fulfill, which means he comes to release us from the law, nga why we keep sinning....
+
+Because Romans 6:23... Ang bayad sa sala is kamatayon, but si Jesus Christ na mismo ang nagpakamatay para sa atong sala, truly siya atong living hope.... The criss-cross reference from the bible is amazing, like at first, it's God nga naghatag sa mga commandments, but he knows pud, there's no one ang maka fulfill ani nga law....
+
+And that's why, because nga way maka-fulfil sa law, he came himself, para sa atoa, he was the perfect sacrifice :)
+
+THANK YOU JESUS...`,
+    lesson: 'No human effort can bridge the chasm of the law. Christ came not to abolish the law but to fulfill it, becoming our perfect sacrifice and living hope.',
+    prayer: 'Thank You Jesus for taking the penalty of my sins and releasing me from the captivity of the law. Amen.',
+    closingThought: 'Because there was no one who could fulfill the law, He came Himself for us — the perfect sacrifice :) THANK YOU JESUS...',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION II: THE LIFE OF SAUL ───
+  {
+    id: 'devotion-2-the-life-of-saul',
+    slug: 'devotion-2-the-life-of-saul',
+    title: 'The Life of Saul',
+    devotionNumber: 'Devotion II',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-01-22',
+    year: 2026,
+    month: 'January',
+    day: 22,
+    isTranscribedOriginal: true,
+    scriptures: ['Acts 9:4-5', 'Acts 9:1-6'],
+    scriptureVerseText: '“And falling to the ground, he heard a voice saying to him, ‘Saul, Saul, why are you persecuting me?’ And he said, ‘Who are you, Lord?’ And he said, ‘I am Jesus, whom you are persecuting.’” — Acts 9:4-5',
+    topics: ['conversion', 'grace', 'redemption', 'calling', 'transformation'],
+    mood: 'Contemplative',
+    excerpt: 'God really moves in an unexpected way... he use people like Paul to share the good news, and he was the most influential character among the bible — God use Paul even if Paul persecuted God.',
+    openingThought: 'Witnessing the blinding grace on the Road to Damascus: how God transforms persecutors into apostles through unexpected encounters.',
+    content: `“And falling to the ground, he heard a voice saying to him, ‘Saul, Saul, why are you persecuting me?’ And he said, ‘Who are you, Lord?’ And he said, ‘I am Jesus, whom you are persecuting.’”
+
+Upon reading the life of Saul, nga how ka skeptical kaayo siya towards ni Jesus and sa mga discipleship, claiming nga Jesus is the false messiah, that they are into false teachings, and sa part pud ni Saul nga how is God is being disregarded and the law being destroyed, is rebuking kaayo siya, and that's why iyang pamatyon mga Christians because they are into false teachings...
+
+And then Acts 9:4, One scene nga nag determine ang conversion ni Saul,.... That time nga si Saul padung siya sa Jerusalem...
+
+He asked for a letter from high priest, para sa synagogues sa Damascus, nga if maka kita siya nga kinsay mga belonging sa “the Way” men or women, he will bound and persecute if...
+
+But then one scene sa the Road of Damascus, Saul suddenly fall to the ground with many lights, as if like ang mga sala ni Saul is na exposed from inside out pinaagi sa kahayag, and then he heard a voice saying, “Why did you persecute me?” “I am Jesus, whom you are persecuting.” And from this moment, ari ga start ang journey ni Saul to Paul, he start believing na, and daghan pud siyag na-agian ug trials.... Because it's all sa pagkahimayaon ni God.
+
+By reflecting this, God really moves in an unexpected way... he use people like Paul to share the good news, and he was the most influential character among the bible — God use Paul even if Paul persecuted God. And it tells us nga God is loving jud.`,
+    lesson: 'God’s transformative love extends even to those who once fought against Him. No past is beyond the reach of Christ’s redeeming light.',
+    prayer: 'Lord Jesus, thank You for Your relentless pursuit and radical love. Expose my blind spots in Your light and use my life for Your glory. Amen.',
+    closingThought: 'God used Paul even when Paul persecuted Him. And it tells us that God is truly loving.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION III: YOU WERE BOUGHT WITH A PRICE ───
+  {
+    id: 'devotion-3-you-were-bought-with-a-price',
+    slug: 'devotion-3-you-were-bought-with-a-price',
+    title: 'You Were Bought With a Price',
+    devotionNumber: 'Devotion III',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-02-14',
+    year: 2026,
+    month: 'February',
+    day: 14,
+    isTranscribedOriginal: true,
+    scriptures: ['1 Corinthians 6:19-20', 'John 15:5'],
+    scriptureVerseText: '“Or do you not know that your body is the temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.” — 1 Corinthians 6:19-20',
+    topics: ['holy spirit', 'identity', 'surrender', 'temple', 'redemption', 'purity'],
+    mood: 'Grateful',
+    excerpt: 'A verse that touched my inner self to realization — that phrase alone “you were bought with a price” is something jud nga maka-ingon ko “wow, legit?” haha. IT WAS THE HOLY SPIRIT MOVING...',
+    openingThought: 'A profound encounter with the Holy Spirit: realizing that true freedom means glorifying God with our bodies, which were redeemed at infinite cost.',
+    content: `“Or do you not know that your body is the temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.”
+
+A verse that touched my inner self to realization — that phrase alone “you were bought with a price” is something jud nga maka-ingon ko “wow, legit?” haha. And, moments shifted, I was in a state of overwhelming joy, like dili ma explain.... I was praying and asking God for wisdom nga what should I read tonight, and then he gave me this verse, and by first time reading it, my face, the atmosphere, my body and soul was suddenly moved like grabe, I'm feeling my nerves, asking myself “what just happen?” Then my heart said “IT WAS THE HOLY SPIRIT MOVING”....
+
+This very verse reminded me of something like changing and self-discovery....
+
+This is the breakthrough nga how everything belongs to God including our body.... And yes, God gave us free will, about what we can do to our body, “we have freedom”.... But this verse tells us that our body is the temple of the Holy Spirit, and in addition, we are bought with a price.... “Ang amazing part diri is we have freedom, and nag remind pud nga our body is the temple, ug naa puy price atong life”..... So upon knowing it, even if we have freedom, ato lang ba ni gamiton sa mga butang nga di maayo? Of course not.... it's not the purpose of our God nga why iya tang gi redeem.... but to use our everything nga unsay naa nato... to glorify God.... Because reality check, “Apart from God we can do nothing....”`,
+    lesson: 'Our bodies are the dwelling place of the Holy Spirit, purchased with the precious blood of Jesus. True freedom is found in dedicating all that we have to glorify Him.',
+    prayer: 'Holy Spirit, thank You for dwelling within me. Help me honor You with my thoughts, actions, and body, knowing I am bought with a price. Amen.',
+    closingThought: 'Apart from God we can do nothing — let us use everything we have to glorify God.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION IV: GOD'S LOVE NEVER CEASES ───
+  {
+    id: 'devotion-4-gods-love-never-ceases',
+    slug: 'devotion-4-gods-love-never-ceases',
+    title: "God's Love Never Ceases",
+    devotionNumber: 'Devotion IV',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-03-01',
+    year: 2026,
+    month: 'March',
+    day: 1,
+    isTranscribedOriginal: true,
+    scriptures: ['Lamentations 3:22-23', 'Genesis 1:3', 'John 3:16'],
+    scriptureVerseText: '“The steadfast love of the Lord never ceases, his mercies never come to an end. They are new every morning: great is your faithfulness.” — Lamentations 3:22-23',
+    topics: ['unconditional love', 'mercy', 'faithfulness', 'morning grace', 'hope'],
+    mood: 'Grateful',
+    excerpt: 'Ang iyang gugma is always bag-o, always new every morning, and it tells us nga how abundant are we. God\'s love is always new, like iya jud ta patilawon nga iyang gugma is fresh. :)',
+    openingThought: 'Meditating on the inexhaustible steadfast love of God from the dawn of creation to the cross, renewed fresh each day.',
+    content: `“The steadfast love of the Lord never ceases, his mercies never come to an end. They are new every morning: great is your faithfulness.”
+
+This verse reminds us that ang gugma sa Ginoo is always nagdan-ag ug nag-palihok kanato. And ang rakanindot pa is... Ang iyang gugma is always bag-o, always new every morning, and it tells us nga how abundant are we. Ang Ginoo is wala nag-kulang kanato, kita noon mismo ang nagkulang, even a simple thank you hangtud sa tibook kadagatan, his love is just great.. So great nga no matter how hard we try to understand it, his faithfulness is great, this verse encourages us to never forget the love of our Lord,….
+
+From the moment he said “Let there be light” to iyang gihatag ang iyang bugtong anak nga si Jesus Christ.... alang kanata, represents his steadfast love, nga amidst sa atong identity nga makakasala and imperfections, “his mercies never come to an end.” And even sa atong everyday lives nga gi-face, nga ups and downs, trials and challenges, Remember, he gave you the blessings to wake up every morning.
+
+God's love is always new, like iya jud ta patilawon nga iyang gugma is fresh. :)`,
+    lesson: 'God\'s love never exhausts or runs dry. Every morning is an invitation to taste and experience His renewed mercy and faithfulness.',
+    prayer: 'Lord, thank You for the gift of waking up each day under the shelter of Your fresh mercies. Your faithfulness is my anchor. Amen.',
+    closingThought: 'God\'s love is always new, letting us taste that His grace is fresh each morning. :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION V: REFLECTION — SEARCH ME, O GOD ───
+  {
+    id: 'devotion-5-search-me-o-god',
+    slug: 'devotion-5-reflection-search-me-o-god',
+    title: 'Reflection — Search Me, O God',
+    devotionNumber: 'Devotion V',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-03-18',
+    year: 2026,
+    month: 'March',
+    day: 18,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 139:23-24'],
+    scriptureVerseText: '“Search me, O God, and know my heart; test me and know my anxious thoughts. See if there is any offensive way in me, and lead me in the way everlasting.” — Psalm 139:23-24',
+    topics: ['conviction', 'self-examination', 'humility', 'surrender', 'light and dark'],
+    mood: 'Vulnerable',
+    excerpt: 'When the self says: Search me, O God, and see if there\'s grievous way in me... But God intervenes, not as soft as a cotton or as calm as the river, but an arrow that pierces the heart — “the arrow of truth”...',
+    openingThought: 'A gripping poetic self-examination confronting hypocrisy, disguised darkness, and the piercing grace of God’s arrow of truth.',
+    content: `When the self says,
+Search me, O God, and see
+if there's grievous way in me.
+
+A voice whispers, yet it was as loud as bell.... “Breathe... you are holding in the way of darkness”
+
+“You thought it glorifies God,”
+“You are no difference of a hypocrite”
+“You, yourself, desperate and trying hard”
+“Yet, you, amidst in the way”
+“You forgot your purpose, doing things nga na Glorify ang Ginoo”
+
+You change your path, in your own way, the way that feels good, the way that how you cope from way out and the truth. Your heart is grievous as someone who's slave. Yet the hard part is... it was beautiful, beautiful as flowers blooms. But, dark as the void itself.
+
+And the self was guilty, because those truths hit him, “Guilty conscience, corrupted heart, mind fogging,” and soul sins..
+
+Yet still, the self continues his way of darkness. Being blind, forgetting who he is, making his paths...
+
+But God intervenes, not as soft as a cotton or as calm as the river, but an arrow that pierces the heart — “the arrow of truth” — that made the self realized, “what am I doing?” The truth really hits.....
+And God humbles the self, He twists his path of darkness into light. Even if at first, the self was nanibago, because he don't wanna leave his path nga nindot, but he didn't realize it was disguised as darkness. And God teaches him a lesson, he searches his heart, mind, soul, so he intervenes to a situation, a hard situation, and the self realized,
+
+— It was God, it is God himself,....
+
+And the self? Rejoicing and reflecting how good God is, when he thinks he's walking to light, but in reality it's darkness. He realized nga how wretched he was.
+
+Darkness blend, yet ang kahayag sa Ginoo is nagadanag, ug nag-protecta sa mga kangingit.
+
+“Reflection” — the story of “Self” reminds me nga sometimes God intervenes in a difficult situation, where it might feel sakit, nga why ngin ani man ni? Why naay twist sa agi-anan? But we are too blind to understand nga that path leads to darkness, even if letting go that path, hurts. And si God is wala ta niya biya-e nga mo continue sa the way of darkness, by any means necessary he walks that path into LIGHT :)`,
+    lesson: 'God loves us too much to leave us in comfortable darkness. His arrow of truth breaks through deceit to lead our steps into His everlasting light.',
+    prayer: 'Search my heart, O God. Reveal the compromises and subtle darkness I have excused. Guide my trembling feet back into Your pure light. Amen.',
+    closingThought: 'And God never abandons us to continue in the way of darkness — by any means necessary He walks that path into LIGHT :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION VI: THE VALUE OF WISDOM ───
+  {
+    id: 'devotion-6-the-value-of-wisdom',
+    slug: 'devotion-6-the-value-of-wisdom',
+    title: 'The Value of Wisdom',
+    devotionNumber: 'Devotion VI',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-04-05',
+    year: 2026,
+    month: 'April',
+    day: 5,
+    isTranscribedOriginal: true,
+    scriptures: ['Proverbs 24:14', 'Psalm 23:4'],
+    scriptureVerseText: '“Know that wisdom is such to your soul; if you find it, there will be a future, and your hope will not be cut off.” — Proverbs 24:14',
+    topics: ['wisdom', 'future', 'hope', 'guidance', 'protection'],
+    mood: 'Hopeful',
+    excerpt: 'Solomon states 2 things about the value of wisdom: “if we find it, there will be a future” and “hope will not be cut off.” Wisdom from God is both our guide and protection...',
+    openingThought: 'Unpacking Solomon’s double promise of wisdom: an assured future and an uncut hope, pairing the rod of protection with the staff of guidance.',
+    content: `“Know that wisdom is such to your soul; if you find it, there will be a future, and your hope will not be cut off.”
+
+This verse tells us that “wisdom” is somewhat crucial in our soul, Solomon states 2 things about the value of wisdom: “if we find it, there will be a future” — this tells us a promising assurance of wisdom nga how wisdom guides our mind and soul on the future, and Solomon also says — “hope will not be cut off.” This tells us nga wisdom from God is both our guide and protection. It guides our path clearly to the future, and it protects from the darkness, that hope will not be cut off. And a verse reminds me — Psalm 23:4, where God's rod and staff comfort us, nga he is both our protector (Rod) and a guide (Staff) :)`,
+    lesson: 'Godly wisdom safeguards our future and preserves our hope. In His hands, wisdom serves as both our rod of protection and staff of guidance.',
+    prayer: 'Heavenly Father, grant me the wisdom that comes from above. Protect my thoughts from foolishness and illuminate the path toward the future You prepared for me. Amen.',
+    closingThought: 'Wisdom from God is both our protector (Rod) and a guide (Staff) :)',
     status: 'PUBLISHED',
     readingTimeMinutes: 2,
+  },
+
+  // ─── DEVOTION VII: GOD IS GREATER THAN OUR HEART ───
+  {
+    id: 'devotion-7-god-is-greater-than-our-heart',
+    slug: 'devotion-7-god-is-greater-than-our-heart',
+    title: 'God Is Greater Than Our Heart',
+    devotionNumber: 'Devotion VII',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-04-28',
+    year: 2026,
+    month: 'April',
+    day: 28,
+    isTranscribedOriginal: true,
+    scriptures: ['1 John 3:20', 'Jeremiah 17:9'],
+    scriptureVerseText: '“For whenever our hearts condemn us, God is greater than our heart, and he knows everything.” — 1 John 3:20',
+    topics: ['assurance', 'condemnation', 'peace', 'victory', 'overcoming anxiety'],
+    mood: 'Grateful',
+    excerpt: 'Whenever e condemn ta sa atong heart, God is greater, God is bigger, he knows everything, the silent battles, the spiritual war inside and deception of the heart... Why worry — REJOICE.',
+    openingThought: 'When self-condemnation and deceitful emotions threaten to drown us, God’s sovereign knowledge and grace overrule our fragile hearts.',
+    content: `“For whenever our hearts condemn us, God is greater than our heart, and he knows everything.”
+
+This verse tells us nga, for every thing nga naa sa atong heart, like mga burdens, problems, worry, anxieties — basically mga bad things nga thinking — God is greater than all this things, even if it seems impossible, heavy, and no hope, a thinking of “maybe my heart that filled with negative traits, is exceptionally greater than God.” And yes, all the time we think of it that way, being consumed about what we feel, the heaviness of the heart and the burdens, a feeling of drowning.....
+
+And Jeremiah 17:9 boldly says, “The heart is deceitful above all things, and desperately sick; who can understand it?”.... Jeremiah gives us a reality check nga ang kasingkasing is malimbungon, above samga tanang butang,
+
+And it's true because if we look deeper to ourselves, “there is always nga time especially mga emotions where it became uncontrollable, because sa source nga, problems, worry, conflict, and it deceive us, sometimes forgetting ourselves, forgetting God, cuz we are consumed sa mga butang nga mga bati.”
+
+And 1 John 3:20 tells us, and assures us nga whenever e condemn ta sa atong heart, God is greater, God is bigger, he knows everything, the silent battles, the spiritual war inside and deception of the heart.
+
+And if we take this verse as our life depend on it... maka-ingon ta nga “Ay hala, naa diay koy Ginoo sa” “Never mind na ni, cuz ang kadaugan is naa ni God.” “Maka-jump ka sa kalipay, nga ‘Ay bitaw! Why worry’ — REJOICE.”`,
+    lesson: 'Our feelings and self-condemning thoughts are not the final authority. God is greater than our deceitful hearts and holds the ultimate victory.',
+    prayer: 'Lord, when guilt and anxious thoughts condemn me, quiet my soul with the truth that You are greater than my heart. I rest in Your complete knowledge and unfailing grace. Amen.',
+    closingThought: '“Ay hala, naa diay koy Ginoo sa!” “Never mind na ni, cuz ang kadaugan is naa ni God.” Why worry — REJOICE.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION VIII: YOUR WORD IS A LAMP TO MY FEET ───
+  {
+    id: 'devotion-8-your-word-is-a-lamp-to-my-feet',
+    slug: 'devotion-8-your-word-is-a-lamp-to-my-feet',
+    title: 'Your Word Is a Lamp to My Feet',
+    devotionNumber: 'Devotion VIII',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-05-20',
+    year: 2026,
+    month: 'May',
+    day: 20,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 119:105', 'Matthew 25:1-12', 'John 1:1', 'Genesis 1:3', 'Romans 7:24', 'John 13:4-5', 'John 13:12'],
+    scriptureVerseText: '“Your word is a lamp to my feet and a light to my path.” — Psalm 119:105',
+    topics: ['word of god', 'light', 'servanthood', 'cleansing', 'guidance', 'eternal life'],
+    mood: 'Contemplative',
+    excerpt: 'A word-by-word study from Discipleship: Lamp, Oil, Feet, and Light. The humility of Jesus washing dirty feet in John 13, and why God’s Word is better than Google Maps for our eternal destiny...',
+    openingThought: 'A rich multi-layered discipleship study breaking down Psalm 119:105 through the Parable of the Ten Virgins, the Incarnation, and Christ’s foot-washing in John 13.',
+    content: `“Your word is a lamp to my feet and a light to my path.”
+
+This verse tells us that it's a reminder and assurance at the same time, the psalmist here when he write this — “it was convicting” — a simple and single verse but many deeper meanings behind, like when the moment I realized, my mind was being open, truly ang mga advice sa among ates and kuyas, nga ang pagbasa jud sa bible is word by word, is nindot jud, grabe — every word has power.
+
+“Realization:” — I shared in Discipleship, “Your word” — a single and simple phrase... “Word” we often identify this as law, rebuke, instructions, like basically the bible, the word of God, ang pulong sa Ginoo, or in other words —
+
+The Parable of the Ten Virgins.
+
+The parable tells us about the ten virgins where 5 of them nag-dala og oil para sa ilang lamps and the other 5 is only lamp ra ang gidala, so when the night comes, looy ang other 5 cuz wala silay light.. And it tells us nga we should be ready all the time because wala ta nasayud sa mga umaabot sa atong life... And another meaning pud ang nag convey sa kani nga parable... Remember: Lamp = fills with oil to be lighted...
+
+“Oil” represents purity. Oil in the lamp is the same thing as God in our life. But let's focus on the word “purity” — ang methapor sa parable of the ten virgins ani, is being pure nga wala nahilabtan, “oil” is the representation sa mga wise 5 virgins as pure....
+
+But it can be classified as subjective — John 1:1: “In the beginning was the Word, and the Word was with God, and the Word was God.” Meaning, the “word” there, is a representation as God, “YOUR WORD IS A LAMP to my FEET, and a LIGHT to my path....”
+
+If we read John 1:1 word by word, the main message is the “beginning,” and if mobalik ta sa beginning, sa Genesis — “Let there be LIGHT”.... kani, nindot kaayo ang cross-reference sa bible, from Psalm 119 (word), John 1:1 (God), Genesis (light) and ni balik rapud sa Psalm 119, “and a light to my path,”.... And kani sa word pa ta, wala pa sa lamp, feet and light....
+
+My realization sa among pag-sharing: “Lamp to my feet” — Lamp = fills with oil para no siga. To illustrate: Matthew 25:1-12
+
+But in our life, if e widen nato ang perspective, we are impure nga makasasala nga nanginabuhi sa flesh.... Matud pa gi-ingon ni Paul sa Romans 7 nga “How wretched I am....”
+
+Now sa “Feet” — Feet = is responsible sa atong pag-lakaw, and ang pinaka-hugaw sa part sa atong flesh... Because mao man gamiton nato sa paglakaw, hugaw jud, even if mag-tsinelas or sapatos, ARE WE CERTAIN? haha, joking aside..
+
+But, yess, it is not just physically but something spiritual. Makita nato sa Gibuhat ni Jesus sa iyang disciples — John 13:4-5, where pagkahuman sa supper “he rose” and iyang gi-hubo ang mga outer garments niya.....
+
+Verse 5: “Then he poured water into a basin and began to wash the disciples' feet and to wipe them with the towel that was wrapped around him.”
+
+Like... grabe kaayo ka humble ang Ginoo aning tayma, grabe kaayo ang iyang pagpa-ubos... “Speechless” ko. And napa pajud sa John 13:12... — “When he had washed their feet and put on his outer garments and resumed his place, he said to them, ‘Do you understand what I have done to you?’” Akong matubag while imagining it is, “wala jud” — I don't understand...
+
+And ang nakanindot pa is, instead nga iyang ilabay iyang garments after sa pag-wash sa feet sa iyang disciples kay hugaw na.... IYA GISUL-OB balik.. Like speechless ko to a maximum level nga unsa jud kamaayo sa Ginoo.. This tells us nga how God, the most gracious and high, came down and humbled himself...
+
+And it's not just about nga unsa jud kahugaw ang feet physically, that Jesus washed it as a sign of service... But something profound and beautiful lies underneath. It's all about how our feet is responsible for everything along life, every step, every decision, is the feet's responsibility, and that's why it is most hugaw sa atong body part, because sa atong pag-lakaw, sometimes mapunta ta sa mga bati.... It's an act of Jesus nga why he washed the disciples' feet, not just physically but for divine assurance of cleansing....
+
+And the verse clearly states, “Your word is the lamp to my feet” — it's not just all about the disciples but kita pud as mga anak sa Ginoo, every day iyang gihugasan atong mga tiil to guide us sa atong pag-lakaw...
+
+And lastly, the LIGHT :) — “And a light to my path” — Light = hope, guide, the staff....
+
+That phrase “A light to my path” reminds us nga for every way nga asa ta padulong, His word is always naa, ga guide.
+
+In today's world, grabe na kaayo ka high-tech, like naa gani Google Maps para makita atong destination, grabe na kaayo ka high-tech ron. But ang Google Maps, nasayud ba sa atong kaugma-on? Ang Google Maps, sayud ba sa atong future? Nuh-uh.. even kita wala ta nasayud, we never know what could happen later, tomorrow, next day, or year...
+
+That's why adto ta sa atong buhing Dios, sayud siya sa tanan, sa atong life. The Google Maps is something temporary ra nga we could rely sa atong destination, but God is Eternal, adto ta sa atong Ginoo nga Eternal... We should set aside the things that are temporary, but start focusing ni God which mag hatag nato ug eternal life... :)`,
+    lesson: 'Every word of God carries living power. Christ continually washes our daily walk, and His Word illuminates the eternal path when worldly navigation fails.',
+    prayer: 'Lord Jesus, wash my feet from the dust of this world. Let Your living Word guide each step and decision toward eternity. Amen.',
+    closingThought: 'The Google Maps is something temporary... but God is Eternal. Let us set aside what is temporary and focus on the God of eternal life :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 5,
+  },
+
+  // ─── DEVOTION IX: YOUR WORD IS A LAMP TO MY FEET (DEVOTIONAL REFLECTION) ───
+  {
+    id: 'devotion-9-your-word-is-a-lamp-to-my-feet-reflection',
+    slug: 'devotion-9-your-word-is-a-lamp-to-my-feet-devotional-reflection',
+    title: 'Your Word Is a Lamp to My Feet (Devotional Reflection)',
+    devotionNumber: 'Devotion IX',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-05-21',
+    year: 2026,
+    month: 'May',
+    day: 21,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 119:105', 'Psalm 23:4'],
+    scriptureVerseText: '“Your word is a lamp to my feet and a light to my path. :)” — Psalm 119:105',
+    topics: ['comfort', 'assurance', 'shepherd', 'word of god', 'guidance'],
+    mood: 'Peaceful',
+    excerpt: 'This verse tells me nga ang word sa Ginoo is buhi jud... Lamp to my feet is the rod (protection) and a light to my path is the staff (guidance)... This verse comforts me and gave hope with assurance :)',
+    openingThought: 'A heartfelt devotional summary connecting the lamp and light to the comforting rod and staff of the Good Shepherd.',
+    content: `“Your word is a lamp to my feet and a light to my path. :)”
+
+Devotional: This verse tells me nga ang word sa Ginoo is buhi jud, from the word nga how it can be objective and subjective, lamp to my feet, serve as the readiness and protection for every step we partake, and a light to my path.. where God gave us clear vision sa atong path, a guidance...
+
+And as I reflect, na remind na pud ko sa akong favorite verse, Psalm 23:4 (“his rod and staff comfort me”) nga how the lamp to my feet is the rod (protection) and a light to my path (guidance) staff...
+
+And sa akong life, like usahay masaag ko, ma consumed ko sa mga bati nga butang... But this verse comforts me and gave hope with assurance :)`,
+    lesson: 'When we lose our way in life\'s storms, God\'s Word stands ready as our protective rod and guiding staff, offering steady assurance and comfort.',
+    prayer: 'Shepherd of my soul, thank You that Your Word is alive and active. Comfort me with Your rod and guide me with Your staff whenever I wander. Amen.',
+    closingThought: 'Even when we feel consumed by negative things, God\'s living Word comforts us with unbreakable hope :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
+
+  // ─── DEVOTION X: GOD'S CALLING TO THE SINNERS ───
+  {
+    id: 'devotion-10-gods-calling-to-the-sinners',
+    slug: 'devotion-10-gods-calling-to-the-sinners',
+    title: "God's Calling to the Sinners",
+    devotionNumber: 'Devotion X',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-06-10',
+    year: 2026,
+    month: 'June',
+    day: 10,
+    isTranscribedOriginal: true,
+    scriptures: ['Matthew 9:13', 'Romans 3:9-18', 'Romans 1:17'],
+    scriptureVerseText: '“Go and learn what this means: ‘I desire mercy, and not sacrifice.’ For I came not to call the righteous, but sinners.” — Matthew 9:13',
+    topics: ['calling', 'mercy', 'imperfect vessels', 'living testament', 'grace'],
+    mood: 'Grateful',
+    excerpt: 'God doesn\'t want our perfection, he wants our imperfections, even sa mga characters sa bible, he\'s using them not by their perfection but ang ilang flaw... Kamaayo ang Ginoo hehe :)',
+    openingThought: 'A raw and personal testimony on how God calls the imperfect, transforming those who felt like salt that lost its saltiness into living testaments of grace.',
+    content: `“Go and learn what this means: ‘I desire mercy, and not sacrifice.’ For I came not to call the righteous, but sinners.”
+
+This verse tells us nga, God is calling the sinners, not the righteous...
+
+Sometimes, in our lives, we think nga, “I need to be perfect para sa Ginoo, buhat kog mga maayo, para mahimaya ang Ginoo.”
+
+But God doesn't want our perfection, he wants our imperfections, even sa mga characters sa bible, he's using them not by their perfection but ang ilang flaw. “Moses was once killed an Egyptian, he hid over 40 years” and finally gigamit siya... “David... weak shepherd boy, but God uses him to...”
+
+(Although, it doesn't mean nga iyang gi-disregard ang nga righteous... but Romans 3:9-18, “No one is righteous, not even one.”)
+
+This is the missing recipe of why we think that being perfect by ourselves is what leads us to righteousness, but it is said no one is righteous. Naa na siya sa atong human nature since when the first sin came, and that's why God came down and calling sinners, not righteous, because no one is righteous, only sinners..
+
+Though we are sinners, but by Jesus, and through Jesus, he will mold us from imperfect to perfect like him — after ani is nanay bag-ong kalawasan ang atong e-wear nga dili madaot, unlike sa atong flesh.
+
+Though we are sinners and no one is righteous, but by faith the righteous shall live — Romans 1:17..
+
+And sa akong life, when I reflect this, it was very useless and hopeless that seigi kog sin, feeling unusable like the salt that lost its saltiness, but God has a plan, he use me, in a way nga akong gi-dream, serving, sharing the word of God, and iya pud ko gibutang sa situation nga makapa bool ko niya, like daghan, and I'm grateful for this because the one that once lost hope because darkness and flesh desires consumed him, but now living something to serve, sharing something to inspire, and writing as the proof of a living testament nga unsa jud
+
+Kamaayo ang Ginoo hehe :)`,
+    lesson: 'Righteousness is not earned through self-perfection; it is received through faith. God delights in using flawed vessels to demonstrate His mercy and glory.',
+    prayer: 'Lord Jesus, thank You for calling me despite my brokenness and flaws. Take my imperfect life and use it to share Your mercy and love with others. Amen.',
+    closingThought: 'Living something to serve, sharing something to inspire, and writing as the proof of a living testament nga unsa jud Kamaayo ang Ginoo hehe :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION XI: THE YOKE IS EASY ───
+  {
+    id: 'devotion-11-the-yoke-is-easy',
+    slug: 'devotion-11-the-yoke-is-easy',
+    title: 'The Yoke Is Easy',
+    devotionNumber: 'Devotion XI',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-07-10',
+    year: 2026,
+    month: 'July',
+    day: 10,
+    isTranscribedOriginal: true,
+    scriptures: ['Matthew 11:30'],
+    scriptureVerseText: '“For my yoke is easy, and my burden is light. :)” — Matthew 11:30',
+    topics: ['rest', 'yoke', 'surrender', 'companionship', 'peace', 'grace'],
+    mood: 'Peaceful',
+    excerpt: 'I thought ako ra isa ga alsa sa akong yoke, like murag carabao nga naay gikuan sa darohan, but Jesus did not say nga you carry it alone... The yoke is not meant for one but two...',
+    openingThought: 'A touching realization of Christ as our yoke-bearer: moving from lonely striving like a plow animal to resting in His infinite strength alongside us.',
+    content: `“For my yoke is easy, and my burden is light. :)”
+
+At first I was in the state of confusion, yet now, this verse really hits me.
+
+“For my yoke is easy, and my burden is light” comforts me nga ang yoke sa Ginoo is easy. I always thought, nga I alone is makaya nako, a thinking nga “amidst sa challenges I overcome, God is there watching, glorifying him cause nakaya nako, then he claps.” I was once thought like this, but God is not static, he doesn't just watch but nagkuyog. I thought ako ra isa ga alsa sa akong yoke, like murag carabao nga naay gikuan sa darohan, but Jesus did not say nga you carry it alone... “I was wrong, problems are real, and heavy...” But the yoke is not meant for one but two... I don't have to carry it alone because Jesus is there helping me to carry my yoke,
+
+And what's amazing is that yoke nga seems heavy, impossible to carry, will be nothing, cause you believe nga there is something powerful, something infinite power nga imong companion, si God,
+
+The yoke you once thought nga impossible will become easy and light.
+
+And as I reflect, I understand it now nga unsa jud pasabot ani nga verse, and I realize something — I was moved in tears and constant awe... I can't imagine nga how loving God is, that dili ta niya pasagdan mo carry alone sa atong yoke :)`,
+    lesson: 'We were never created to pull the heavy plow of life alone. Christ yokes Himself to us, transforming impossible burdens into light, shared grace.',
+    prayer: 'Jesus, I release my self-reliance and step into Your yoke. Thank You for walking beside me, sharing my load, and comforting my weary heart with Your gentle love. Amen.',
+    closingThought: 'The yoke is not meant for one, but two — Jesus is right beside you carrying the weight :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── DEVOTION XII: A TIME FOR EVERY THING ───
+  {
+    id: 'devotion-12-a-time-for-every-thing',
+    slug: 'devotion-12-a-time-for-every-thing',
+    title: 'A Time for Every Thing',
+    devotionNumber: 'Devotion XII',
+    collection: 'Personal Devotions',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-02',
+    year: 2026,
+    month: 'August',
+    day: 2,
+    isTranscribedOriginal: true,
+    scriptures: ['Ecclesiastes 3:1-8'],
+    scriptureVerseText: '“For everything there is a season, and a time for every matter under heaven.” — Ecclesiastes 3',
+    topics: ['seasons', 'vanity and purpose', 'hope', 'eternity', 'trust'],
+    mood: 'Contemplative',
+    excerpt: 'For every darkness, there is light. For every cave, there\'s a way out. For every storm there is a rainbow in the corner. And God represents all those things — LET\'S TRUST AND BELIEVE OUR GOD. :)',
+    openingThought: 'Wrestling honestly with the existential weight of Ecclesiastes 3: understanding that while under the sun all is fleeting fog, God is beyond time and death, bringing purpose and light to every season.',
+    content: `“For everything there is a season, and a time for every matter under heaven.”
+
+The writing of Solomon in Ecclesiastes, especially in chapter 3, is very heavy to understand, yet somehow it is the reality itself, convicting us.
+
+A time for everything, everything happens by time,
+“a time to be born, and a time to die”
+“a time to break down, and a time to build up”
+“a time to mourn, and a time to dance”
+“a time to seek, a time to lose”
+“a time to keep silence, a time to speak”
+“a time to love, a time to hate”
+
+This is heavy, heavy like the heart telling you to unsee it because it was never meant to know....
+
+This is the philosophy side of the Bible, and somehow depressing.... The writings of Solomon, like Proverbs, teach us that justice serves equally, where there is a great chasm between the wise and the fool that is mentioned in Proverbs — the wise inherit treasures and fools deserve what they deserve...
+
+But Ecclesiastes, on the other hand, teaches us a very whole new perspective and realization... (the depressing side) — “Time” and “Death” doesn't care who we are, no matter how wise and fool we are, there is always a season, and a time for every matter under heaven, and “Death?” It's just a destination that we are crossing — different life, different path — but in the end of everything our destination is the same, inevitable fate, unescapable destiny.
+
+A time for everything, that no matter who we are, there is always sadness in joy, anger in excitement, war in peace, hate in love, breakdown in growth, downs in ups, and sorrow in happiness...
+
+That's why Solomon says, for this is also vanity, which means meaningless, but not the full picture. Vanity defines as something as fog, meaning, it is hard to see that what is beyond in the fog.
+
+Vanity, uncertain, confusion.
+Sometimes life holds meaning on its own,
+that we never meant to understand.
+For whatever we toil under the sun is VANITY.
+
+But even if the writings in Ecclesiastes are somehow depressing, this doesn't mean nga walay pulos ang life, “well, yes,” naka-ingon nga everything is vanity sa atong life and sa kalibutan..
+
+But, if we have God in our life, life feels meaningful and colorful, if we take to understand nga unsa jud ka maayo ang Ginoo — the promises, the blessings, the gift, the eternal life he promised, the guidance, the protection, the wisdom and the sacrifice — because of his unconditional love.
+
+There is always a time for negative things. But also there is always a positive vibe. For every darkness, there is light. For every cave, there's a way out. For every storm there is a rainbow in the corner.
+
+And God represents all those things — light, the way out...
+
+And do we let our negative things consume us? Of course not, we have God.. hehe. :) Even if time itself and death is very depressing, God himself is beyond time and death.. Even if kanang duha ga condemn nato..
+
+LET'S TRUST AND BELIEVE OUR GOD. :)`,
+    lesson: 'Even when the fleeting seasons and inevitabilities of life feel like fog and vanity, God is beyond time and death. Anchoring our soul in His eternal love makes life colorful, meaningful, and full of hope.',
+    prayer: 'Lord, when the heaviness of life\'s seasons makes me feel lost in the fog, remind me that You stand beyond time. Be my light, my way out, and the rainbow in my storms. Amen.',
+    closingThought: 'For every cave there is a way out, for every storm a rainbow — LET\'S TRUST AND BELIEVE OUR GOD. :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 4,
   },
 
   // ─── 10. FEATURED EDITORIAL: LEARNING TO WAIT ───

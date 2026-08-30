@@ -15,5 +15,11 @@ export const archiveTopics: Topic[] = [
   { id: 'youth', name: 'Youth & Example', description: 'Standing firm in speech, conduct, love, faith, and purity.' },
   { id: 'solitude', name: 'Solitude & Peace', description: 'Finding sanctuary in quiet mornings, mountains, and silent rooms.' },
   { id: 'discipline', name: 'Discipline & Restraint', description: 'Guarding words, cultivating holy habits, and walking in faithfulness.' },
-  { id: 'growth', name: 'Personal Growth', description: 'The slow, messy, beautiful process of being molded by the Master.' }
+  { id: 'growth', name: 'Personal Growth', description: 'The slow, messy, beautiful process of being molded by the Master.' },
+  { id: 'holy-spirit', name: 'Holy Spirit & Temple', description: 'The dwelling presence of God in our redeemed bodies.' },
+  { id: 'word-of-god', name: 'Word of God & Light', description: 'The living compass that cleanses our walk and guides our path.' },
+  { id: 'calling', name: 'Calling & Imperfect Vessels', description: 'How God calls the broken and uses our flaws for His glory.' },
+  { id: 'assurance', name: 'Assurance & Victory', description: 'Resting in the truth that God is greater than our deceitful hearts.' },
+  { id: 'rest', name: 'Rest & Shared Yoke', description: 'Letting Jesus carry the weight with us in gentle communion.' },
+  { id: 'seasons', name: 'Seasons & Eternity', description: 'Navigating the changing rhythms of life anchored in the eternal God.' }
 ];

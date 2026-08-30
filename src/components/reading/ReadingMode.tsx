@@ -160,6 +160,14 @@ export const ReadingMode: React.FC<ReadingModeProps> = ({
               <span>
                 {entry.day} {entry.month} {entry.year}
               </span>
+              {entry.devotionNumber && (
+                <>
+                  <span>·</span>
+                  <span className="px-2 py-0.5 rounded-full bg-[#78966A]/15 text-[#3F6248] font-bold">
+                    {entry.devotionNumber}
+                  </span>
+                </>
+              )}
               {entry.memoNumber && (
                 <>
                   <span>·</span>
@@ -173,6 +181,17 @@ export const ReadingMode: React.FC<ReadingModeProps> = ({
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-normal text-[#253326] leading-tight tracking-normal">
               {entry.title}
             </h1>
+
+            {entry.author && (
+              <p className="text-sm font-serif-body text-[#5B6D5C] pt-1">
+                Written by <span className="font-medium text-[#253326]">{entry.author}</span>
+                {entry.collection && (
+                  <span className="text-[#78966A] font-mono text-xs ml-2 px-2 py-0.5 rounded-full bg-[#78966A]/10 border border-[#78966A]/20">
+                    {entry.collection}
+                  </span>
+                )}
+              </p>
+            )}
 
             {/* Emotional Atmosphere Tag */}
             <div className="flex items-center justify-center space-x-2 text-xs font-mono text-[#848D80] pt-1">

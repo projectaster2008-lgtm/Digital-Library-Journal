@@ -34,6 +34,34 @@ export interface AmbientTrack {
 // Internal array of curated YouTube video ambient URLs
 export const YOUTUBE_AMBIENT_TRACKS: AmbientTrack[] = [
   {
+    id: 'user-track-1',
+    videoId: 'i9Yz7v_3rrI',
+    title: 'Peaceful Worship & Highland Reflections',
+    artist: 'Highland Sanctuary Ambience',
+    mood: 'Serene · Acoustic Praise · Deep Stillness',
+  },
+  {
+    id: 'user-track-2',
+    videoId: '-UIxUGbQDJw',
+    title: 'Solitude in the Mist & Gentle Hymns',
+    artist: 'Misty Forest Sanctuary',
+    mood: 'Contemplative · Mountain Solitude · Dawn Light',
+  },
+  {
+    id: 'user-track-3',
+    videoId: '6zYYjSiLxKg',
+    title: 'Quiet Valley Prayer & Deep Instrumental Peace',
+    artist: 'Valley Groves Soundscape',
+    mood: 'Peaceful · Rolling Clouds · Gentle Breeze',
+  },
+  {
+    id: 'user-track-4',
+    videoId: 'hRrn3IJjfoU',
+    title: 'Eternal Sanctuary & Mountain Sunset Hymns',
+    artist: 'Highland Sunset Acoustic',
+    mood: 'Warm Gold · Restful Dusk · Eternal Security',
+  },
+  {
     id: 'track-1',
     videoId: '4p0Yc5mW81I',
     title: 'Ethereal Morning Haze & Misty Hills',
@@ -181,30 +209,60 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
     };
   }, [handleShuffleNext]);
 
-  // 6. Guarantee autoplay upon active window / first user gesture on the website
+  // 6. Guarantee autoplay upon active window / first user gesture / portal entry on mobile
   useEffect(() => {
-    const triggerAutoplayOnGesture = () => {
+    const triggerAutoplay = () => {
       setHasUserInteracted(true);
       sendIframeCommand('playVideo');
-      window.removeEventListener('pointerdown', triggerAutoplayOnGesture);
-      window.removeEventListener('keydown', triggerAutoplayOnGesture);
-      window.removeEventListener('touchstart', triggerAutoplayOnGesture);
+      setIsPlaying(true);
+      // Also wake up sound engine Web Audio context if needed
+      soundEngine.initAudioContext();
     };
 
-    window.addEventListener('pointerdown', triggerAutoplayOnGesture, { once: true });
-    window.addEventListener('keydown', triggerAutoplayOnGesture, { once: true });
-    window.addEventListener('touchstart', triggerAutoplayOnGesture, { once: true });
+    const handleGlobalGesture = () => {
+      triggerAutoplay();
+      window.removeEventListener('pointerdown', handleGlobalGesture);
+      window.removeEventListener('keydown', handleGlobalGesture);
+      window.removeEventListener('touchstart', handleGlobalGesture);
+      window.removeEventListener('touchend', handleGlobalGesture);
+      window.removeEventListener('touchmove', handleGlobalGesture);
+      window.removeEventListener('scroll', handleGlobalGesture);
+      window.removeEventListener('click', handleGlobalGesture);
+    };
 
-    // Also attempt immediate programmatic play command on mount
-    const timer = setTimeout(() => {
+    const handlePortalEntryEvent = () => {
+      triggerAutoplay();
+    };
+
+    window.addEventListener('pointerdown', handleGlobalGesture, { passive: true });
+    window.addEventListener('keydown', handleGlobalGesture, { passive: true });
+    window.addEventListener('touchstart', handleGlobalGesture, { passive: true });
+    window.addEventListener('touchend', handleGlobalGesture, { passive: true });
+    window.addEventListener('touchmove', handleGlobalGesture, { passive: true });
+    window.addEventListener('scroll', handleGlobalGesture, { passive: true });
+    window.addEventListener('click', handleGlobalGesture, { passive: true });
+    window.addEventListener('trigger-audio-autoplay', handlePortalEntryEvent);
+
+    // Also attempt immediate programmatic play commands on mount
+    const timer1 = setTimeout(() => {
       sendIframeCommand('playVideo');
-    }, 1000);
+    }, 400);
+
+    const timer2 = setTimeout(() => {
+      sendIframeCommand('playVideo');
+    }, 1200);
 
     return () => {
-      clearTimeout(timer);
-      window.removeEventListener('pointerdown', triggerAutoplayOnGesture);
-      window.removeEventListener('keydown', triggerAutoplayOnGesture);
-      window.removeEventListener('touchstart', triggerAutoplayOnGesture);
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      window.removeEventListener('pointerdown', handleGlobalGesture);
+      window.removeEventListener('keydown', handleGlobalGesture);
+      window.removeEventListener('touchstart', handleGlobalGesture);
+      window.removeEventListener('touchend', handleGlobalGesture);
+      window.removeEventListener('touchmove', handleGlobalGesture);
+      window.removeEventListener('scroll', handleGlobalGesture);
+      window.removeEventListener('click', handleGlobalGesture);
+      window.removeEventListener('trigger-audio-autoplay', handlePortalEntryEvent);
     };
   }, [sendIframeCommand, currentTrackIndex]);
 
@@ -214,7 +272,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
       <div
         className={`fixed transition-all duration-300 z-50 ${
           isOpen
-            ? 'bottom-20 right-6 w-[90vw] sm:w-[392px] h-[220px] rounded-2xl overflow-hidden shadow-2xl border border-[#78966A]/30 bg-black opacity-100 pointer-events-auto'
+            ? 'bottom-20 sm:bottom-24 right-3 sm:right-6 w-[calc(100vw-1.5rem)] sm:w-[392px] h-[200px] sm:h-[220px] rounded-2xl overflow-hidden shadow-2xl border border-[#78966A]/30 bg-black opacity-100 pointer-events-auto'
             : 'bottom-0 right-0 w-1 h-1 opacity-0 pointer-events-none overflow-hidden'
         }`}
         style={!isOpen ? { position: 'fixed', left: '-9999px', top: '-9999px' } : undefined}
@@ -231,18 +289,18 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
         />
       </div>
 
-      {/* ─── Floating Mini Sanctuary Disc / Bar when Closed ─── */}
+      {/* ─── Floating Mini Sanctuary Disc / Bar when Closed (Mobile-Optimized with perfect clearance) ─── */}
       {!isOpen && (
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 20, opacity: 0 }}
-          className="fixed bottom-6 right-6 z-40 flex items-center space-x-2"
+          className="fixed bottom-[4.5rem] right-3 sm:bottom-6 sm:right-6 z-30 flex items-center space-x-1.5 sm:space-x-2"
         >
           {/* Quick Play/Pause on Mini Dock */}
           <button
             onClick={handleTogglePlay}
-            className="p-2.5 rounded-full bg-[#FAF9F5]/95 text-[#2A3F35] backdrop-blur-md shadow-lg border border-[#78966A]/30 hover:bg-white hover:scale-105 transition-all cursor-pointer hidden sm:flex items-center justify-center"
+            className="p-2 sm:p-2.5 rounded-full bg-[#FAF9F5]/95 text-[#2A3F35] backdrop-blur-md shadow-lg border border-[#78966A]/30 hover:bg-white hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center min-w-[38px] min-h-[38px]"
             title={isPlaying ? 'Pause Ambient Stream' : 'Play Ambient Stream'}
           >
             {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
@@ -251,7 +309,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
           {/* Quick Shuffle Button */}
           <button
             onClick={handleShuffleNext}
-            className="p-2.5 rounded-full bg-[#FAF9F5]/95 text-[#3F6248] backdrop-blur-md shadow-lg border border-[#78966A]/30 hover:bg-white hover:scale-105 transition-all cursor-pointer hidden sm:flex items-center justify-center"
+            className="p-2 sm:p-2.5 rounded-full bg-[#FAF9F5]/95 text-[#3F6248] backdrop-blur-md shadow-lg border border-[#78966A]/30 hover:bg-white hover:scale-105 active:scale-95 transition-all cursor-pointer hidden xs:flex items-center justify-center min-w-[38px] min-h-[38px]"
             title="Shuffle to Next Ambient Track"
           >
             <Shuffle className="w-3.5 h-3.5" />
@@ -260,7 +318,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
           {/* Main Floating Deck Trigger */}
           <button
             onClick={onToggleOpen}
-            className="p-3 rounded-full bg-[#2A3F35] text-[#F7F8F2] shadow-2xl hover:bg-[#1C2C25] hover:scale-105 transition-all flex items-center space-x-3 border border-[#E5B26E]/50 cursor-pointer group"
+            className="p-2 sm:p-2.5 rounded-full bg-[#2A3F35] text-[#F7F8F2] shadow-2xl hover:bg-[#1C2C25] hover:scale-105 active:scale-95 transition-all flex items-center space-x-2 sm:space-x-3 border border-[#E5B26E]/50 cursor-pointer group"
             title="Open Misty Alpine Music Sanctuary"
           >
             <div className="relative flex items-center justify-center">
@@ -291,31 +349,31 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.95 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
-            className="fixed bottom-6 right-6 z-50 w-[94vw] sm:w-[440px] max-h-[88vh] bg-[#FAF9F5]/98 backdrop-blur-2xl border border-[#78966A]/30 rounded-3xl shadow-2xl modern-paper overflow-hidden flex flex-col pointer-events-auto"
+            className="fixed bottom-2 sm:bottom-6 left-3 right-3 sm:left-auto sm:right-6 z-50 w-[calc(100vw-1.5rem)] sm:w-[440px] max-h-[88vh] bg-[#FAF9F5]/98 backdrop-blur-2xl border border-[#78966A]/30 rounded-3xl shadow-2xl modern-paper overflow-hidden flex flex-col pointer-events-auto"
           >
             {/* Header: Misty Alpine Aesthetic */}
-            <div className="px-5 py-4 border-b border-[#78966A]/20 flex items-center justify-between bg-gradient-to-r from-[#2A3F35] to-[#3B5448] text-white">
-              <div className="flex items-center space-x-3">
-                <div className="w-9 h-9 rounded-full bg-[#1C2C25] text-[#E5B26E] border border-[#E5B26E]/40 flex items-center justify-center shadow-inner">
+            <div className="px-4 sm:px-5 py-3.5 sm:py-4 border-b border-[#78966A]/20 flex items-center justify-between bg-gradient-to-r from-[#2A3F35] to-[#3B5448] text-white flex-shrink-0">
+              <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#1C2C25] text-[#E5B26E] border border-[#E5B26E]/40 flex items-center justify-center shadow-inner flex-shrink-0">
                   <Mountain className="w-4 h-4 text-[#E5B26E]" />
                 </div>
-                <div>
-                  <h4 className="text-sm font-display font-medium text-[#FAF9F5] tracking-wide flex items-center space-x-1.5">
-                    <span>Misty Highland Music</span>
-                    <span className="px-1.5 py-0.5 rounded-full bg-[#E5B26E]/20 text-[#E5B26E] text-[9px] font-mono uppercase">
-                      Autoplay & Loop
+                <div className="min-w-0">
+                  <h4 className="text-xs sm:text-sm font-display font-medium text-[#FAF9F5] tracking-wide flex items-center space-x-1.5">
+                    <span className="truncate">Highland Music</span>
+                    <span className="px-1.5 py-0.5 rounded-full bg-[#E5B26E]/20 text-[#E5B26E] text-[8px] sm:text-[9px] font-mono uppercase flex-shrink-0">
+                      Autoplay
                     </span>
                   </h4>
-                  <p className="text-[10px] font-mono text-[#D8E2DC] uppercase tracking-wider flex items-center space-x-1">
-                    <Radio className="w-3 h-3 text-[#E5B26E]" />
-                    <span>Continuous Ambient Soundscape</span>
+                  <p className="text-[9px] sm:text-[10px] font-mono text-[#D8E2DC] uppercase tracking-wider flex items-center space-x-1 truncate">
+                    <Radio className="w-3 h-3 text-[#E5B26E] flex-shrink-0" />
+                    <span className="truncate">Continuous Ambient Stream</span>
                   </p>
                 </div>
               </div>
 
               <button
                 onClick={onToggleOpen}
-                className="p-1.5 rounded-full hover:bg-white/15 text-[#D8E2DC] hover:text-white transition-colors cursor-pointer"
+                className="p-1.5 rounded-full hover:bg-white/15 text-[#D8E2DC] hover:text-white transition-colors cursor-pointer flex-shrink-0"
                 title="Minimize Sanctuary Deck"
               >
                 <X className="w-4 h-4" />
@@ -323,7 +381,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
             </div>
 
             {/* Scrollable Body Content */}
-            <div className="p-4 space-y-4 overflow-y-auto max-h-[calc(88vh-130px)]">
+            <div className="p-3 sm:p-4 space-y-3 sm:space-y-4 overflow-y-auto max-h-[calc(88vh-130px)]">
               {/* Spacer for the positioned persistent iframe above */}
               <div className="w-full aspect-video rounded-2xl bg-black/5 flex items-center justify-center border border-dashed border-[#78966A]/30">
                 <div className="text-center p-4">
@@ -335,19 +393,19 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
               </div>
 
               {/* Active Track Metadata & Controls */}
-              <div className="p-4 rounded-2xl bg-white/90 border border-[#78966A]/20 shadow-sm space-y-3">
-                <div className="flex items-start justify-between">
-                  <div className="space-y-1">
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-white/90 border border-[#78966A]/20 shadow-sm space-y-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="space-y-1 min-w-0">
                     <span className="text-[10px] font-mono text-[#3F6248] uppercase tracking-widest font-semibold flex items-center space-x-1">
-                      <Sparkles className="w-3 h-3 text-[#E5B26E]" />
-                      <span>
+                      <Sparkles className="w-3 h-3 text-[#E5B26E] flex-shrink-0" />
+                      <span className="truncate">
                         Track {currentTrackIndex + 1} of {tracks.length} · Auto-Shuffling
                       </span>
                     </span>
-                    <h5 className="text-base font-display text-[#253326] font-medium leading-snug">
+                    <h5 className="text-sm sm:text-base font-display text-[#253326] font-medium leading-snug truncate">
                       {currentTrack.title}
                     </h5>
-                    <p className="text-xs font-serif-body italic text-[#6B7B6C]">
+                    <p className="text-xs font-serif-body italic text-[#6B7B6C] truncate">
                       {currentTrack.mood}
                     </p>
                   </div>
@@ -356,7 +414,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                     href={`https://www.youtube.com/watch?v=${currentTrack.videoId}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1.5 rounded-lg text-[#78966A] hover:text-[#2A3F35] hover:bg-[#78966A]/10 transition-colors"
+                    className="p-1.5 rounded-lg text-[#78966A] hover:text-[#2A3F35] hover:bg-[#78966A]/10 transition-colors flex-shrink-0"
                     title="Open on YouTube"
                   >
                     <ExternalLink className="w-4 h-4" />
@@ -364,11 +422,11 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                 </div>
 
                 {/* Playback Control Bar: Play/Pause, Shuffle, Prev, Next */}
-                <div className="pt-2 border-t border-[#78966A]/15 flex items-center justify-between">
+                <div className="pt-2 border-t border-[#78966A]/15 flex flex-wrap items-center justify-between gap-2">
                   {/* Shuffle Toggle */}
                   <button
                     onClick={() => setIsShuffle(!isShuffle)}
-                    className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-sans-ui transition-all cursor-pointer ${
+                    className={`flex items-center space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-full text-xs font-sans-ui transition-all cursor-pointer ${
                       isShuffle
                         ? 'bg-[#2A3F35] text-[#E5B26E] shadow-sm font-semibold'
                         : 'bg-[#F3EEDC] text-[#6B7B6C] hover:text-[#253326]'
@@ -376,11 +434,11 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                     title="Toggle Random Shuffle on Finish"
                   >
                     <Shuffle className="w-3.5 h-3.5" />
-                    <span>Shuffle {isShuffle ? 'Active' : 'Off'}</span>
+                    <span>Shuffle {isShuffle ? 'On' : 'Off'}</span>
                   </button>
 
                   {/* Play & Skip Controls */}
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2">
                     <button
                       onClick={handlePrevTrack}
                       className="p-2 rounded-full bg-[#FAF9F5] border border-[#78966A]/25 text-[#3F6248] hover:bg-[#3F6248] hover:text-white transition-all cursor-pointer"
@@ -399,10 +457,10 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
 
                     <button
                       onClick={handleShuffleNext}
-                      className="px-3.5 py-1.5 rounded-full bg-[#3F6248] text-white hover:bg-[#2A3F35] transition-all flex items-center space-x-1 text-xs font-medium cursor-pointer shadow-sm"
+                      className="px-3 py-1.5 rounded-full bg-[#3F6248] text-white hover:bg-[#2A3F35] transition-all flex items-center space-x-1 text-xs font-medium cursor-pointer shadow-sm"
                       title="Shuffle to Next Track"
                     >
-                      <span>Next Shuffled</span>
+                      <span>Next</span>
                       <SkipForward className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -427,7 +485,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                 </button>
 
                 {isExpandedTracklist && (
-                  <div className="p-2 space-y-1.5 border-t border-[#78966A]/10 bg-white/90">
+                  <div className="p-2 space-y-1.5 border-t border-[#78966A]/10 bg-white/90 max-h-48 overflow-y-auto">
                     {tracks.map((track, idx) => {
                       const isSelected = idx === currentTrackIndex;
                       return (
@@ -440,9 +498,9 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                               : 'hover:bg-[#F3EEDC] text-[#253326]'
                           }`}
                         >
-                          <div className="flex items-center space-x-2.5">
+                          <div className="flex items-center space-x-2.5 min-w-0">
                             <span
-                              className={`w-5 h-5 rounded-full text-[10px] font-mono flex items-center justify-center font-bold ${
+                              className={`w-5 h-5 rounded-full text-[10px] font-mono flex items-center justify-center font-bold flex-shrink-0 ${
                                 isSelected
                                   ? 'bg-[#E5B26E] text-[#2A3F35]'
                                   : 'bg-[#78966A]/15 text-[#3F6248]'
@@ -450,16 +508,16 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                             >
                               {idx + 1}
                             </span>
-                            <div>
+                            <div className="min-w-0">
                               <h6
-                                className={`text-xs font-display font-medium line-clamp-1 ${
+                                className={`text-xs font-display font-medium truncate ${
                                   isSelected ? 'text-[#FAF9F5]' : 'text-[#253326]'
                                 }`}
                               >
                                 {track.title}
                               </h6>
                               <p
-                                className={`text-[10px] font-serif-body italic ${
+                                className={`text-[10px] font-serif-body italic truncate ${
                                   isSelected ? 'text-[#D8E2DC]' : 'text-[#6B7B6C]'
                                 }`}
                               >
@@ -469,7 +527,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
                           </div>
 
                           {isSelected && (
-                            <span className="w-2 h-2 rounded-full bg-[#E5B26E] animate-pulse" />
+                            <span className="w-2 h-2 rounded-full bg-[#E5B26E] animate-pulse flex-shrink-0 ml-2" />
                           )}
                         </div>
                       );
@@ -479,14 +537,14 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
               </div>
 
               {/* Multi-Layer Procedural Mist & Nature Sound Toggle */}
-              <div className="p-3.5 rounded-2xl bg-[#FAF9F5] border border-[#78966A]/20 flex items-center justify-between">
-                <div className="flex items-center space-x-2.5">
-                  <Layers className="w-4 h-4 text-[#78966A]" />
-                  <div>
-                    <span className="text-xs font-sans-ui text-[#253326] font-medium block">
+              <div className="p-3 sm:p-3.5 rounded-2xl bg-[#FAF9F5] border border-[#78966A]/20 flex items-center justify-between gap-2">
+                <div className="flex items-center space-x-2.5 min-w-0">
+                  <Layers className="w-4 h-4 text-[#78966A] flex-shrink-0" />
+                  <div className="min-w-0">
+                    <span className="text-xs font-sans-ui text-[#253326] font-medium block truncate">
                       Procedural Mountain Breeze
                     </span>
-                    <span className="text-[10px] font-mono text-[#848D80]">
+                    <span className="text-[10px] font-mono text-[#848D80] truncate block">
                       Layer ambient synthesis over music
                     </span>
                   </div>
@@ -494,7 +552,7 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
 
                 <button
                   onClick={handleToggleProcedural}
-                  className={`px-3 py-1 rounded-full text-xs font-sans-ui font-medium transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-full text-xs font-sans-ui font-medium transition-all cursor-pointer flex-shrink-0 ${
                     proceduralActive
                       ? 'bg-[#2A3F35] text-[#E5B26E] shadow-sm'
                       : 'bg-white text-[#6B7B6C] border border-[#78966A]/25 hover:text-[#253326]'
@@ -506,16 +564,16 @@ export const AmbientMusicPlayer: React.FC<AmbientMusicPlayerProps> = ({
             </div>
 
             {/* Botanical Footer Bar */}
-            <div className="px-5 py-3 border-t border-[#78966A]/20 bg-white/80 flex items-center justify-between text-[10px] font-mono text-[#78966A]">
-              <span className="flex items-center space-x-1">
-                <Leaf className="w-3 h-3 text-[#78966A]" />
-                <span>Autoplay & Continuous Loop Stream Active</span>
+            <div className="px-4 sm:px-5 py-2.5 sm:py-3 border-t border-[#78966A]/20 bg-white/80 flex items-center justify-between text-[10px] font-mono text-[#78966A] flex-shrink-0">
+              <span className="flex items-center space-x-1 truncate mr-2">
+                <Leaf className="w-3 h-3 text-[#78966A] flex-shrink-0" />
+                <span className="truncate">Autoplay & Continuous Loop Active</span>
               </span>
               <button
                 onClick={onToggleOpen}
-                className="text-[#2A3F35] hover:underline font-semibold cursor-pointer"
+                className="text-[#2A3F35] hover:underline font-semibold cursor-pointer whitespace-nowrap flex-shrink-0"
               >
-                Minimize Deck ✕
+                Minimize ✕
               </button>
             </div>
           </motion.div>

@@ -88,21 +88,21 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0F1B16]/85 border-b border-white/15 transition-colors duration-500 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Left: Brand Leaf Icon and Journal Title */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 min-w-0">
           <button
             id="brand-home-button"
             onClick={() => onNavigate('home')}
-            className="flex items-center space-x-3 text-left group focus:outline-none cursor-pointer"
+            className="flex items-center space-x-2.5 text-left group focus:outline-none cursor-pointer"
           >
-            <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center font-display font-semibold text-lg text-[#78C491] bg-[#182C22] shadow-md group-hover:border-[#78C491] transition-colors">
+            <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center font-display font-semibold text-lg text-[#78C491] bg-[#182C22] shadow-md group-hover:border-[#78C491] transition-colors flex-shrink-0">
               <Leaf className="w-4 h-4 text-[#78C491]" />
             </div>
-            <div>
-              <span className="font-display tracking-[0.2em] text-sm text-[#FAF8F2] uppercase block font-semibold group-hover:text-[#F2C96D] transition-colors">
+            <div className="min-w-0">
+              <span className="font-display tracking-[0.15em] sm:tracking-[0.2em] text-xs sm:text-sm text-[#FAF8F2] uppercase block font-semibold group-hover:text-[#F2C96D] transition-colors whitespace-nowrap">
                 The Journal
               </span>
-              <span className="text-[10px] tracking-wider text-[#A8C4B2] uppercase block font-sans-ui font-medium">
-                A Living Garden of Thoughts
+              <span className="text-[9px] sm:text-[10px] tracking-wider text-[#A8C4B2] uppercase font-sans-ui font-medium truncate hidden xs:block">
+                A Living Garden
               </span>
             </div>
           </button>
@@ -115,13 +115,13 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Right: Seasons Selector, Nature Music, Atmosphere, Search, Write */}
-        <div className="flex items-center space-x-2 sm:space-x-2.5">
+        <div className="flex items-center space-x-1.5 sm:space-x-2.5 flex-shrink-0">
           {/* Season Selector Pill */}
           <div className="relative">
             <button
               id="season-selector-button"
               onClick={() => setIsSeasonMenuOpen(!isSeasonMenuOpen)}
-              className="flex items-center space-x-1.5 px-2.5 py-1.5 rounded-full text-xs font-sans-ui bg-[#182C22]/90 border border-white/20 text-[#FAF8F2] hover:border-[#78C491] shadow-md transition-all cursor-pointer"
+              className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-2.5 py-1.5 rounded-full text-xs font-sans-ui bg-[#182C22]/90 border border-white/20 text-[#FAF8F2] hover:border-[#78C491] shadow-md transition-all cursor-pointer"
               title={`Current Season: ${activeSeasonData.name}. Click to change season`}
             >
               <span className="w-2 h-2 rounded-full" style={{ backgroundColor: activeSeasonData.accentColor }} />
@@ -175,7 +175,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             id="nature-music-header-button"
             onClick={onOpenMusicPlayer}
-            className="flex items-center space-x-1.5 px-2.5 py-1.5 rounded-full text-xs font-sans-ui bg-[#23382D] text-[#FAF9F5] hover:bg-[#2D483A] border border-[#F2C96D]/50 shadow-md transition-all cursor-pointer group"
+            className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-2.5 py-1.5 rounded-full text-xs font-sans-ui bg-[#23382D] text-[#FAF9F5] hover:bg-[#2D483A] border border-[#F2C96D]/50 shadow-md transition-all cursor-pointer group"
             title="Open Misty Highland Shuffled Ambient Music Sanctuary"
           >
             <Music className="w-3.5 h-3.5 text-[#F2C96D] group-hover:rotate-12 transition-transform" />
@@ -189,7 +189,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               id="ambience-control-pill"
               onClick={() => setIsAmbienceMenuOpen(!isAmbienceMenuOpen)}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-full text-xs font-sans-ui transition-all border cursor-pointer backdrop-blur-md ${
+              className={`flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-2.5 py-1.5 rounded-full text-xs font-sans-ui transition-all border cursor-pointer backdrop-blur-md ${
                 isPlayingSound
                   ? 'bg-[#2D5A3C] text-[#FAF8F2] border-[#78C491]/50 shadow-md'
                   : 'bg-[#182C22]/90 text-[#C5D9CD] border-white/20 hover:text-white hover:bg-[#23382D]'
@@ -272,7 +272,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             id="search-header-button"
             onClick={onOpenSearch}
-            className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-[#182C22]/90 border border-white/20 text-[#C5D9CD] hover:text-white hover:border-[#78C491] transition-colors shadow-md cursor-pointer"
+            className="flex items-center space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-[#182C22]/90 border border-white/20 text-[#C5D9CD] hover:text-white hover:border-[#78C491] transition-colors shadow-md cursor-pointer"
             title="Search Archive"
           >
             <Search className="w-3.5 h-3.5 text-[#78C491]" />
@@ -286,7 +286,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             id="new-entry-header-button"
             onClick={onOpenCMS}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-[#2D5A3C] text-[#FAF8F2] hover:bg-[#39724C] transition-all text-xs font-bold shadow-lg border border-[#78C491]/40 cursor-pointer"
+            className="flex items-center space-x-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-[#2D5A3C] text-[#FAF8F2] hover:bg-[#39724C] transition-all text-xs font-bold shadow-lg border border-[#78C491]/40 cursor-pointer"
             title="Open Private CMS / Write Entry"
           >
             <Feather className="w-3.5 h-3.5 text-[#F2C96D]" />

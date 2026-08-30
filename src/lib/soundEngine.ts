@@ -10,7 +10,7 @@ class SoundEngine {
   private cricketsInterval: number | null = null;
   private rainDropsInterval: number | null = null;
 
-  private initContext() {
+  public initAudioContext() {
     if (!this.ctx) {
       const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
       this.ctx = new AudioCtx();
@@ -21,6 +21,10 @@ class SoundEngine {
     if (this.ctx.state === 'suspended') {
       this.ctx.resume();
     }
+  }
+
+  private initContext() {
+    this.initAudioContext();
   }
 
   public setPreset(preset: AmbienceType) {

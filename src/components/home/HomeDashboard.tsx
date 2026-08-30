@@ -80,20 +80,20 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full md:w-auto">
-            <div className="p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
-              <span className="block text-2xl font-display text-[#C9A96E]">137</span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 w-full md:w-auto">
+            <div className="p-3 sm:p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
+              <span className="block text-2xl font-display text-[#C9A96E]">{entries.length}</span>
               <span className="text-[10px] text-[#918B80] uppercase tracking-wider font-mono">Writings</span>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
-              <span className="block text-2xl font-display text-[#F4F0E8]">42</span>
+            <div className="p-3 sm:p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
+              <span className="block text-2xl font-display text-[#F4F0E8]">{totalDevotionals}</span>
               <span className="text-[10px] text-[#918B80] uppercase tracking-wider font-mono">Devotionals</span>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
-              <span className="block text-2xl font-display text-[#F4F0E8]">81</span>
+            <div className="p-3 sm:p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
+              <span className="block text-2xl font-display text-[#F4F0E8]">{totalJournals}</span>
               <span className="text-[10px] text-[#918B80] uppercase tracking-wider font-mono">Journals</span>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
+            <div className="p-3 sm:p-3.5 rounded-xl bg-[#0B0B0A]/80 border border-[#C9A96E]/10 text-center">
               <span className="block text-2xl font-display text-[#C9A96E]">2025+</span>
               <span className="text-[10px] text-[#918B80] uppercase tracking-wider font-mono">Timeline</span>
             </div>

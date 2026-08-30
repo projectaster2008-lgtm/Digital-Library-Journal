@@ -218,7 +218,7 @@ export function App() {
             />
 
             {/* Dynamic Center Canvas */}
-            <main className="lg:pl-72 py-6 transition-all duration-300">
+            <main className="lg:pl-72 py-6 pb-28 sm:pb-16 transition-all duration-300">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentTab}
@@ -308,7 +308,7 @@ export function App() {
           </div>
 
           {/* Minimalist Botanical Footer */}
-          <footer className="relative z-10 border-t border-[#78966A]/20 py-8 text-center text-xs text-[#6B7B6C] font-mono lg:pl-72 bg-[#F7F8F2]/80 backdrop-blur-sm">
+          <footer className="relative z-10 border-t border-[#78966A]/20 py-8 mb-16 lg:mb-0 text-center text-xs text-[#6B7B6C] font-mono lg:pl-72 bg-[#F7F8F2]/80 backdrop-blur-sm">
             <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
               <span className="tracking-widest uppercase text-[#3F6248] font-medium">The Personal Journal · Digital Garden</span>
               <span className="italic font-serif-body text-sm text-[#4E5C4F]">
