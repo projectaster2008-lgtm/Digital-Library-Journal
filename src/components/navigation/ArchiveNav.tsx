@@ -17,6 +17,7 @@ import {
   Grid,
   X,
   ChevronRight,
+  Lock,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -28,6 +29,7 @@ interface ArchiveNavProps {
     devotional: number;
     reflection: number;
     letter: number;
+    blueprint: number;
   };
 }
 
@@ -37,11 +39,13 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
   entryCounts,
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
 
   const navItems = [
     { id: 'home', label: 'Garden Index', num: '00', icon: Home, desc: 'Living 3D environment & latest reflections' },
+    { id: 'blueprint', label: 'Sovereign Architect', num: '★', icon: isVaultUnlocked ? Compass : Lock, count: isVaultUnlocked ? entryCounts.blueprint : undefined, desc: isVaultUnlocked ? 'A Blueprint for a Life Well-Built · Decrypted' : '🔒 Encrypted Architecture · Passcode Protected' },
     { id: 'journal', label: 'Journal (Leaves)', num: '01', icon: Leaf, count: entryCounts.journal, desc: 'Personal daily chronicles & observations' },
-    { id: 'devotionals', label: 'Devotionals (Light)', num: '02', icon: Sun, count: entryCounts.devotional, desc: 'Scripture-grounded handwritten meditations' },
+    { id: 'devotionals', label: 'Personal Devotions', num: '02', icon: Sun, count: entryCounts.devotional, desc: 'Scripture-grounded handwritten meditations & lessons' },
     { id: 'reflections', label: 'Reflections (Water)', num: '03', icon: Droplets, count: entryCounts.reflection, desc: 'Thematic contemplative spiritual notes' },
     { id: 'letters', label: 'Letters (Paper)', num: '04', icon: FileText, count: entryCounts.letter, desc: 'Unsent prayers and epistolary thoughts' },
     { id: 'timeline', label: 'Life Timeline', num: '05', icon: Clock, desc: 'Chronological faith milestones' },
@@ -53,6 +57,7 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
 
   const primaryMobileTabs = [
     { id: 'home', label: 'Garden', icon: Home },
+    { id: 'blueprint', label: 'Blueprint', icon: isVaultUnlocked ? Compass : Lock },
     { id: 'journal', label: 'Journal', icon: Leaf },
     { id: 'devotionals', label: 'Devotions', icon: Sun },
     { id: 'timeline', label: 'Timeline', icon: Clock },
@@ -65,7 +70,7 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
     <>
       {/* Desktop Floating Side Botanical Book Index */}
       <aside className="hidden lg:block fixed left-6 top-24 bottom-10 w-64 z-30 pointer-events-auto">
-        <div className="h-full flex flex-col justify-between p-4 rounded-2xl bg-[#0F1B16]/85 backdrop-blur-xl border border-white/15 shadow-2xl">
+        <div className="h-full flex flex-col justify-between p-4 rounded-2xl bg-[#0F1B16]/95 backdrop-blur-2xl border-2 border-white/20 shadow-2xl">
           {/* Top Header of Index */}
           <div>
             <div className="px-3 pb-3 mb-2 border-b border-white/15 flex items-center justify-between">
@@ -86,8 +91,8 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
                     onClick={() => onSelectTab(item.id)}
                     className={`w-full group text-left px-3 py-2 rounded-xl flex items-center justify-between text-xs transition-all cursor-pointer ${
                       isActive
-                        ? 'bg-[#2D5A3C] text-[#FAF8F2] font-semibold shadow-md border border-[#78C491]/40'
-                        : 'text-[#C5D9CD] hover:text-[#FFFFFF] hover:bg-white/10'
+                        ? 'bg-[#2D5A3C] text-[#FAF8F2] font-semibold shadow-md border border-[#78C491]/60'
+                        : 'text-[#D4E3DA] hover:text-[#FFFFFF] hover:bg-white/15 border border-transparent hover:border-white/15'
                     }`}
                   >
                     <div className="flex items-center space-x-2.5">
@@ -99,7 +104,7 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
                       </span>
                     </div>
 
-                    {item.count !== undefined && (
+                    {item.count !== undefined ? (
                       <span
                         className={`text-[10px] font-mono px-1.5 py-0.5 rounded-full ${
                           isActive
@@ -109,7 +114,9 @@ export const ArchiveNav: React.FC<ArchiveNavProps> = ({
                       >
                         {item.count}
                       </span>
-                    )}
+                    ) : item.id === 'blueprint' && !isVaultUnlocked ? (
+                      <span className="text-[10px] text-[#F2C96D]">🔒</span>
+                    ) : null}
                   </button>
                 );
               })}

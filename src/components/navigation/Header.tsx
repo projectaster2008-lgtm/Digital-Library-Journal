@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({
   const activeSeasonData = SEASONS_DATA[season];
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0F1B16]/85 border-b border-white/15 transition-colors duration-500 shadow-xl">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-2xl bg-[#09140E]/95 border-b-2 border-white/20 transition-colors duration-500 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Left: Brand Leaf Icon and Journal Title */}
         <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 min-w-0">

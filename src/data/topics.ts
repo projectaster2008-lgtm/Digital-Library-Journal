@@ -21,5 +21,10 @@ export const archiveTopics: Topic[] = [
   { id: 'calling', name: 'Calling & Imperfect Vessels', description: 'How God calls the broken and uses our flaws for His glory.' },
   { id: 'assurance', name: 'Assurance & Victory', description: 'Resting in the truth that God is greater than our deceitful hearts.' },
   { id: 'rest', name: 'Rest & Shared Yoke', description: 'Letting Jesus carry the weight with us in gentle communion.' },
-  { id: 'seasons', name: 'Seasons & Eternity', description: 'Navigating the changing rhythms of life anchored in the eternal God.' }
+  { id: 'seasons', name: 'Seasons & Eternity', description: 'Navigating the changing rhythms of life anchored in the eternal God.' },
+  { id: 'life-blueprint', name: 'Life Blueprint & Architecture', description: 'Personal life architecture, seven strategic phases, counting the cost, and diligence over haste.' },
+  { id: 'stewardship', name: 'Stewardship & Legacy', description: 'Honoring God with resources, building generational assets, and faithful management of talents.' },
+  { id: 'diligence', name: 'Diligence Over Haste', description: 'Choosing the patient, legal, and thorough path over dangerous shortcuts and anxious speculation.' },
+  { id: 'stoicism-faith', name: 'Stoicism & Faith', description: 'Dichotomy of control, managing imagined suffering, and grounding practical discipline in Scripture.' },
+  { id: 'risk-management', name: 'Risk Shield & Humility', description: 'Naming risks in daylight, planning against failure, and holding outcomes under James 4:13–15.' }
 ];

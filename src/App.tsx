@@ -19,6 +19,7 @@ import { LifeTimeline } from './components/timeline/LifeTimeline';
 import { YearlyChapters } from './components/yearly/YearlyChapters';
 import { ReflectionsArchive } from './components/reflections/ReflectionsArchive';
 import { AboutArchive } from './components/about/AboutArchive';
+import { SovereignArchitectView } from './components/blueprint/SovereignArchitectView';
 import { ReadingMode } from './components/reading/ReadingMode';
 import { ArchiveSearchModal } from './components/modals/ArchiveSearchModal';
 import { OnThisDayModal } from './components/modals/OnThisDayModal';
@@ -153,6 +154,7 @@ export function App() {
     devotional: entries.filter((e) => e.type === 'devotional').length,
     reflection: entries.filter((e) => e.type === 'reflection').length,
     letter: entries.filter((e) => e.type === 'letter').length,
+    blueprint: entries.filter((e) => e.type === 'blueprint').length,
   };
 
   return (
@@ -239,6 +241,14 @@ export function App() {
                       onOpenRandom={() => setIsRandomOpen(true)}
                       onOpenOnThisDay={() => setIsOnThisDayOpen(true)}
                       onOpenMusicPlayer={() => setIsMusicPlayerOpen(true)}
+                    />
+                  )}
+
+                  {currentTab === 'blueprint' && (
+                    <SovereignArchitectView
+                      onSelectEntry={handleSelectEntry}
+                      onSelectScripture={handleNavigateToScripture}
+                      onSelectTopic={handleNavigateToTopic}
                     />
                   )}
 

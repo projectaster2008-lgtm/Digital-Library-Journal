@@ -22,6 +22,8 @@ import {
   Trees,
   CloudSnow,
   Radio,
+  Lock,
+  ShieldCheck,
 } from 'lucide-react';
 import { ArchiveEntry, GardenAtmosphere, RoomTheme, Season } from '../../types';
 import { LivingArchiveTree } from '../tree/LivingArchiveTree';
@@ -54,6 +56,7 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
   onOpenMusicPlayer,
 }) => {
   const [isPlayingAudio, setIsPlayingAudio] = useState(soundEngine.getIsPlaying());
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
 
   const featuredEntry = entries.find((e) => e.isFeatured) || entries[0];
   const devotionals = entries.filter((e) => e.type === 'devotional');
@@ -271,36 +274,110 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
         </motion.div>
       </section>
 
-      {/* ─── 10 & 11. The Living Archive Tree (Writings as Leaves) ─── */}
+      {/* ─── 10. The Sovereign Architect: Master Life Blueprint ─── */}
+      <section className="space-y-4">
+        <motion.div
+          whileHover={{ y: -3 }}
+          onClick={() => onNavigate('blueprint')}
+          className="relative p-6 sm:p-8 rounded-3xl bg-[#0B1511]/95 backdrop-blur-2xl border-2 border-[#F2C96D]/50 hover:border-[#F2C96D] shadow-2xl cursor-pointer overflow-hidden transition-all group"
+        >
+          <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-[#F2C96D]/15 via-[#2D5A3C]/10 to-transparent rounded-full blur-3xl pointer-events-none group-hover:from-[#F2C96D]/25 transition-all" />
+
+          <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-3 max-w-2xl">
+              <div className="flex items-center space-x-2.5">
+                <span className="px-2.5 py-1 rounded-full bg-[#F2C96D]/20 text-[#F2C96D] text-[10px] font-mono uppercase tracking-widest font-bold border border-[#F2C96D]/40 flex items-center space-x-1">
+                  {isVaultUnlocked ? <Compass className="w-3 h-3 mr-1" /> : <Lock className="w-3 h-3 mr-1 text-[#F2C96D]" />}
+                  <span>{isVaultUnlocked ? 'Master Category · 7 Life Phases' : '🔒 Encrypted Vault · Passcode Protected'}</span>
+                </span>
+                <span className="text-[11px] font-mono text-[#D4E3DA]">
+                  {isVaultUnlocked ? 'Proverbs 24:3–4 · Matthew 6:33' : 'Master Blueprint · Clint Aldwin Maurin'}
+                </span>
+              </div>
+
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-display text-[#FAF8F2] group-hover:text-[#F2C96D] transition-colors leading-tight">
+                  The Sovereign Architect
+                </h3>
+                <p className="text-xs sm:text-sm font-serif-body text-[#D4E3DA] mt-1 leading-relaxed">
+                  {isVaultUnlocked
+                    ? 'A comprehensive, interactive strategic roadmap uniting financial stewardship, discipline, career schedules, and unwavering faith across seven distinct life epochs (Ages 18–60+).'
+                    : 'Confidential life architecture and private strategic roadmap. Passcode verification is required to decrypt and view.'}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 pt-1">
+                {isVaultUnlocked ? (
+                  ['Foundation & Grit', 'Market Dominance', 'Wealth Architecture', 'Kingdom Stewardship', 'Letters to Future Self'].map((tag) => (
+                    <span key={tag} className="text-[10px] font-mono text-[#FAF8F2] bg-white/15 px-2.5 py-1 rounded-md border border-white/20">
+                      {tag}
+                    </span>
+                  ))
+                ) : (
+                  ['🔒 Encrypted Archive', 'Protected Document', 'Passcode Required'].map((tag) => (
+                    <span key={tag} className="text-[10px] font-mono text-[#F2C96D] bg-[#F2C96D]/15 px-2.5 py-1 rounded-md border border-[#F2C96D]/30">
+                      {tag}
+                    </span>
+                  ))
+                )}
+              </div>
+            </div>
+
+            <div className="flex-shrink-0 flex items-center justify-end">
+              <button
+                className="px-5 py-3 rounded-2xl bg-[#2D5A3C] group-hover:bg-[#3B7550] text-[#FAF8F2] text-xs font-sans-ui uppercase tracking-wider font-bold shadow-lg border border-[#78C491]/60 flex items-center space-x-2 transition-all cursor-pointer"
+              >
+                {isVaultUnlocked ? (
+                  <>
+                    <span>Enter Blueprint</span>
+                    <ArrowRight className="w-4 h-4 text-[#F2C96D] group-hover:translate-x-1 transition-transform" />
+                  </>
+                ) : (
+                  <>
+                    <Lock className="w-4 h-4 text-[#F2C96D]" />
+                    <span>Unlock Vault</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* ─── 11. The Living Archive Tree (Writings as Leaves) ─── */}
       <section className="space-y-4">
         <LivingArchiveTree entries={entries} onSelectEntry={onSelectEntry} />
       </section>
 
-      {/* ─── 12 & 13. Content Metaphors: Devotionals as Light & Reflections as Water ─── */}
+      {/* ─── 12 & 13. Content Metaphors: Personal Devotions & Reflections as Water ─── */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Devotionals as Light */}
-        <div className="p-8 rounded-3xl bg-[#0F1B16]/85 backdrop-blur-xl border border-[#F2C96D]/40 shadow-2xl space-y-6 text-[#FAF8F2]">
+        {/* Personal Devotions (formerly Devotionals as Light) */}
+        <div className="p-8 rounded-3xl bg-[#0F1B16]/95 backdrop-blur-2xl border-2 border-[#F2C96D]/50 shadow-2xl space-y-6 text-[#FAF8F2]">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[#F2C96D] font-bold">
-              <Sun className="w-4 h-4" />
-              <span>Devotionals as Light</span>
+            <div className="flex items-center space-x-2 text-xs font-mono text-[#F2C96D]">
+              <Sun className="w-4 h-4 text-[#F2C96D]" />
+              <span className="text-[11px] font-mono text-[#D4E3DA]">{devotionals.length} Sacred Meditations</span>
             </div>
-            <span className="text-xs font-mono text-[#C5D9CD]">{devotionals.length} Sacred Lights</span>
+            <span className="text-[10px] font-mono text-[#F2C96D] uppercase font-bold tracking-widest bg-[#F2C96D]/15 px-2.5 py-0.5 rounded-full border border-[#F2C96D]/30">
+              Scripture Sanctuary
+            </span>
           </div>
 
-          <h3 className="text-2xl font-display text-[#FAF8F2]">
-            The Illuminations
-          </h3>
-          <p className="text-xs font-serif-body text-[#D4E3DA] leading-relaxed">
-            Each devotional is a small point of light. The more truth gathered, the brighter the sanctuary becomes.
-          </p>
+          <div>
+            <h3 className="text-2xl sm:text-3xl font-display text-[#FAF8F2]">
+              Personal Devotions
+            </h3>
+            <p className="text-xs sm:text-sm font-serif-body text-[#D4E3DA] mt-1 leading-relaxed">
+              Scripture meditations, handwritten notebook pages, and spiritual lessons gathered through the years.
+            </p>
+          </div>
 
           <div className="space-y-3 pt-2">
             {devotionals.slice(0, 3).map((entry) => (
               <div
                 key={entry.id}
                 onClick={() => onSelectEntry(entry)}
-                className="group p-4 rounded-xl bg-[#182C22]/80 border border-[#F2C96D]/30 hover:border-[#F2C96D] transition-all cursor-pointer flex items-center justify-between shadow-md"
+                className="group p-4 rounded-xl bg-[#182C22]/90 border border-[#F2C96D]/40 hover:border-[#F2C96D] transition-all cursor-pointer flex items-center justify-between shadow-md hover:bg-[#1E382B]"
               >
                 <div className="space-y-1">
                   <span className="text-[10px] font-mono text-[#F2C96D] uppercase font-semibold">
@@ -317,35 +394,37 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
 
           <button
             onClick={() => onNavigate('devotionals')}
-            className="w-full py-2.5 rounded-xl border border-[#F2C96D]/50 text-xs font-sans-ui uppercase tracking-wider text-[#F2C96D] hover:bg-[#F2C96D]/20 transition-all text-center font-bold cursor-pointer shadow-sm"
+            className="w-full py-3 rounded-xl border border-[#F2C96D]/60 text-xs font-sans-ui uppercase tracking-wider text-[#F2C96D] hover:bg-[#F2C96D]/20 transition-all text-center font-bold cursor-pointer shadow-sm"
           >
-            Enter Devotional Library →
+            Enter Personal Devotions →
           </button>
         </div>
 
         {/* Reflections as Water */}
-        <div className="p-8 rounded-3xl bg-[#0D2020]/85 backdrop-blur-xl border border-[#8EC5C1]/40 shadow-2xl space-y-6 text-[#FAF8F2]">
+        <div className="p-8 rounded-3xl bg-[#0D2020]/95 backdrop-blur-2xl border-2 border-[#8EC5C1]/50 shadow-2xl space-y-6 text-[#FAF8F2]">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[#8EC5C1] font-bold">
               <Droplets className="w-4 h-4" />
-              <span>Reflections as Water</span>
+              <span>Contemplations</span>
             </div>
-            <span className="text-xs font-mono text-[#C5D9CD]">{reflections.length} Tranquil Ripples</span>
+            <span className="text-xs font-mono text-[#D4E3DA]">{reflections.length} Tranquil Ripples</span>
           </div>
 
-          <h3 className="text-2xl font-display text-[#FAF8F2]">
-            The Rippling Pond
-          </h3>
-          <p className="text-xs font-serif-body text-[#C6E2DF] leading-relaxed">
-            Shorter thoughts and deep contemplation cast into the water, sending subtle ripples through memory.
-          </p>
+          <div>
+            <h3 className="text-2xl sm:text-3xl font-display text-[#FAF8F2]">
+              Reflections as Water
+            </h3>
+            <p className="text-xs sm:text-sm font-serif-body text-[#D4E3DA] mt-1 leading-relaxed">
+              Shorter thoughts and deep contemplation cast into the water, sending subtle ripples through memory.
+            </p>
+          </div>
 
           <div className="space-y-3 pt-2">
             {reflections.slice(0, 3).map((entry) => (
               <div
                 key={entry.id}
                 onClick={() => onSelectEntry(entry)}
-                className="group p-4 rounded-xl bg-[#152E2E]/80 border border-[#8EC5C1]/30 hover:border-[#8EC5C1] transition-all cursor-pointer flex items-center justify-between shadow-md"
+                className="group p-4 rounded-xl bg-[#152E2E]/90 border border-[#8EC5C1]/40 hover:border-[#8EC5C1] transition-all cursor-pointer flex items-center justify-between shadow-md hover:bg-[#1C3E3E]"
               >
                 <div className="space-y-1">
                   <span className="text-[10px] font-mono text-[#8EC5C1] uppercase font-semibold">
@@ -362,7 +441,7 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
 
           <button
             onClick={() => onNavigate('reflections')}
-            className="w-full py-2.5 rounded-xl border border-[#8EC5C1]/50 text-xs font-sans-ui uppercase tracking-wider text-[#8EC5C1] hover:bg-[#8EC5C1]/20 transition-all text-center font-bold cursor-pointer shadow-sm"
+            className="w-full py-3 rounded-xl border border-[#8EC5C1]/60 text-xs font-sans-ui uppercase tracking-wider text-[#8EC5C1] hover:bg-[#8EC5C1]/20 transition-all text-center font-bold cursor-pointer shadow-sm"
           >
             Visit The Pond →
           </button>
@@ -391,10 +470,10 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
                 key={id}
                 whileHover={{ y: -3 }}
                 onClick={() => onSeasonChange(id)}
-                className={`p-5 rounded-2xl border transition-all cursor-pointer relative overflow-hidden backdrop-blur-xl ${
+                className={`p-5 rounded-2xl border-2 transition-all cursor-pointer relative overflow-hidden backdrop-blur-2xl ${
                   isSelected
                     ? 'bg-[#182C22]/95 shadow-2xl ring-2'
-                    : 'bg-[#0F1B16]/80 hover:bg-[#182C22]/85 border-white/15'
+                    : 'bg-[#0F1B16]/90 hover:bg-[#182C22]/95 border-white/20'
                 }`}
                 style={{
                   borderColor: isSelected ? data.accentColor : undefined,
@@ -431,7 +510,7 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
                   {data.themePhrase}
                 </p>
 
-                <div className="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between text-[10px] font-mono">
+                <div className="mt-3 pt-2.5 border-t border-white/15 flex items-center justify-between text-[10px] font-mono">
                   <span className="text-[#A8C4B2] truncate max-w-[170px]">
                     {data.particleDescription}
                   </span>
@@ -451,7 +530,7 @@ export const HomeGardenLandscape: React.FC<HomeGardenLandscapeProps> = ({
       </section>
 
       {/* ─── 25. Discover Something & Time-Capsule Exploration ─── */}
-      <section className="p-8 rounded-3xl bg-[#0F1B16]/85 backdrop-blur-xl border border-white/20 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 text-[#FAF8F2]">
+      <section className="p-8 rounded-3xl bg-[#0F1B16]/95 backdrop-blur-2xl border-2 border-white/25 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 text-[#FAF8F2]">
         <div className="space-y-2 text-center sm:text-left">
           <span className="text-xs font-mono uppercase tracking-widest text-[#F2C96D] font-bold">
             Exploratory Wandering

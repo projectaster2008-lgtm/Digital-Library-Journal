@@ -314,7 +314,8 @@ It was never our destiny to receive the wrath of God, but to obtain eternal salv
     slug: 'devotion-1-released-from-the-law',
     title: 'Released From the Law',
     devotionNumber: 'Devotion I',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-01-08',
@@ -354,7 +355,8 @@ THANK YOU JESUS...`,
     slug: 'devotion-2-the-life-of-saul',
     title: 'The Life of Saul',
     devotionNumber: 'Devotion II',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-01-22',
@@ -392,7 +394,8 @@ By reflecting this, God really moves in an unexpected way... he use people like 
     slug: 'devotion-3-you-were-bought-with-a-price',
     title: 'You Were Bought With a Price',
     devotionNumber: 'Devotion III',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-02-14',
@@ -426,7 +429,8 @@ This is the breakthrough nga how everything belongs to God including our body...
     slug: 'devotion-4-gods-love-never-ceases',
     title: "God's Love Never Ceases",
     devotionNumber: 'Devotion IV',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-03-01',
@@ -460,7 +464,8 @@ God's love is always new, like iya jud ta patilawon nga iyang gugma is fresh. :)
     slug: 'devotion-5-reflection-search-me-o-god',
     title: 'Reflection — Search Me, O God',
     devotionNumber: 'Devotion V',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-03-18',
@@ -515,7 +520,8 @@ Darkness blend, yet ang kahayag sa Ginoo is nagadanag, ug nag-protecta sa mga ka
     slug: 'devotion-6-the-value-of-wisdom',
     title: 'The Value of Wisdom',
     devotionNumber: 'Devotion VI',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-04-05',
@@ -545,7 +551,8 @@ This verse tells us that “wisdom” is somewhat crucial in our soul, Solomon s
     slug: 'devotion-7-god-is-greater-than-our-heart',
     title: 'God Is Greater Than Our Heart',
     devotionNumber: 'Devotion VII',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-04-28',
@@ -583,7 +590,8 @@ And if we take this verse as our life depend on it... maka-ingon ta nga “Ay ha
     slug: 'devotion-8-your-word-is-a-lamp-to-my-feet',
     title: 'Your Word Is a Lamp to My Feet',
     devotionNumber: 'Devotion VIII',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-05-20',
@@ -651,7 +659,8 @@ That's why adto ta sa atong buhing Dios, sayud siya sa tanan, sa atong life. The
     slug: 'devotion-9-your-word-is-a-lamp-to-my-feet-devotional-reflection',
     title: 'Your Word Is a Lamp to My Feet (Devotional Reflection)',
     devotionNumber: 'Devotion IX',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-05-21',
@@ -685,7 +694,8 @@ And sa akong life, like usahay masaag ko, ma consumed ko sa mga bati nga butang.
     slug: 'devotion-10-gods-calling-to-the-sinners',
     title: "God's Calling to the Sinners",
     devotionNumber: 'Devotion X',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-06-10',
@@ -731,7 +741,8 @@ Kamaayo ang Ginoo hehe :)`,
     slug: 'devotion-11-the-yoke-is-easy',
     title: 'The Yoke Is Easy',
     devotionNumber: 'Devotion XI',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-07-10',
@@ -769,7 +780,8 @@ And as I reflect, I understand it now nga unsa jud pasabot ani nga verse, and I 
     slug: 'devotion-12-a-time-for-every-thing',
     title: 'A Time for Every Thing',
     devotionNumber: 'Devotion XII',
-    collection: 'Personal Devotions',
+    volume: 'Volume I',
+    collection: 'Personal Devotions Volume I',
     author: 'Clint Aldwin Maurin',
     type: 'devotional',
     date: '2026-08-02',
@@ -828,266 +840,507 @@ LET'S TRUST AND BELIEVE OUR GOD. :)`,
     readingTimeMinutes: 4,
   },
 
-  // ─── 10. FEATURED EDITORIAL: LEARNING TO WAIT ───
+  // ══════════════════════════════════════════════════════════════════════════
+  // PERSONAL DEVOTIONS: VOLUME II — A JOURNAL OF SCRIPTURE AND REFLECTION
+  // Written by Clint Aldwin Maurin (Complete 11-Chapter Devotional Collection)
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ─── VOLUME II · DEVOTION I: GOD IS MY HOME ───
   {
-    id: 'learning-to-wait',
-    slug: 'learning-to-wait',
-    title: 'Learning to Wait',
-    type: 'journal',
-    date: '2026-08-29',
+    id: 'vol2-devotion-1-god-is-my-home',
+    slug: 'vol2-devotion-1-god-is-my-home',
+    title: 'God Is My Home',
+    devotionNumber: 'Devotion I',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-10',
     year: 2026,
     month: 'August',
-    day: 29,
-    isFeatured: true,
-    scriptures: ['Psalm 27:14', 'Isaiah 40:31'],
-    scriptureVerseText: '"Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!" — Psalm 27:14',
-    topics: ['waiting', 'patience', 'faith', 'silence', 'trust'],
+    day: 10,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 91:2'],
+    scriptureVerseText: '“I will say to the LORD, “My refuge and my fortress, my God, in whom I trust.””',
+    topics: ['refuge', 'fortress', 'rest', 'surrender', 'protection', 'trust'],
     mood: 'Peaceful',
-    excerpt: 'There are seasons where nothing seems to move. I’ve prayed about it. I’ve thought about it. And perhaps the lesson wasn’t understanding. Perhaps it was learning to wait.',
-    openingThought: 'Sometimes faith isn’t about knowing what comes next—it is about abiding quietly in the middle of what is still unresolved.',
-    content: `There are seasons where nothing seems to move.
+    excerpt: 'This verse reminds and encourages us to go to God whenever we feel tired, for God is our refuge, he is our shelter, and fortress, kung kapoyon man ta, overwhelmed ta sa life...',
+    openingThought: 'A devotion on finding rest in God as both our shelter and fortress — "Come with me, puede naka mo pahuway."',
+    content: `“I will say to the LORD, “My refuge and my fortress, my God, in whom I trust.””
 
-I've prayed about it.
-I've thought about it.
-I've tried to understand it.
+This verse reminds and encourages us to go to God whenever we feel tired, for God is our refuge, he is our shelter, and fortress, kung kapoyon man ta, overwhelmed ta sa life, this verse tells us nga we can rest to God, like surrender, telling us nga “Come with me, puede naka mo pahuway.” And ang naka-nindot pa is, while were taking refuge to God, we are already secured... while we are tired and exhausted, God is always moving, for he is both our refuge as kapahulayan, and our fortress as protection..`,
+    lesson: 'God is both our refuge (kapahulayan) to rest and our fortress to protect us. While we are resting in Him, He is already moving and securing our life.',
+    prayer: 'Lord, You are my refuge and my fortress, my God in whom I trust. When I am tired and overwhelmed, I surrender my burdens into Your care. Amen.',
+    closingThought: 'While we are tired and exhausted, God is always moving, for He is both our refuge as kapahulayan, and our fortress as protection..',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
 
-And perhaps the lesson wasn't understanding.
-Perhaps it was learning to wait.
+  // ─── VOLUME II · DEVOTION II: DISCIPLESHIP NOTES: THE HOLY SPIRIT ───
+  {
+    id: 'vol2-devotion-2-discipleship-notes-the-holy-spirit',
+    slug: 'vol2-devotion-2-discipleship-notes-the-holy-spirit',
+    title: 'Discipleship Notes: The Holy Spirit',
+    devotionNumber: 'Devotion II',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-12',
+    year: 2026,
+    month: 'August',
+    day: 12,
+    isTranscribedOriginal: true,
+    scriptures: ['1 Thessalonians 5:19', 'Ephesians 4:30', 'John 12:40', 'John 14:16', 'John 16:7', 'Acts 1:4-5', 'Galatians 5:16', 'Matthew 7:21-23', 'Matthew 12:32'],
+    scriptureVerseText: '“Do not quench the Spirit.” (1 Thessalonians 5:19) · “And I will ask the Father, and he will give you another Helper, to be with you forever.” (John 14:16) · “He has blinded their eyes and hardened their heart, lest they see with their eyes, and understand with their heart, and turn, and I would heal them.” (John 12:40)',
+    topics: ['holy spirit', 'justification', 'sanctification', 'trinity', 'conviction', 'surrender', 'healing'],
+    mood: 'Contemplative',
+    excerpt: 'Justification, Sanctification, Glorification — Understanding the Holy Spirit is crucial: “Do not quench the Spirit.” The Spirit is calling, moving us towards right...',
+    openingThought: 'A comprehensive discipleship study & personal reflection on the Holy Spirit: Trinity roles, conviction, grieving the Spirit, and Jesus healing hardened hearts.',
+    content: `Study & Personal Reflection
 
-We live in a world that treats waiting as wasted time. If a door doesn't open immediately, we assume we took the wrong turn or that something broke along the way. But the older I get, the more I realize that waiting is where the root system develops.
+Justification
+Faith in Jesus Christ as personal savior, an act on Holy Spirit — you being baptized, (namatarong sa mata sa Grace).
 
-A tree doesn't shoot up fifty feet into the air overnight. The invisible months underground are what keep it standing when the typhoons hit.
+Sanctification
+Holy Spirit dwell in you permanently — the total works of a Christian.
 
-When I look back on 2025 and early 2026, the moments that felt like stalled momentum were actually God's kindness keeping me from rushing into rooms I was not spiritually ready to occupy.
+Glorification
 
-────────────────────
+Justification — In Detail
+1.) It's a mark that you belong to God. We cannot be adopted in God, Father, without the baptism of the Holy Spirit, by believing in Jesus Christ.
 
-PERSONAL NOTES
+2.) Spirit provides power of a new life — Since we are the children of God, we cannot do things nga ma-offend si God, and we cannot do anything by ourselves in flesh, but by the Holy Spirit, we alone are unable. Ang Cristohanong kinabuhi is dili sa pagpanikmot, but fully surrender.
 
-Woke up at 5:30 AM today. The air outside was cool and the city was completely quiet. Read Psalm 27 by candlelight. The sentence "Wait for the Lord; be strong, and let your heart take courage" stayed on repeat in my mind throughout the morning.
+3.) Spirit unites the Christian community by Jesus Christ.
 
-I don't need all the answers for the next five years today. I only need the grace to be faithful with the next twenty-four hours.
+Understanding the Holy Spirit is crucial — 1 Thessalonians 5:19: “Do not quench the Spirit.”
 
-────────────────────
+1 God, 3 Persons — The Trinity, Different Roles
+God the Father — our Father, has authority to the Son and the Spirit.
+God the Son — the one who died and resurrected, our Savior.
+Holy Spirit — a consuming fire, he will burn nga dili mahimaya sa Ginoo, same God as different roles/persona.
 
-PRAYER
+The Spirit is calling, but sometimes we ignore it, when we feel like doing something bad, but the Spirit says No. Sometimes we don't obey.
 
-Lord, teach my restless heart the quiet beauty of waiting. When anxiety tempts me to force outcomes or run ahead of Your timing, still my spirit. You are good in the waiting, just as You are good in the arrival. Amen.`,
-    lesson: 'Waiting is not an absence of progress; it is the silent cultivation of character and trust.',
-    prayer: 'Lord, give me courage to remain still until You move.',
-    closingThought: 'Trusting without knowing is the truest definition of walking by faith.',
-    photos: [
-      {
-        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Morning mist over the ridge — June 2026',
-        location: 'Mountain Sanctuary',
-        date: 'June 2026',
-      },
-    ],
+Holy Spirit is like ethics, knowing right and wrong, but it's moving you towards right...
+
+Illustration and Prophecy
+When in the time of Noah there is a flood, meaning water, and the coming of Jesus Christ (Revelation) through fire.
+
+“Holy Spirit is a Person” — has emotion. It says in the Bible, “do not grieve the Holy Spirit,” Ephesians 4:30, the word grieve = emotions.
+
+Holy Spirit serves as the voice, telling us, nga ayaw, sa mga bati nga butang.
+
+A question that, “Are we taking the Spirit for granted?”
+
+A time in my life, yes, even if wala ko kabaw, but the Spirit is working — pride of life, flesh desires, lust.. gi-neglect ning mga butanga.
+
+The Unforgivable Sin
+“And whoever speaks a word against the Son of Man will be forgiven, but whoever speaks against the Holy Spirit will not be forgiven.”
+
+The speaking against is the same thing as disregarding, and that's why Jesus stated those heavy words, “Depart from me,” because the Spirit was being spoken against, even if glorifying the name of Jesus, but there is no fire of the Spirit...
+
+But if nahadlok ta based sa atong conscience, nga “did I commit this unforgivable sin, blaspheme of the Holy Spirit?” — kana palang nga feeling nga nahadlok, that's already the Holy Spirit convicting :) you,
+
+And ang Christian life is not just knowing through knowledge, but experience by the Holy Spirit, the fire, the convictions,
+
+How the Holy Spirit Moved....
+Pagkanindot jud sa katayoan sa Ginoo. At this point, I forgot, or wala nako kaayo naka-focus sa mga burdens, but si God ra..
+
+“Nindota kaha nga ngin-ani na jud permi, you and God, listening to him, worship and praise him forever, because he is Holy forever, iyang katahom nga gugma, mercy and promises.” “Nga Lord, garahan nako mo-surrender, ikaw lang nasayud Lord, I wanna give my everything Lord God, nga ikaw na ang magpanglihok sa among heart, bisag kani nga present nga sufferings, is not worth comparing sa umaabot, even if burden kaayo siya. But I wanna surrender this everythings, all in my life, I just want to cry sa imong atubangan, tuhod nga mag-luhod, and open arms, worshiping and praising you forever...”
+
+The Heart Is Hardened, but Jesus Healed It — John 12:40
+“He has blinded their eyes and hardened their heart, lest they see with their eyes, and understand with their heart, and turn, and I would heal them.”
+
+This verse is a gentle reminder sa atoa na whenever nga we are blind, whenever mag-doubts ta sa Ginoo, and whenever nga atong kasingkasing was bring hardened sa life, trials, challenges, worries and problems, to the point nga gi-set aside nato si God because we are overwhelmed na that we ignore God's calling, till dili nata makadungog, og makakita.
+
+Sometimes in our lives, there's this kind of attachment nga gi-gunitan, like “ka busy ba ron,”.... And then... we ask.... “God, help to overcome this,” little did we know, often times, mas grabe atong ka busy kay sa ni God..
+
+To the point nga focus na kaayo ta sa lain butang nga instead of fully surrendered ni God... Until dili nata kadungog sa Ginoo....
+
+YES, we are calling, asking him to help us... But... we prioritize our call over our listening. Hangtud maabot nata sa point nga our hearts is hardened na, we call to God.... but there is something nga naka-block sa atong heart that prevents him from intervening, and because of this maka-question ta nga, “God, where are you? Speak to me? Are you there......?” and we did not realize nga all along is kita ang nagkulang, never nagkulang ang Ginoo, “the self was the problem,” and because of the attachments, busyness, worries and any areas in life, the heart was being hardened,....
+
+Speaking in Tongues, and the Promise of the Spirit
+Speaking in tongues, prophesying, is the work of the Holy Spirit.
+
+And if we think nga can we lose our Holy Spirit? Just remember John 14:16, “he will send you another Helper to be with you forever”.....
+
+My Sharing
+Ganiha, ga duha jud ko arig tungod sa spirito sa katapol haha, and burden pud sa mga responsibilities, academics and work, but somehow, a part of me moved, like even if daghan kaayog trabahoon, I still wanna learn, listen, and share with you,
+
+My Realization After
+It was worth it, I learn many things, together with my brothers, sa mga ilang gi-agian, and dili lang pud diri ako ang nakabati o feel
+
+Galatians 5:16 — Walk by the Spirit
+Sometimes the Holy Spirit is the most forgotten and disregarded in the Godhead.
+
+Matthew 7:21-23
+This verse is somehow the worst thing if ma-realize nato, “saying nga Lord, didn't we prophesy in your way, didn't we cast out demons in your name, didn't we glorify and magnify your name (the will of the Father)?” And Jesus said, “depart from me, I never knew you.”
+
+Notice nga why? It mentions “does the will of the Father” and “in the name of Jesus,” but the Spirit is not there — “And that's the missing piece.” Because Matthew 12:32 says—
+
+John 14:16
+“And I will ask the Father, and he will give you another Helper, to be with you forever.”
+
+If we ask a question, can we lose the Holy Spirit in our life... NO. John 14:16.
+
+The Way That Jesus Comforts Us — John 16:7
+Good sa mga disciples nga si Jesus Christ mo-leave, even if wala kasabot ang mga disciples, but Jesus did not leave us alone, but he sent a Helper (Holy Spirit). It is said in Acts 1:4-5 (promise).
+
+Water baptism — outwardly, and symbolizes following Jesus.
+
+Fire baptism — Holy Spirit dwelling in you.
+
+But... This Is the Verse — John 12:40
+Amidst sa everything.. even if we are blinded, and our hearts is hardened, God himself is always working, he never leaves us. “Lest they see with their heart, and turn, and understand with their heart and I would heal them.”
+
+It's a very comforting message, “I would heal them.”
+
+And now we know nga, God is always working behind the scene, God is always calling to us lost sheep...
+
+It's time for us nga we listen to him, surrender all to him, believe in him.. cast all our burdens to him..
+Because he is our God who is loving :)..`,
+    lesson: 'The Christian life is not mere intellectual knowledge, but experiencing the Holy Spirit, His fire, and convictions. Even when busyness and worries harden our hearts, God is always working behind the scenes to heal us.',
+    prayer: 'Holy Spirit, do not let me quench or grieve You. Soften my heart, burn away all that does not glorify God, and teach me to listen and surrender fully. Amen.',
+    closingThought: 'It is time for us to listen to Him, surrender all to Him, believe in Him, and cast all our burdens to Him — because He is our God who is loving :).',
     status: 'PUBLISHED',
     readingTimeMinutes: 5,
   },
 
-  // ─── 11. A QUIET MORNING ───
+  // ─── VOLUME II · DEVOTION III: THE DEBT HAS BEEN PAID ───
   {
-    id: 'a-quiet-morning',
-    slug: 'a-quiet-morning',
-    title: 'A Quiet Morning',
-    type: 'journal',
-    date: '2026-08-27',
+    id: 'vol2-devotion-3-the-debt-has-been-paid',
+    slug: 'vol2-devotion-3-the-debt-has-been-paid',
+    title: 'The Debt Has Been Paid',
+    devotionNumber: 'Devotion III',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-14',
     year: 2026,
     month: 'August',
-    day: 27,
-    scriptures: ['Lamentations 3:22-23', 'Psalm 46:10'],
-    topics: ['solitude', 'gratitude', 'peace', 'morning'],
-    mood: 'Peaceful',
-    excerpt: 'The city hasn’t woken up yet. Just the steam rising from black coffee and the sound of morning rain tapping softly against the window glass...',
-    content: `The city hasn't woken up yet. Just the steam rising from black coffee and the sound of morning rain tapping softly against the window glass.
+    day: 14,
+    isTranscribedOriginal: true,
+    scriptures: ['Philippians 4:18-19', 'Romans 6:23'],
+    scriptureVerseText: '“I have received full payment and more. I am well supplied, having received from Epaphroditus the gift you sent, a fragrant offering, a sacrifice acceptable and pleasing to God. And my God will supply every need of yours according to his riches in glory in Christ Jesus.” — Philippians 4:18-19',
+    topics: ['redemption', 'debt paid', 'cross', 'grace', 'sacrifice', 'gratitude'],
+    mood: 'Grateful',
+    excerpt: 'All our sins, shame, unrighteous acts, negative things, evils and our uncleanliness.. “He paid it all,” through his Son, iyang tang gibayaran pinaagi sa iyang kamatayon...',
+    openingThought: 'A meditation on the finished work of Christ: our debt is fully paid, and no gift compares to His sacrifice.',
+    content: `“I have received full payment and more. I am well supplied, having received from Epaphroditus the gift you sent, a fragrant offering, a sacrifice acceptable and pleasing to God. And my God will supply every need of yours according to his riches in glory in Christ Jesus.”
 
-There is a sacred quality to the first thirty minutes of the day before notifications, demands, and worldly noise flood in. In this quiet corner, I am reminded that God's mercies are new every single morning.
+All our sins, shame, unrighteous acts, negative things, evils and our uncleanliness.. “He paid it all,” through his Son, iyang tang gibayaran pinaagi sa iyang kamatayon and pinaagi sa blood niya, we have been washed... Romans 6:23 — For the wages of sin is death; but the free gift of God is eternal life in Christ Jesus our Lord.
 
-It doesn't matter how drained yesterday felt or what mistakes lingered from last week. The dawn brings a fresh slate.
+We have to die for ourselves to pay our sin, but because of Jesus Christ, we have been born again by his resurrection. And now he paid it all..., instead nga kita ang magpakamatay para sa atong sala, our most gracious high came down on his throne and chose to sacrifice himself for us..
 
-I sat with my notebook open for twenty minutes without writing a single line. Just breathing. Just thanking God for breath in my lungs and another chance to walk closely with Him.`,
-    prayer: 'Father, thank You for the quiet sanctuary of this morning. Let the peace of this hour remain with me when the rush begins.',
+That is literally a perfect gift that no one can compare.
+
+And we are living because of his greatness. No debt to pay, because he already paid it all.
+
+And karon, the only thing na we can do is to praise him, worship him, magnify and lift his name up.. nga how great he was for us :)`,
+    lesson: 'Jesus paid the full penalty for our sins through His death and resurrection. We have no debt left to pay, only a life of worship and praise to offer.',
+    prayer: 'Lord Jesus, thank You for paying the price I could never afford. You took my death and gave me eternal life. I lift Your name in praise and adoration. Amen.',
+    closingThought: 'No debt to pay, because He already paid it all. The only thing we can do is praise Him, worship Him, magnify and lift His name up :)',
     status: 'PUBLISHED',
-    readingTimeMinutes: 3,
+    readingTimeMinutes: 2,
   },
 
-  // ─── 12. THE THINGS I CANNOT CONTROL ───
+  // ─── VOLUME II · DEVOTION IV: GOD IS MY PORTION ───
   {
-    id: 'things-cannot-control',
-    slug: 'the-things-i-cannot-control',
-    title: 'The Things I Cannot Control',
-    type: 'reflection',
-    date: '2026-08-24',
+    id: 'vol2-devotion-4-god-is-my-portion',
+    slug: 'vol2-devotion-4-god-is-my-portion',
+    title: 'God Is My Portion',
+    devotionNumber: 'Devotion IV',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-16',
     year: 2026,
     month: 'August',
-    day: 24,
-    scriptures: ['Proverbs 3:5-6', 'Matthew 6:34'],
-    topics: ['surrender', 'anxiety', 'trust', 'peace', 'sovereignty'],
+    day: 16,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 73:26'],
+    scriptureVerseText: '“My flesh and my heart may fail, but God is the strength of my heart and my portion forever.” — Psalm 73:26',
+    topics: ['strength', 'portion', 'contentment', 'backsliding', 'restoration', 'following Jesus'],
     mood: 'Contemplative',
-    excerpt: 'I spent years thinking that anxiety was a sign of vigilance. In reality, it was just the heavy burden of trying to sit on a throne that was never mine to occupy.',
-    content: `I spent years thinking that anxiety was a sign of vigilance. In reality, it was just the heavy burden of trying to sit on a throne that was never mine to occupy.
+    excerpt: 'Whenever our flesh and heart fails, ang Ginoo is atong “bahin,” atong portion. In times nga life seems hopeless and empty inside... God makes us whole in his presence...',
+    openingThought: 'When our heart fails and feelings of inadequacy surface, God remains our eternal portion and the strength that lifts us up.',
+    content: `“My flesh and my heart may fail, but God is the strength of my heart and my portion forever.”
 
-Here is a list of things I cannot control:
-- What tomorrow will bring.
-- How other people perceive or misunderstand me.
-- The exact timeline of the dreams I carry.
-- Every sudden change in circumstance.
+An encouraging verse that reminds us, nga God himself is our strength and portion. Whenever our flesh and heart fails, ang Ginoo is atong “bahin,” atong portion. In times nga life seems hopeless and empty inside, a longing for something, desires of the flesh, guilt, shame, and feeling nga you lost something; a feeling nga something is lost inside, yourself, your heart..... feels incomplete.
 
-Here is what I CAN steward:
-- The posture of my heart today.
-- The kindness with which I speak.
-- The honesty of my prayers.
-- My willingness to forgive and stay soft.
+Just remember God is our strength and portion, even sa atong mga failures ug pagkuwang, God makes us whole in his presence, siya atong kusog ug bahin matag-adlaw ug hangtud sa kahangturan.
 
-Surrender isn't giving up; surrender is transferring ownership to the One who actually knows the road ahead.`,
+Because, in him, we should be content, thankful and grateful, not enough sa appreciation because of how far God is working upon us.
+
+And this tells us that, even ma-backslide ta sa pangalagad sa Ginoo, ma-pandol sa pag-follow ni God.... Remember he is our strength and portion, he saves and gipabarog ta niya sa pagka-fall... Knowing na God is not just leading us sa mga maayo, ang dalan sa pagka-righteous, ug ang dalan sa heaven, but he's also watching over us,
+
+Sa atong pag-lakaw, we should follow him from behind.. Not sa front, not sa side but behind him, that who knows the way for you. :)`,
+    lesson: 'Even in our failures and shortcomings, God makes us whole. Follow Him from behind, trusting the One who knows the road ahead.',
+    prayer: 'Father, when my heart and flesh fail, be the strength of my soul and my portion forever. Help me follow humbly behind You, trusting Your guiding hand. Amen.',
+    closingThought: 'In our walk, we should follow Him from behind — not in front, not at the side, but behind the One who knows the way for you :)',
     status: 'PUBLISHED',
-    readingTimeMinutes: 4,
+    readingTimeMinutes: 2,
   },
 
-  // ─── 13. THINGS I DIDN'T SAY ───
+  // ─── VOLUME II · DEVOTION V: WALKING WORTHY OF THE LORD ───
   {
-    id: 'things-i-didnt-say',
-    slug: 'things-i-didnt-say',
-    title: "Things I Didn't Say",
-    type: 'journal',
-    date: '2026-08-22',
-    year: 2026,
-    month: 'August',
-    day: 22,
-    scriptures: ['Proverbs 15:1', 'James 1:19'],
-    topics: ['discipline', 'wisdom', 'forgiveness', 'relationships'],
-    mood: 'Vulnerable',
-    excerpt: 'Restraint is often louder than an argument. Sometimes the greatest victory is simply closing your mouth, taking a breath, and letting God fight the battle.',
-    content: `There are conversations where every instinct in my pride wanted to lash back with a sharp retort. To prove that I was right. To show that I was wronged.
-
-Tonight, I am grateful for the words I swallowed.
-
-Proverbs says a soft answer turns away wrath, but grievous words stir up anger. When I speak out of hurt, I rarely speak with wisdom.
-
-Learning when to stay quiet is not weakness; it is the holy restraint of Christ, who, when reviled, did not revile in return.`,
-    status: 'PUBLISHED',
-    readingTimeMinutes: 3,
-  },
-
-  // ─── 14. WHEN PRAYER FEELS QUIET ───
-  {
-    id: 'when-prayer-feels-quiet',
-    slug: 'when-prayer-feels-quiet',
-    title: 'When Prayer Feels Quiet',
-    type: 'reflection',
-    date: '2026-08-19',
-    year: 2026,
-    month: 'August',
-    day: 19,
-    scriptures: ['Psalm 13:1-2', 'Romans 8:26'],
-    topics: ['prayer', 'silence', 'faith', 'doubt', 'waiting'],
-    mood: 'Difficult',
-    excerpt: 'What do you do when heaven feels silent? You don’t stop praying. You remember that silence is not absence.',
-    content: `There are days when prayer feels like a warm conversation with a friend. And there are days when it feels like words bouncing off cold ceiling tiles.
-
-I used to think that dry prayer meant something was wrong with my faith.
-
-Now I realize that praying when you don't feel anything is often the most sincere form of worship. Anyone can praise God when their emotions are overflowing. But to kneel when your soul is weary and simply say, "I am still here, Lord, and I still believe" — that is faith forged in fire.`,
-    status: 'PUBLISHED',
-    readingTimeMinutes: 4,
-  },
-
-  // ─── 15. THE MOUNTAIN ───
-  {
-    id: 'the-mountain-gullas',
-    slug: 'the-mountain',
-    title: 'The Mountain',
-    type: 'journal',
+    id: 'vol2-devotion-5-walking-worthy-of-the-lord',
+    slug: 'vol2-devotion-5-walking-worthy-of-the-lord',
+    title: 'Walking Worthy of the Lord',
+    devotionNumber: 'Devotion V',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
     date: '2026-08-18',
     year: 2026,
     month: 'August',
     day: 18,
-    scriptures: ['Psalm 121:1-2', 'Matthew 14:23'],
-    topics: ['solitude', 'nature', 'creation', 'renewal'],
-    mood: 'Peaceful',
-    excerpt: 'I didn’t realize how much silence I needed until the wind swept over the ridge and washed away the mental debris of the past six months.',
-    content: `Climbed up the mountain trail before sunrise.
-
-By the time I reached the lookout, the sun was just cresting the horizon, painting the clouds in pale amber and soft gold.
-
-I sat on a flat rock with my Bible on my lap and listened to the wind rushing through the tall pines. I didn't realize how much silence I needed.
-
-When Jesus felt the press of the crowds and the weight of ministry, Scripture says He went up on the mountain by Himself to pray. If the Son of God needed mountain solitude to commune with the Father, how much more do we?`,
-    photos: [
-      {
-        url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Gullas Mountain — June 2026',
-        location: 'Gullas Ridge',
-        date: 'June 2026',
-      },
-    ],
-    status: 'PUBLISHED',
-    readingTimeMinutes: 3,
-  },
-
-  // ─── 16. GRACE IN FAILURE ───
-  {
-    id: 'grace-in-failure',
-    slug: 'grace-in-failure',
-    title: 'Grace in Failure',
-    type: 'devotional',
-    date: '2026-07-04',
-    year: 2026,
-    month: 'July',
-    day: 4,
-    scriptures: ['2 Corinthians 12:9', 'Proverbs 24:16'],
-    scriptureVerseText: '"My grace is sufficient for you, for my power is made perfect in weakness." — 2 Corinthians 12:9',
-    topics: ['grace', 'failure', 'forgiveness', 'humility', 'growth'],
-    mood: 'Grateful',
-    excerpt: 'A righteous man falls seven times and rises again. The mark of a believer is not that they never fall, but that they always fall in the direction of the Cross.',
-    openingThought: 'Redefining spiritual setbacks not as the end of our story, but as the ground where grace is proven.',
-    content: `We often equate holiness with perfection. But Scripture tells us a very different story: Peter denied Jesus three times, David had grievous moral failures, and Moses struggled with anger.
-
-Yet God did not write them off.
-
-When we stumble, the enemy whispers: "You are a hypocrite. Give up."
-Jesus whispers: "Come to Me. My grace is enough."
-
-Never let your failure convince you to run away from God. Run TO Him. He already saw the fall before it happened, and His mercy is already waiting on the other side.`,
-    lesson: 'God’s power is made perfect not in our strength, but in our confessed weakness.',
-    prayer: 'Lord, pick me up when I fall. Teach me to rely on Your sufficiency rather than my fragile self-reliance.',
-    status: 'PUBLISHED',
-    readingTimeMinutes: 3,
-  },
-
-  // ─── 17. LETTER TO MY FUTURE SELF ───
-  {
-    id: 'letter-to-future-self',
-    slug: 'letter-to-my-future-self',
-    title: 'Letter to My Future Self',
-    type: 'letter',
-    date: '2026-01-01',
-    year: 2026,
-    month: 'January',
-    day: 1,
-    scriptures: ['Philippians 1:6'],
-    topics: ['purpose', 'identity', 'growth', 'hope'],
+    isTranscribedOriginal: true,
+    scriptures: ['Colossians 1:10'],
+    scriptureVerseText: '“So as to walk in a manner worthy of the Lord, fully pleasing to him, bearing fruit in every good work and increasing in the knowledge of God.” — Colossians 1:10',
+    topics: ['worthiness', 'grace', 'pleasing God', 'good works', 'knowledge of God'],
     mood: 'Hopeful',
-    excerpt: 'If you are reading this years from now, remember the quiet hours in this room. Remember the prayers that felt like whispers in the dark.',
-    content: `Dear future self,
+    excerpt: 'This verse is a “call” for us children of God... To work worthy in the eyes of the Lord, that everything we do, throughout our lives, may serve to please the most Gracious High...',
+    openingThought: 'A call to walk worthy: how God lifts us from our fleshly unworthiness and invites us to bear fruit pleasing to Him.',
+    content: `“So as to walk in a manner worthy of the Lord, fully pleasing to him, bearing fruit in every good work and increasing in the knowledge of God.”
 
-If you are reading this years from now, when the archive has grown thick with entries and the dates look distant:
+This verse is a “call” for us children of God... To work worthy in the eyes of the Lord, that everything we do, throughout our lives, may serve to please the most Gracious High, our Lord God.
 
-Do not forget where you came from.
+Though in terms of worthiness, sometimes, the flesh is the cause of all evil things and unrighteous acts, always a sinner, that led us to be unworthy.
 
-Remember the seasons of deep confusion, when you had no idea how God was going to untangle the knots in your life. Remember how He carried you through every single one of them.
-
-Do not become cynical.
-Do not let success harden your heart.
-Do not let delay make you bitter.
-
-Stay soft before the Lord. Keep writing. Keep praying. Keep trusting the Lamb who died and the Lion who conquered the grave.
-
-He who began a good work in you will carry it on to completion.`,
+But this verse calls us, lifted us up from the down pit, that amidst our fleshly nature of unworthiness, God is calling us to be worthy in his eyes. God doesn't abandon us because of unworthiness but instead — he did not leave us, he even invites us to be worthy. Truly how amazing God is :)`,
+    lesson: 'God does not abandon us in our unworthiness; instead, He lifts us from the pit and invites us to walk in a manner pleasing to Him.',
+    prayer: 'Lord God, may everything I do today bear fruit and bring pleasure to Your heart. Increase my knowledge of You and teach me to walk worthy. Amen.',
+    closingThought: 'God doesn’t abandon us because of unworthiness, but invites us to be worthy in His eyes. Truly how amazing God is :)',
     status: 'PUBLISHED',
-    readingTimeMinutes: 4,
+    readingTimeMinutes: 2,
+  },
+
+  // ─── VOLUME II · DEVOTION VI: MY HELP COMES FROM THE LORD ───
+  {
+    id: 'vol2-devotion-6-my-help-comes-from-the-lord',
+    slug: 'vol2-devotion-6-my-help-comes-from-the-lord',
+    title: 'My Help Comes From the Lord',
+    devotionNumber: 'Devotion VI',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-20',
+    year: 2026,
+    month: 'August',
+    day: 20,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 121:2'],
+    scriptureVerseText: '“My help comes from the LORD, who made heaven and earth.” — Psalm 121:2',
+    topics: ['help', 'sovereignty', 'humility', 'prayer', 'miracles', 'pride'],
+    mood: 'Grateful',
+    excerpt: 'A very beautiful declaration of someone saying “My help comes from the Lord”.... Not a sign of weakness to act tough but a sign of surrender, a time to pause, and a moment to reach out to God...',
+    openingThought: 'Surrendering self-reliance to the Maker of heaven and earth: why asking God for help is the greatest mark of wisdom, not weakness.',
+    content: `“My help comes from the LORD, who made heaven and earth.”
+
+A very beautiful declaration of someone saying “My help comes from the Lord”.... Not a sign of weakness to act tough but a sign of surrender, a time to pause, and a moment to reach out to God when we needed help, knowing that there is someone above all, omnipotent, all-knowing God who is loving and merciful. Our help from God is like a newborn baby who needs its mother, and God is our source, our provider, our help, our fortress, our protection and our guide. The moment when we pray, and ask God “Lord help me, I cannot do this alone, I'm overwhelmed and exhausted, I'm lost” — everything shifts, either directly or indirectly, answered prayers... But one thing is clear... God is listening to our prayers, our mournings, he watches us every second, every minute, every hour, to prove and show his sovereignty and dominion.. It feels like magic... but that's who he is.. God, not magic but miracle.. he is the miracle worker..
+
+And if we think nga makaya ni nato alone, we don't need help because maayo nakay ta, kaya rani... Well, that's pride, and self-centered egoism, it may seem nga kadaugan because the self made it... But the real victory is from God... Iyang tabang sa atoa, God desired not sa mga maayo or perfect nga tawo, but he desired sinners nga modool niya, and asking for his help — “God, here I am again, nag-paubos sa imong presence, ug nagaluhod.......”
+
+And let us remind ourselves, nga when we need help, don't ask others sa. Ask God first, to search our hearts nga needed help, and by then, asking your loved ones to accompany you is what a wise person would do :)`,
+    lesson: 'Asking God for help is not weakness; it is holy surrender. He does not desire perfection before coming to Him, but humble hearts that kneel before His grace.',
+    prayer: 'Lord, my help comes from You, Maker of heaven and earth. Strip away all pride and self-reliance. Hear my prayer and guide my steps. Amen.',
+    closingThought: 'When we need help, ask God first to search our hearts, and then ask loved ones to accompany us as wise believers :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── VOLUME II · DEVOTION VII: THE PARABLE OF THE LOST SHEEP ───
+  {
+    id: 'vol2-devotion-7-the-parable-of-the-lost-sheep',
+    slug: 'vol2-devotion-7-the-parable-of-the-lost-sheep',
+    title: 'The Parable of the Lost Sheep',
+    devotionNumber: 'Devotion VII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-22',
+    year: 2026,
+    month: 'August',
+    day: 22,
+    isTranscribedOriginal: true,
+    scriptures: ['Luke 15:1-7', 'Luke 15:4', 'Luke 15:5-6'],
+    scriptureVerseText: '“What man of you, having a hundred sheep, if he has lost one of them, does not leave the ninety-nine in the open country, and go after the one that is lost, until he finds it?” — Luke 15:4',
+    topics: ['lost sheep', 'good shepherd', 'unconditional love', 'redemption', 'joy'],
+    mood: 'Peaceful',
+    excerpt: 'This parable of Jesus, “The Lost Sheep,” gave us a very beautiful contrast — 99 sheep, and 1 lost sheep, where the shepherd leaves his 99 to find the one...',
+    openingThought: 'The "Jesus way": no one is left behind. Even when we are the single lost sheep wandering in deception, the Shepherd pursues us until we are found.',
+    content: `This parable of Jesus, “The Lost Sheep,” gave us a very beautiful contrast — 99 sheep, and 1 lost sheep, where the shepherd leaves his 99 to find the one.
+
+Sometimes, when we look at our lives, we are that one lost sheep — uncertain, always doubting, failures, lost his way nga wala na kabaw asa padulong, lost in the world where deception and evil things consume. Without the shepherd, that sheep is hopeless... But thankful kay ta nga atong shepherd is pangitaon jud ta, actually! We are undeserving, who are we? nga byaan niya iyang 99 para pangitaon jud ta....? (Although it doesn't mean nga iyang gibayaan iyang 99 sa dili ng safe nga lugar. Luke 15:4 clearly states sa “open country” — that open country is defined as safe :)
+
+And it reminds me nga the “Jesus way” is wala juy mabyaan liha kanimo bisan 1 sheep pa ang ma-lost...
+
+And the metaphor and illustration of the parable continues... Luke 15:5-6 says, nga kung nakit-an niya iyang sheep, he will call his friends and neighbors saying nga, “paglipay kamo,” cause I found my lost sheep.... that alone is very comforting..
+
+And honestly.. I didn't know nga how much we're being loved by him... Not surface-level love, but all kinds of love that show nga maayo jud ang Ginoo :)`,
+    lesson: 'The Good Shepherd never leaves a single lost sheep behind. His pursuit of us is deep, unconditional, and celebrated with great heavenly joy.',
+    prayer: 'Jesus, Good Shepherd, thank You for seeking me out when I was lost, uncertain, and consumed by the world. Hold me close in Your loving arms. Amen.',
+    closingThought: 'The "Jesus way" is that no one is left behind — even if just one sheep is lost, He seeks until He finds :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
+
+  // ─── VOLUME II · DEVOTION VIII: THE AUTHOR WHO HOLDS THE PEN ───
+  {
+    id: 'vol2-devotion-8-the-author-who-holds-the-pen',
+    slug: 'vol2-devotion-8-the-author-who-holds-the-pen',
+    title: 'The Author Who Holds the Pen',
+    devotionNumber: 'Devotion VIII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-24',
+    year: 2026,
+    month: 'August',
+    day: 24,
+    isTranscribedOriginal: true,
+    scriptures: ['Romans 9:15-16', 'Romans 9:11'],
+    scriptureVerseText: '“For he says to Moses, ‘I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion.’ So then it depends not on human will or exertion, but on God, who has mercy.” — Romans 9:15-16',
+    topics: ['sovereignty', 'author of life', 'purpose', 'election', 'story', 'trust'],
+    mood: 'Contemplative',
+    excerpt: 'Imagine if kita naa ta sa usa ka story, nga character ta... Of course we cannot beat the one who holds the pen, we are just a character of the story, and he decides fate, destiny and timing...',
+    openingThought: 'A profound literary metaphor on divine sovereignty: God holds the pen of our lives, orchestrating every rising action, climax, and plot twist for His purpose.',
+    content: `A deep and profound verse nga the way nga mangalagad, mo-follow, and being loved by him, does not depend sa human will but by God's will and mercy... and to make this more deep, makita nato sa Romans 9:11, nga how God's will is operating throughout generations — “though they were not yet born and had done nothing either good or bad — in order that God's purpose of election might continue, not because of works but of him who calls” — this means nga everything atong ginabuhat, sa like, pag-eskwela, relationships, pag-serve, pangalagad, pag-trabaho and pag-simba, is not by our own works, but rather the one above all and his will...
+
+A metaphorical, fictional concept somehow reminded me of this verse... “Imagine if kita naa ta sa usa ka story, nga character ta...
+
+Of course we cannot beat the one who holds the pen, we are just a character of the story, and we are grounded and created from the author who holds the pen... he decides fate, destiny and timing... And same pud sa atong life, sayud jud ta nga sometimes is grabe jud kaayo ka timing ang tanan, like naka-ingon lang ta nga is this a coincidence? Nuh-uh.. Remember the author who holds the pen, sayud siya sa nga dagan sa story, “rising action, climax, plot twist...”
+
+And this verse of the right remind me sa pagka-sovereign sa Ginoo, that whatever we do, whatever we toil, whatever man ang atong naagian, it has a purpose and God's will, it doesn't depend sa atong human choice but by his love and compassion who wrote the story... :)`,
+    lesson: 'Our lives are written by the Sovereign Author of the universe. Every trial, timing, and plot twist serves His compassionate election and divine purpose.',
+    prayer: 'Sovereign Lord, You hold the pen to my story. I surrender my script to You, trusting Your perfect timing, wisdom, and eternal love. Amen.',
+    closingThought: 'Whatever we toil, whatever we go through, it has a purpose in God’s will — written by His love and compassion who holds the pen :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── VOLUME II · DEVOTION IX: A LOVE THAT NEVER DEPARTS ───
+  {
+    id: 'vol2-devotion-9-a-love-that-never-departs',
+    slug: 'vol2-devotion-9-a-love-that-never-departs',
+    title: 'A Love That Never Departs',
+    devotionNumber: 'Devotion IX',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-26',
+    year: 2026,
+    month: 'August',
+    day: 26,
+    isTranscribedOriginal: true,
+    scriptures: ['Isaiah 54:10', 'Romans 8:38-39'],
+    scriptureVerseText: '“For the mountains may depart and the hills be removed, but my steadfast love shall not depart from you, and my covenant of peace shall not be removed, says the LORD, who has compassion on you.” — Isaiah 54:10',
+    topics: ['unfailing love', 'covenant of peace', 'eternal security', 'steadfast love', 'promises'],
+    mood: 'Grateful',
+    excerpt: 'The verse has a very beautiful contrast: mountains and hills emphasize temporary things sa kalibutan nga ma-removed, ma-fade ra, but God\'s love is eternal :)',
+    openingThought: 'Contrasting the fleeting mountains of this world with the unbreakable covenant of peace and love that can never be shaken.',
+    content: `“For the mountains may depart and the hills be removed, but my steadfast love shall not depart from you, and my covenant of peace shall not be removed, says the LORD, who has compassion on you.”
+
+This verse reminds me nga how God's promises nagpadayun, comfort us, assure us, and tell us how God doesn't break his promises..
+
+The verse enlightens us about God's love.... nga iyang gugma is dili og never mopalayo kanato....
+The verse has a very beautiful contrast, “For the mountains may depart and the hills be removed, but my steadfast love remains.” It's like saying nga ang “mountains and hills” emphasizes sa mga temporary nga things sa kalibutan nga ma-removed, ma-fade ra, but God's love is eternal :)
+
+So this tells us nga we shouldn't rely sa mga temporary nga things sa kalibutan, but we should rely sa something Eternal :)
+
+Because it's already stated sa verse nga God's love remains faithful, and for us! It's time nga modool pud ta niya, and padayun, sa pangalagad sa Ginoo, because from the very beginning, he already loves us.. :)
+
+And what's more amazing is.... how the “Word of God” in his covenant, nagpadayan :), from this Isaiah verse to Romans 8:38-39 — nga walay makahimulag nato sa gugma sa Ginoo.. even sa mga bug-at nga word iyang gi-state... Not even life, death and all of his creation will separate us from the love of God :).
+
+And this tells us a crucial breaking point nga how God's “LOVE” will reign forever more :)
+
+AMEN`,
+    lesson: 'Worldly things fade like departing hills, but God’s covenant of peace and steadfast love will never depart or be removed.',
+    prayer: 'Lord, thank You that nothing in life or death can separate me from Your steadfast love. Anchor my heart in Your eternal covenant of peace. Amen.',
+    closingThought: 'Neither life, nor death, nor any creation can separate us from the love of God. God’s LOVE will reign forever more :) AMEN',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
+
+  // ─── VOLUME II · DEVOTION X: JOURNAL NOTE: MONEY & FINANCIAL PHILOSOPHY ───
+  {
+    id: 'vol2-devotion-10-journal-note-money-and-financial-philosophy',
+    slug: 'vol2-devotion-10-journal-note-money-and-financial-philosophy',
+    title: 'Journal Note: Money & Financial Philosophy',
+    devotionNumber: 'Devotion X',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-27',
+    year: 2026,
+    month: 'August',
+    day: 27,
+    isTranscribedOriginal: true,
+    personalNotes: 'Personal Note (not scripture-based)',
+    scriptures: [],
+    topics: ['financial philosophy', 'discipline', 'intention', 'wisdom', 'stewardship'],
+    mood: 'Contemplative',
+    excerpt: 'Money is not just something we earn — it\'s something we believe in. Money follows discipline, intention, and understanding. What matters most is not how much we earn, but how wisely we choose...',
+    openingThought: 'A personal philosophical note on money, discipline, and managing wealth intentionally rather than loudly.',
+    content: `Personal Note (not scripture-based)
+
+Money is not just something we earn — it's something we believe in.
+
+Today, we share our personal finance philosophies, different mindsets, one goal: financial clarity.
+
+These are not just quotes. These are decisions we live by.
+
+Our philosophies may be different, but they all point to one truth — money follows discipline, intention, and understanding. What matters most is not how much we earn, but how wisely we choose. This is how we manage money — not loudly but intentionally.`,
+    lesson: 'Money follows discipline, intention, and understanding. What matters most is not how much we earn, but how wisely we choose.',
+    prayer: 'Lord, grant me wisdom and quiet discipline to steward every resource intentionally and honorably.',
+    closingThought: 'This is how we manage money — not loudly but intentionally.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 1,
+  },
+
+  // ─── VOLUME II · DEVOTION XI: BUILD YOUR HOUSE ON THE ROCK ───
+  {
+    id: 'vol2-devotion-11-build-your-house-on-the-rock',
+    slug: 'vol2-devotion-11-build-your-house-on-the-rock',
+    title: 'Build Your House on the Rock',
+    devotionNumber: 'Devotion XI',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-28',
+    year: 2026,
+    month: 'August',
+    day: 28,
+    isTranscribedOriginal: true,
+    scriptures: ['Matthew 7:24-27', 'James 1:22'],
+    scriptureVerseText: '“Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.” — Matthew 7:24 · “But be doers of the word, and not hearers only, deceiving yourselves.” — James 1:22',
+    topics: ['rock foundation', 'obedience', 'doers of the word', 'trials', 'unshakable hope', 'jesus Christ'],
+    mood: 'Hopeful',
+    excerpt: 'This parable tells us about how the words of God is like a wise man building his house on the rock... In James 1:22: “Be doers of the word, and not hearers only.” And Jesus Christ is that Rock...',
+    openingThought: 'Standing unshakeable in every storm by building on the solid rock of Christ and being doers of the living Word.',
+    content: `This parable tells us about how the words of God is like a wise man building his house on the rock, if we receive and do them, but the other perspective says, if we just hear and not do them, it's like a foolish man building his house on the sand. In James 1:22, it clearly states and instructs us... “But be doers of the word, and not hearers only, deceiving yourselves.”...
+
+And this tells us that as we read the word of God and listen, we should integrate and apply that level of knowledge to wisdom in our respective lives, because that word of God is our solemn rock, our firm foundation, and our steadfast hope that will not be shaken... :)
+
+That whatever man ang maabot sa atong life — trials, problems, challenges and tribulation... we will not be shaken, because we have built our house on the rock that no matter what storm may come, it'll stand still :)
+
+And Jesus Christ is that Rock, our Rock, for he is the word... :)`,
+    lesson: 'Hearing the Word is not enough; true wisdom is being a doer of the Word. Built upon the Rock of Christ, no storm can shake our foundation.',
+    prayer: 'Lord Jesus, You are my Rock and firm foundation. Teach me to not merely listen to Your Word, but to live it out daily in steadfast faith. Amen.',
+    closingThought: 'Whatever storms may come, we will not be shaken because we have built our house upon the Rock — and Jesus Christ is that Rock :)',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
   },
 ];

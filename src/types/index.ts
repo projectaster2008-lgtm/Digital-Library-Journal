@@ -1,4 +1,4 @@
-export type EntryType = 'journal' | 'devotional' | 'reflection' | 'letter';
+export type EntryType = 'journal' | 'devotional' | 'reflection' | 'letter' | 'blueprint';
 
 export type EntryStatus = 'PUBLISHED' | 'DRAFT' | 'PRIVATE' | 'ARCHIVED';
 
@@ -9,6 +9,21 @@ export interface PhotoAttachment {
   caption: string;
   location?: string;
   date?: string;
+}
+
+export interface BlueprintPhase {
+  phaseNumber: number;
+  title: string;
+  subtitle: string;
+  timeframe: string;
+  targetAge: string;
+  status: 'COMPLETED' | 'IN_PROGRESS' | 'UPCOMING' | 'ONGOING';
+  what: string;
+  why: string;
+  howSteps?: string[];
+  lessonLearned?: string;
+  correctionsMade?: string;
+  keyMetrics?: { label: string; value: string }[];
 }
 
 export interface ArchiveEntry {
@@ -39,8 +54,11 @@ export interface ArchiveEntry {
   isTranscribedOriginal?: boolean; // From handwritten notebook
   memoNumber?: string; // e.g. "Memo No. 1"
   author?: string; // e.g. "Clint Aldwin Maurin"
+  volume?: string; // e.g. "Volume I", "Volume II"
   collection?: string; // e.g. "Personal Devotions"
   devotionNumber?: string; // e.g. "Devotion I"
+  blueprintPart?: string; // e.g. "Part III — The Seven Phases"
+  blueprintPhaseNumber?: number;
 }
 
 export interface Topic {

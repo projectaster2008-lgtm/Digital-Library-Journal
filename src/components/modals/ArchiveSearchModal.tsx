@@ -86,13 +86,13 @@ export const ArchiveSearchModal: React.FC<ArchiveSearchModalProps> = ({
               <button
                 key={t}
                 onClick={() => setTypeFilter(t)}
-                className={`px-2.5 py-1 rounded-full capitalize text-[11px] transition-colors ${
+                className={`px-2.5 py-1 rounded-full text-[11px] transition-colors ${
                   typeFilter === t
                     ? 'bg-[#C9A96E] text-[#0B0B0A] font-bold'
                     : 'text-[#918B80] hover:text-[#E8E1D5]'
                 }`}
               >
-                {t}
+                {t === 'devotional' ? 'Personal Devotions' : t.charAt(0).toUpperCase() + t.slice(1)}
               </button>
             ))}
           </div>
