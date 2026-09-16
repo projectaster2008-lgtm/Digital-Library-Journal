@@ -18,9 +18,11 @@ export const OnThisDayModal: React.FC<OnThisDayModalProps> = ({
 }) => {
   if (!isOpen) return null;
 
-  // Let's find entries matching current month (August) or vintage time capsule
-  const matchingEntries = entries.filter((e) => e.month.toLowerCase().includes('august') || e.year === 2025);
-  const featuredVintage = matchingEntries[0] || entries[0];
+  // Let's find entries matching current month (August) or vintage time capsule, omitting locked blueprint
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
+  const eligibleEntries = entries.filter((e) => isVaultUnlocked || (e.id !== 'sovereign-architect-master' && e.type !== 'blueprint'));
+  const matchingEntries = eligibleEntries.filter((e) => e.month.toLowerCase().includes('august') || e.year === 2025);
+  const featuredVintage = matchingEntries[0] || eligibleEntries[0] || entries[0];
 
   return (
     <AnimatePresence>

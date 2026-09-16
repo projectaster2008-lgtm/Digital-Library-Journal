@@ -32,6 +32,123 @@ export interface RiskItem {
   severity: 'High' | 'Medium' | 'Critical';
 }
 
+export interface TesdaCourseItem {
+  year: string;
+  course: string;
+  code: string;
+  hours: number;
+  timing: string;
+  purpose: string;
+  aiRisk: string;
+  roleInStack: string;
+}
+
+export interface RemoteWorkProjectItem {
+  rank: number;
+  project: string;
+  whyItMatters: string;
+  category: string;
+}
+
+export const tesdaLineup: TesdaCourseItem[] = [
+  {
+    year: 'Y1',
+    course: 'EIM NC II — Electrical Installation and Maintenance',
+    code: 'EIM-NC2',
+    hours: 196,
+    timing: 'Summer break',
+    purpose: 'Power/electrical foundation. Verified in demand domestically and overseas (Saudi Arabia 2026 in-demand list).',
+    aiRisk: '~15% (Very Low)',
+    roleInStack: 'Install capability — physical foundation for trade work & Phase 6 facilities.',
+  },
+  {
+    year: 'Y2',
+    course: 'EPAS NC II — Electronic Products Assembly and Servicing',
+    code: 'EPAS-NC2',
+    hours: 260,
+    timing: 'Summer break',
+    purpose: 'Electronics assembly and diagnostic depth. Addresses documented shortage (56,605 workers in CALABARZON).',
+    aiRisk: 'Low-Medium',
+    roleInStack: 'Assemble & repair capability — board diagnostics, CCTV, device maintenance.',
+  },
+  {
+    year: 'Y3',
+    course: 'Technical Drafting NC II',
+    code: 'DRAFT-NC2',
+    hours: 148,
+    timing: 'Summer break (148–206h range)',
+    purpose: 'CAD literacy. Sketch wiring layouts, farm structures, restaurant floor plans for Phase 6 instead of hiring out.',
+    aiRisk: 'Medium',
+    roleInStack: 'Design capability — connective multiplier uniting electrical & building plans.',
+  },
+  {
+    year: 'Y4 / post-grad',
+    course: 'CSS NC II — Computer Systems Servicing',
+    code: 'CSS-NC2',
+    hours: 280,
+    timing: 'Post-graduation (zero-slack)',
+    purpose: 'Bridge to BSIT and IT infrastructure. Placed post-grad so zero academic deadlines compete with 280h.',
+    aiRisk: 'Highest (~40%)',
+    roleInStack: 'Digital bridge — paired with completed BSIT degree, never standalone.',
+  },
+];
+
+export const remoteWorkPortfolio: RemoteWorkProjectItem[] = [
+  {
+    rank: 1,
+    project: 'Excel double-entry accounting tracker (ABM + AI-built)',
+    whyItMatters: 'The strongest, rarest asset on the list. Real ledger/journal logic, auto-generating financial statements.',
+    category: 'Flagship Asset',
+  },
+  {
+    rank: 2,
+    project: 'Cafe landing page mockup',
+    whyItMatters: 'Proves frontend range. A commoditized category on its own — pairs with a maintenance/booking flow to stand out.',
+    category: 'Web Interface',
+  },
+  {
+    rank: 3,
+    project: 'Notion template / setup',
+    whyItMatters: 'An underserved niche; solopreneurs need this and rarely find someone who does it well.',
+    category: 'Productivity Systems',
+  },
+  {
+    rank: 4,
+    project: 'Light novel website(s)',
+    whyItMatters: 'Best proof of raw coding skill and follow-through. A proof piece, not a sellable service on its own.',
+    category: 'Full Application',
+  },
+  {
+    rank: 5,
+    project: 'Canva design work / lakbay sanaysay (100+ pages)',
+    whyItMatters: 'A strong discipline story, weaker commercial signal on its own. Supporting piece.',
+    category: 'Design & Publishing',
+  },
+  {
+    rank: 6,
+    project: 'Edited film / video project',
+    whyItMatters: 'Bonus only, unless video editing becomes its own service line later.',
+    category: 'Media Production',
+  },
+];
+
+export const remotePayTiers = [
+  { stage: 'Generic VA (no specialization)', pay: '₱8,000 – ₱15,000', note: 'Commoditized competition' },
+  { stage: 'Specialized VA, first client (month 1–2)', pay: '₱10,000 – ₱15,000', note: 'Priced low on purpose, buying the first review' },
+  { stage: 'Specialized VA, after 1 proven client (month 3+)', pay: '₱18,000 – ₱25,000', note: 'Standard retainer rate' },
+  { stage: 'Realistic ceiling as full-time student', pay: '₱35,000 – ₱40,000', note: 'Needs 20–25 hrs/wk; conflicts with exams' },
+];
+
+export const timelineGlance = [
+  { phase: '1 — The Foundation', years: 'Completed', age: '17–18', focus: 'SHS ABM Honors · Cash flow mindset' },
+  { phase: '2 — The Freedom Gap', years: 'Jun–Jul 2026', age: '18', focus: 'Daily coding, calisthenics, 7h sleep floor' },
+  { phase: '3 — The Foundation Build', years: '2026–2030', age: '18–22', focus: 'BSIT Degree, 4 TESDA trades, remote pipeline' },
+  { phase: '4 — The Legal Entry', years: '2030', age: '22', focus: 'Direct Saudi IT visa, degree attested, SCE registered' },
+  { phase: '5 — The Career Ascent', years: '2030–2035', age: '22–27/28', focus: '5-year IT ladder, ₱10.07M total capital target' },
+  { phase: '6 — The Sovereign Legacy', years: '2035 onward', age: '27/28+', focus: 'Return to PH: Real estate, resto, farm' },
+  { phase: '7 — Tech–Business Fusion', years: 'Ongoing', age: 'Born from Ph.6', focus: 'Internal tools turned to commercial B2B SaaS' },
+];
+
 export const blueprintPhases: BlueprintPhase[] = [
   {
     phaseNumber: 1,
@@ -73,22 +190,24 @@ export const blueprintPhases: BlueprintPhase[] = [
   {
     phaseNumber: 3,
     title: 'The Foundation Build',
-    subtitle: 'College BSIT + Capability Credentials',
+    subtitle: 'College BSIT + 4-Course TESDA Lineup + Remote Income',
     timeframe: '2026–2030',
     targetAge: 'Age 18–22',
     status: 'UPCOMING',
-    what: 'Complete the 4-year BSIT degree as the primary asset. Acquire CSS NC II and EIM NC II as secondary, Philippines-based capability credentials.',
-    why: 'Under Saudi legal system, only BSIT legally qualifies for the IT Specialist visa category. CSS and EIM serve as personal capability layers and college freelance income.',
+    what: 'Complete the 4-year BSIT degree as the primary asset. Acquire EIM NC II, EPAS NC II, Technical Drafting NC II, and CSS NC II (884 total hours) as Philippines-based capability credentials, running a 6-project closed remote work pipeline.',
+    why: 'Under Saudi legal system, only BSIT legally qualifies for the IT Specialist visa category. The physical trio (EIM, EPAS, Drafting) compounds during college into a design-build-repair stack, while CSS bridges to BSIT post-grad. Remote work provides ₱15k–₱25k/mo student income.',
     howSteps: [
-      'Self-pace AWS Cloud Practitioner & CompTIA Security+ during downtime.',
-      'Business self-study in parallel: reading balance sheets, income statements, and cash flows using real Philippine companies (e.g. Jollibee Foods Corp).',
-      'Build small automation projects (savings tracker, financial calculator, property monitoring mockup).',
-      'Research DFA & Saudi Embassy degree attestation in final college year to prevent bottlenecks.',
+      'TESDA Lineup: Y1 EIM (196h summer), Y2 EPAS (260h summer), Y3 Drafting (148–206h summer), Y4/post-grad CSS (280h post-grad).',
+      'Remote Work Pipeline: Lead pitches with ABM double-entry Excel tracker; cap at 10–12 hrs/wk (₱15k–25k/mo target).',
+      'Self-pace AWS Cloud Practitioner & CompTIA Security+ during downtime to differentiate degree.',
+      'Business self-study: read financial statements of real Philippine companies (e.g. Jollibee Foods Corp).',
+      'Degree attestation: initiate DFA and Saudi Embassy authentication during 4th year before graduation rush.',
       'Protect 6-hour sleep floor even during working-student evening schedule (3–9 PM class alongside morning merchandising).',
     ],
     keyMetrics: [
       { label: 'Primary Degree', value: '4-Year BSIT' },
-      { label: 'Capability Layers', value: 'CSS NC II & EIM NC II' },
+      { label: 'TESDA Stack', value: '4 Trades (884 Hours)' },
+      { label: 'Remote Target', value: '₱15,000–₱25,000 / mo' },
       { label: 'Target Certs', value: 'AWS Cloud + CompTIA Sec+' },
     ],
   },
@@ -100,16 +219,18 @@ export const blueprintPhases: BlueprintPhase[] = [
     targetAge: 'Age 22',
     status: 'UPCOMING',
     what: 'Enter Saudi Arabia directly as an IT professional — not as an electrician technician hoping to pivot later.',
-    why: 'Under Saudi labor law, Iqama is tied to a single legal profession, and SCE registration is required. Working outside the listed profession is a violation (Tastur) carrying deportation/blacklisting risks. Direct IT entry avoids risk and increases 5-year savings by ~₱3M.',
+    why: 'Under Saudi labor law, Iqama is tied to a single legal profession, and SCE registration is required. Working outside listed profession is a violation (Tastur) carrying deportation/blacklisting. Direct IT entry is 100% legal, and 0% expat wage tax means 100% of gross salary lands in the bank.',
     howSteps: [
       'Finish 4-year BSIT degree completely as the clean entry ticket.',
       'Formally attest degree with Saudi Embassy / DFA during final year.',
       'Leverage uncle’s supervisor position correctly: apply formally to an entry-level IT support or systems role.',
       'Enter on IT Specialist visa category with matching Iqama, contract, and job title.',
+      'Trade skills (EIM, EPAS, Drafting, CSS) become internal super-power: direct cost-savers across Phase 6 setups.',
     ],
     keyMetrics: [
       { label: 'Visa Category', value: 'IT Specialist / Support' },
       { label: 'Legal Status', value: '100% SCE Clean & Attested' },
+      { label: 'Tax Advantage', value: '0% Expat Income Tax on Wages' },
       { label: 'Savings Advantage', value: '+₱2.98M vs Electrician Path' },
     ],
   },
@@ -288,6 +409,16 @@ export const blueprintRisks: RiskItem[] = [
     mitigation: 'Install trusted non-family manager for daily operations where possible. Maintain personal oversight; conduct honest role alignment before capital changes hands.',
     severity: 'High',
   },
+  {
+    risk: 'TESDA Plan Assumptions Unverified (Availability, true cost, scheduling)',
+    mitigation: 'Call or visit the nearest accredited TESDA center before Y1 summer; confirm actual schedule, seat availability, TWSP/free-slot status, and true cost. Treat 148–206h Drafting as real range.',
+    severity: 'Medium',
+  },
+  {
+    risk: 'Two Competing Saudi-Entry Narratives (IT-first vs EIM overseas demand)',
+    mitigation: 'EIM stays a domestic capability layer & optional later lever, never a replacement for the attested BSIT degree entry. Revisit only if IT-first entry confirmed to have actually failed, not preemptively.',
+    severity: 'High',
+  },
 ];
 
 export const lettersToClint = [
@@ -397,18 +528,109 @@ In Grade 11, you were an average student watching from the outside. Then you dec
 ---
 
 ### Part III — The Seven Strategic Phases
-1. **Phase 1 — The Foundation (COMPLETED)**: Senior High School ABM Honors. Established cash flow and balance sheet literacy.
-2. **Phase 2 — The Freedom Gap (June–July 2026, Age 18)**: Pre-college daily habit formation. freeCodeCamp coding, daily calisthenics, 7-hour sleep floor. Japanese dropped for direct Saudi IT preparation.
-3. **Phase 3 — The Foundation Build (College, 2026–2030, Age 18–22)**: Complete 4-year BSIT. Acquire CSS NC II & EIM NC II for practical local capability and college freelance income. Self-study AWS Cloud + CompTIA Security+, balance sheets, small automation projects, degree attestation.
-4. **Phase 4 — The Legal Entry: Saudi Arabia (Age ≈22, 2030)**: Direct entry as an IT professional with attested BSIT degree and SCE registration, eliminating *Tastur* risk and gaining +₱2.98M in savings advantage over technician route.
-5. **Phase 5 — The Career Ascent (Age 22–28, Saudi Arabia)**: 5-year IT progression (₱94.2k/mo to ₱275.5k/mo Cyber/Cloud Specialist). Total accumulated capital: **₱10,076,050** (₱8.69M base savings + ₱1.38M bonuses & gratuity).
-6. **Phase 6 — The Sovereign Legacy (Age ≈28+, Philippines Return)**: Deploy capital into permanent assets:
-   - Real estate condo down payment: ₱1.5M
-   - Casual Filipino restaurant: ₱1.2M (opened LAST with physical presence)
-   - Rural livestock & farm: ₱800k (managed with in-laws)
-   - Untouchable emergency buffer: ₱1.0M
-   - Reserve & opportunity capital: ₱5.58M
-7. **Phase 7 — The Tech–Business Fusion (Ongoing)**: Turn internal business tools (OFW rental tracker, resto POS, farm ops) into commercial SaaS products. Validated before sold.
+This is the actual architecture. Seven phases, each with a clear what, why, and how — and, where the original plan was wrong, an honest correction. A plan that never gets corrected was never being tested. This one was.
+
+#### Phase 1 — The Foundation COMPLETED ✓
+- **What**: Graduate senior high school with honors from the ABM (Accountancy, Business, and Management) strand.
+- **Why**: To build a financial and structural mindset early, so a career is never viewed only as a wage — but as a mechanism for generating capital.
+- **The Connection**: This is the root of Phase 6. Most IT specialists fail at business because they only understand technology. You will enter the market already understanding cash flow, asset management, and how a balance sheet actually behaves.
+- *Lesson learned*: Health and calisthenics were sacrificed to overworking during Grade 12. Correction — physical restoration is now a mandatory, non-negotiable input, not an optional extra.
+
+#### Phase 2 — The Freedom Gap (June–July 2026, Age 18)
+- **What**: Use the final month before college for daily self-study and routine-building — no formal academic pressure yet, maximum discipline while it’s still optional.
+- **Revision note**: The original version of this phase included a daily Japanese-language block, in service of the original Japan route. Japan was later replaced with Saudi Arabia (see Phase 4). The language block is dropped. Freed hours are folded into coding practice and physical rebuilding instead.
+- **HOW**:
+  - *Tech prep*: freeCodeCamp Responsive Web Design (HTML/CSS/JS), 2–3 focused hours daily — not to finish the certificate, but to enter college already comfortable building on a blank file, not just a guided one.
+  - *Health rebuild*: 20–30 minutes of daily calisthenics, and a protected 7-hour sleep floor. This is the direct correction from Phase 1’s lesson learned.
+  - *The blank-canvas discipline*: You already noticed the gap between tutorial-following and from-scratch building — and you’re already closing it by rebuilding finished projects from memory before starting new ones. Keep doing exactly this.
+- **Why**: Not to finish a certificate. To overcome inertia, install a daily-practice habit before external deadlines force it, and walk into BSIT already thinking like a builder instead of a beginner.
+
+#### Phase 3 — The Foundation Build (College, 2026–2030, Age 18–22)
+- **What**: Complete the 4-year BSIT degree as the primary asset. Acquire CSS NC II and EIM NC II as secondary, Philippines-based capability credentials — not as a Saudi entry strategy (that idea is corrected in Phase 4).
+- **The Hierarchy — Revised**:
+  - *BSIT Degree*: The career, the legal Saudi visa category, and the income ceiling.
+  - *CSS NC II*: Local college freelance income + a lifelong practical home skill.
+  - *EIM NC II*: Local college freelance income + practical home skill + a real cost-saver across every Phase 6 business.
+- **Add to This Phase**:
+  - *Certifications*: AWS Cloud Practitioner and CompTIA Security+, self-paced during downtime — these are what differentiate your BSIT degree from every other fresh graduate applying to the same Saudi job posting.
+  - *Business self-study, in parallel*: Learning to actually read a balance sheet, income statement, and cash flow statement using real, public Philippine companies (Jollibee Foods Corp is a natural first practice case — it’s literally the industry Phase 6’s restaurant will enter).
+  - *Small automation projects*: The seeds of Phase 7 — simple personal tools built as coding practice that also happen to be useful (a savings tracker, a simple financial-ratio calculator, a small property-monitoring mock-up).
+  - *Degree attestation research*: Start learning the DFA / Saudi Embassy authentication process in your final year, so it is not a bottleneck standing between graduation and departure.
+
+##### The TESDA + BSIT Lineup (Revised — Added September 2026)
+*The Lineup (Total: 884 hours)*:
+1. **Y1**: EIM NC II — Electrical Installation and Maintenance (196h, Summer break)
+2. **Y2**: EPAS NC II — Electronic Products Assembly and Servicing (260h, Summer break)
+3. **Y3**: Technical Drafting NC II (148h [148–206h range], Summer break)
+4. **Y4 / post-grad**: CSS NC II — Computer Systems Servicing (280h, Post-graduation)
+
+*The Core Logic*:
+The physical trio — EIM, EPAS, Technical Drafting — finishes during college and compounds into one design-build-repair stack instead of three unrelated trade skills. EIM lets you install. EPAS lets you assemble and repair. Drafting lets you design what you're building before you touch either one. The digital bridge — CSS — finishes after graduation on purpose: full attention, zero academic deadlines competing for its 280 hours.
+
+*What Each Piece is For*:
+- **EIM**: Power/electrical foundation. In-demand in the Philippines and Saudi Arabia. Estimated at low AI-automation risk (~15%).
+- **EPAS**: Electronics assembly & diagnostic depth. Matches 2026 semiconductor shortage (56,605 workers in CALABARZON).
+- **Drafting**: Connective, multiplying skill. CAD literacy for wiring layouts, farm structures, restaurant floor plans instead of paying someone else.
+- **CSS**: Bridge to BSIT and infrastructure, paired directly with completed degree.
+
+##### The Remote Work Pipeline — Closed Portfolio (Added September 2026)
+This is the income engine running underneath:
+1. **Rank 1**: Excel double-entry accounting tracker (ABM + AI-built) — Strongest, rarest asset. Real ledger logic, auto-generating financial statements.
+2. **Rank 2**: Cafe landing page mockup — Proves frontend range. Pairs with booking/maintenance flow.
+3. **Rank 3**: Notion template / setup — Underserved solopreneur niche.
+4. **Rank 4**: Light novel website(s) — Best proof of raw coding skill and follow-through.
+5. **Rank 5**: Canva design work / lakbay sanaysay (100+ pages) — Strong discipline story.
+6. **Rank 6**: Edited film / video project — Bonus piece.
+
+- *Packaging*: Six projects packaged into a real portfolio website, not a generic PDF. Scope stays tight: home intro, six project sections, contact.
+- *The Pitch*: “I built a working double-entry accounting system in Excel — auto-generating financial statements, changes in equity, and visual dashboards — because I needed to track my own money and existing tools weren’t enough.”
+- *Scarcity Test*: Accountants usually can’t code, developers usually don’t understand double-entry ledgers. AI devalues slow manual bookkeeping, not underlying domain understanding.
+- *Realistic Pay (Part-time, 10–15 hrs/wk)*:
+  - Generic VA: ₱8,000–15,000
+  - Specialized VA (first client): ₱10,000–15,000 (buying first review)
+  - Specialized VA (after 1 client): ₱18,000–25,000
+  - Realistic ceiling: ₱35,000–40,000 (needs 20–25 hrs/wk, conflicts with exams)
+  - Honest target first two semesters: ₱15,000–₱25,000/month. Hour cap: 10–12 hrs/week, non-negotiable.
+- *The Infinite Preparation Trap*: List is closed at six projects. Any new idea goes into a future-projects note.
+- *The Working-Student Reality*: 3–9 PM evening classes + 7–11 AM morning merchandising. 6-hour sleep floor. Protect weekends as sacred build-time.
+- *Leadership and Honors*: Lead when genuinely needed; let others grow in the gaps. Aim for consistency, not perfection. A 2.50-average graduate who can actually build things beats a Latin-Honors graduate with no real skill in almost every hiring room.
+
+#### Phase 4 — The Legal Entry: Saudi Arabia (Age ≈22, 2030)
+- **Revision Note**: Under Saudi labor law, your Iqama is tied to a single legal profession, and SCE registration is required to legally hold an engineering or IT-specialist title. Working outside your Iqama’s listed profession is a real violation (*Tastur*) carrying deportation and blacklisting risk. Enter directly as an IT professional.
+- **Where EIM, EPAS, Drafting, and CSS Sit**: They move to a domestic personal capability layer and become direct cost-savers across every Phase 6 business.
+- **Why the Tax Picture is Real**:
+  - Saudi Arabia imposes **no personal income tax on wages** for expatriates. Gross is spendable, investable capital.
+  - Only deduction is GOSI (typically applies to Saudi nationals).
+  - Contrast with Philippines equivalent salary, which loses 15–30% to withholding tax.
+
+#### Phase 5 — The Career Ascent (Age 22–28, Saudi Arabia)
+- 5 years of disciplined, legally clean IT work in Saudi Arabia:
+  - Y1 (Age 22): Entry IT Support — ₱94,250/mo salary (₱73,225/mo savings, ₱878,700 running)
+  - Y2 (Age 23): IT Support, proven — ₱116,000/mo salary (₱92,800/mo savings, ₱1,992,300 running)
+  - Y3 (Age 24): Mid-Junior + certs — ₱159,500/mo salary (₱133,400/mo savings, ₱3,593,100 running)
+  - Y4 (Age 25): Solid Mid-Level — ₱217,500/mo salary (₱185,600/mo savings, ₱5,820,300 running)
+  - Y5 (Age 26): Cyber / Cloud Specialist — ₱275,500/mo salary (₱239,250/mo savings, ₱8,691,300 running)
+- Base Savings: **₱8,691,300**
+- Extras: Annual flight allowance (₱145,000) + Bi-annual bonuses (₱551,000) + End-of-service gratuity (₱688,750) = **₱1,384,750**
+- **Total in the bank at Age 27–28: ₱10,076,050**
+
+#### Phase 6 — The Sovereign Legacy (Age ≈28+, Return to the Philippines)
+Deploy Saudi capital into permanent generational assets:
+- Real estate down payment: ₱1,500,000 (₱3.0M condo in secondary CBD)
+- Restaurant startup capital: ₱1,200,000 (*opened LAST with physical presence; 60% fail within 3 years nationally*)
+- Farm / livestock initial capital: ₱800,000 (native poultry + small livestock in peaceful rural area with water/vet access)
+- Emergency buffer (never touched): ₱1,000,000
+- Reserve / opportunity capital: ₱5,576,050
+- *Weighted Scenarios*:
+  - Scenario A (20%): Everything works — ₱130,500/mo net
+  - Scenario B (55%): Realistic mix — ₱39,500/mo net
+  - Scenario C (20%): Restaurant fails — ₱2,500/mo net (untouched ₱5.58M absorbs it)
+  - Scenario D (5%): Everything fails — The Hard Floor. Skills, ₱1M buffer, ₱3M+ real estate, degree, certs, and 5-yr Saudi record remain. You are not destroyed. You rebuild.
+
+#### Phase 7 — The Tech–Business Fusion (Ongoing, born out of Phase 6)
+- Build tools that run own businesses, then package and sell as commercial SaaS (OFW rental manager, restaurant POS, farm ops).
+- Validated before sold: solving own lived problems first.
+- *The AI-Era Reframe*: AI closes the execution gap. The scarce skill is knowing what is worth building and why. ABM thinking wearing a hoodie.
 
 ---
 
@@ -419,24 +641,62 @@ In Grade 11, you were an average student watching from the outside. Then you dec
 ---
 
 ### Part V — The Risk Management Shield
-- Burnout: Start projects on day assigned; 6-hour sleep floor.
-- Saudi legal: Direct IT visa with attested degree.
-- Restaurant risk: Open last with physical presence.
-- Farm disease: Insurance and crop diversification.
-- Real estate: Secondary CBDs with verified transit/BPO demand.
-- **The Humility Clause (James 4:13–15)**: *“If the Lord will, we shall live, and do this, or that.”* Hold plans firmly to work toward them daily, loosely enough to bend if God rewrites a chapter.
+10 Named Risks & Mitigations:
+1. **Working-student burnout**: Day 1 project starts, weekends protected, 6-hour sleep hard floor.
+2. **Saudi legal / visa risk (Tastur)**: Direct IT visa, degree attested, SCE registration.
+3. **Restaurant failure (~60% nationally)**: Open last with physical presence in the Philippines.
+4. **Farm disease (ASF / avian flu)**: Livestock insurance, crop diversification alongside animals.
+5. **Real-estate vacancy**: Secondary CBDs near transit/BPO hubs; study vacancy by barangay.
+6. **The “dangerous leader” pattern**: Lead when needed, let others grow in the gaps.
+7. **Honors pressure**: Consistency over perfection; a builder with a 2.50 GPA beats an honors student with no portfolio in tech.
+8. **Family-run business strain**: Non-family manager for daily ops, honest role clarity.
+9. **TESDA plan assumptions unverified**: Check accredited center before Y1 summer; verify actual schedule, seats, and out-of-pocket costs.
+10. **Two competing Saudi-entry narratives**: EIM stays a domestic capability lever only, not a replacement for the attested BSIT degree entry.
+
+- **The Humility Clause (James 4:13–15)**: *“If the Lord will, we shall live, and do this, or that.”* Hold plans firmly enough to work toward them daily, loosely enough that if God’s providence rewrites a chapter, you bend instead of break.
 
 ---
 
 ### Part VI — Letters to My Future Self
-- **To Clint at 22**: Walk through the front door with an attested IT degree.
-- **To Clint at 27–28**: Do not rush Phase 6. Research before capital. Slow is not the enemy; wrong is.
-- **To Clint at 30 and beyond**: The point was never just money. It was your parents never carrying debt, being an unwavering provider, and hearing *“Well done, good and faithful servant”* (Matthew 25:21).
+- **To Clint at 22, holding the diploma**: Remember why the entry has to be clean. Not because the electrician money isn’t real, but because you already decided, back at 18, that the legal, patient road beats the fast, risky one. Trust the version of you that did that research. Get the degree attested. Let your uncle find you a real title. Walk in the front door.
+  > *“The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.”* — Proverbs 21:5 (KJV)
+- **To Clint at 27–28, stepping off the plane**: You’re carrying more than most Filipino families accumulate in a lifetime — and you earned every peso of it. Do not rush Phase 6. The 18-year-old who wrote this begged you: research before capital. Buy the real estate first. Slow is not the enemy here. Wrong is.
+  > *“For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?”* — Luke 14:28 (KJV)
+- **To Clint at 30 and beyond**: If you’re reading this with a piano in the room and land somewhere quiet, some version of the dream came true. Remember the point was never just money. It was your parents never carrying debt, being an unwavering provider, and hearing the Master say:
+  > *“Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.”* — Matthew 25:21 (KJV)
 
 ---
 
 > “Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.”
 > — **Proverbs 3:5–6 (KJV)**
+
+---
+
+### Appendix — Quick Reference
+- **SHS-to-College Grade Conversion (Philippine SUC Scale)**:
+  - 1.00: 97–100% (Excellent)
+  - 1.25: 94–96% (Your SHS Average lands here — 94 ABM average)
+  - 1.50: 91–93% (Superior)
+  - 1.75: 88–90% (Very Good)
+  - 2.00: 85–87% (Good)
+  - 3.00: 75% (Minimum Passing)
+  - 5.00: Below 75% (Failed)
+- **Latin Honors Cutoffs**: Summa Cum Laude (1.00–1.20), Magna Cum Laude (1.21–1.45), Cum Laude (1.46–1.75).
+- **Phase Timeline at a Glance**:
+  - Phase 1: The Foundation (Completed — SHS ABM Honors)
+  - Phase 2: The Freedom Gap (Jun–Jul 2026, Age 18 — Pre-college habit engine)
+  - Phase 3: The Foundation Build (2026–2030, Age 18–22 — BSIT + 4 TESDA + Remote Pipeline)
+  - Phase 4: The Legal Entry (2030, Age 22 — Direct Saudi IT Visa + 0% Expat Wage Tax)
+  - Phase 5: The Career Ascent (2030–2035, Age 22–27/28 — ₱10.07M total capital target)
+  - Phase 6: The Sovereign Legacy (2035 onward, Age 27/28+ — Condo, Farm, Resto, ₱1M Buffer)
+  - Phase 7: Tech–Business Fusion (Ongoing — Lived problem B2B SaaS)
+- **Update Log — September 2026**:
+  - Added the four-course TESDA lineup (EIM, EPAS, Drafting, CSS = 884 hours) and stress test.
+  - Added the six-project Remote Work Pipeline as a closed portfolio with scarcity test and pay tiers.
+  - Extended Phase 4’s trade skill framing to personal capability & Phase 6 facility cost-reduction.
+  - Integrated 0% expat wage tax in Saudi Arabia ahead of Phase 5 savings projections.
+
+*This document was built from a real conversation, corrected where it needed correcting, and grounded in what actually matters. Update it as life happens — a blueprint that never changes was never actually being used.*
 
 *Build the tower. Count the cost, like you already did. And when it’s standing — remember whose hands were on it with you the whole time.*
 *— Clint, Age 18, one month before it all began.*`,

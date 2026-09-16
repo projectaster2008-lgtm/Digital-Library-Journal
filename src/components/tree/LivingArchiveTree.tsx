@@ -15,13 +15,16 @@ export const LivingArchiveTree: React.FC<LivingArchiveTreeProps> = ({
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [hoveredEntry, setHoveredEntry] = useState<ArchiveEntry | null>(null);
 
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
+  const visibleEntries = entries.filter((e) => isVaultUnlocked || (e.id !== 'sovereign-architect-master' && e.type !== 'blueprint'));
+
   // Group entries by year
-  const years = Array.from(new Set(entries.map((e) => e.year))).sort((a, b) => b - a);
+  const years = Array.from(new Set(visibleEntries.map((e) => e.year))).sort((a, b) => b - a);
 
   // Filter entries if a branch/year is focused
   const displayedEntries = selectedYear
-    ? entries.filter((e) => e.year === selectedYear)
-    : entries;
+    ? visibleEntries.filter((e) => e.year === selectedYear)
+    : visibleEntries;
 
   return (
     <div className="relative p-6 sm:p-10 rounded-3xl bg-[#F3EEDC]/80 border border-[#78966A]/20 backdrop-blur-md shadow-xl modern-paper space-y-8 overflow-hidden">

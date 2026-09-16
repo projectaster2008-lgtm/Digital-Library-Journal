@@ -20,11 +20,15 @@ export const RandomEntryModal: React.FC<RandomEntryModalProps> = ({
   const [daysAgo, setDaysAgo] = useState(247);
   const [isSpinning, setIsSpinning] = useState(false);
 
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
+  const eligibleEntries = entries.filter((e) => isVaultUnlocked || (e.id !== 'sovereign-architect-master' && e.type !== 'blueprint'));
+
   const pickRandom = () => {
     setIsSpinning(true);
     setTimeout(() => {
-      const idx = Math.floor(Math.random() * entries.length);
-      const chosen = entries[idx];
+      const pool = eligibleEntries.length > 0 ? eligibleEntries : entries;
+      const idx = Math.floor(Math.random() * pool.length);
+      const chosen = pool[idx];
       setRandomEntry(chosen);
 
       // Calculate approximate days elapsed from reference date 2026-08-29

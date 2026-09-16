@@ -33,6 +33,11 @@ import {
   Eye,
   EyeOff,
   ShieldCheck,
+  Cpu,
+  Wrench,
+  Check,
+  AlertCircle,
+  FileText,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArchiveEntry } from '../../types';
@@ -45,6 +50,10 @@ import {
   blueprintRisks,
   lettersToClint,
   sovereignBlueprintMasterEntry,
+  tesdaLineup,
+  remoteWorkPortfolio,
+  remotePayTiers,
+  timelineGlance,
 } from '../../data/blueprintData';
 
 interface SovereignArchitectViewProps {
@@ -335,12 +344,12 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
               return (
                 <div
                   key={phase.phaseNumber}
-                  className={`rounded-2xl border transition-all overflow-hidden ${
+                  className={`rounded-2xl border-2 transition-all overflow-hidden shadow-md ${
                     phase.status === 'COMPLETED'
-                      ? 'bg-[#FAF9F5] border-[#78966A]/30'
+                      ? 'bg-white border-[#2A3F35]/40'
                       : phase.status === 'IN_PROGRESS'
-                      ? 'bg-white border-[#E5B26E] shadow-md ring-1 ring-[#E5B26E]/40'
-                      : 'bg-[#FAF9F5]/70 border-[#78966A]/20'
+                      ? 'bg-white border-[#E5B26E] ring-2 ring-[#E5B26E]/40'
+                      : 'bg-white border-[#78966A]/35'
                   }`}
                 >
                   {/* Phase Summary Bar */}
@@ -400,7 +409,7 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="px-4 sm:px-6 pb-5 pt-1 space-y-4 border-t border-[#78966A]/15 bg-white/60"
+                        className="px-4 sm:px-6 pb-6 pt-3 space-y-4 border-t-2 border-[#78966A]/25 bg-white"
                       >
                         {/* What & Why Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
@@ -469,6 +478,137 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
                             ))}
                           </div>
                         )}
+
+                        {/* Phase 3 Special Deep Dives: TESDA 4-Course Lineup & Remote Work Pipeline */}
+                        {phase.phaseNumber === 3 && (
+                          <div className="space-y-6 pt-4 border-t-2 border-[#78966A]/20">
+                            {/* 1. TESDA 4-Course Lineup */}
+                            <div className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-[#2A3F35]/30 shadow-md space-y-4">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#78966A]/20 pb-3">
+                                <div className="flex items-center space-x-2">
+                                  <Wrench className="w-4 h-4 text-[#D4A359]" />
+                                  <h4 className="text-sm sm:text-base font-display font-semibold text-[#14241B]">
+                                    TESDA 4-Course Technical Trade Lineup
+                                  </h4>
+                                </div>
+                                <span className="text-[11px] font-mono text-[#2A3F35] bg-[#FAF8F2] px-2.5 py-1 rounded-lg border border-[#78966A]/30 font-bold">
+                                  884 Total Hours · Physical Skill Hedge
+                                </span>
+                              </div>
+
+                              <p className="text-xs font-serif-body text-[#324538] leading-relaxed">
+                                Physical and electrical trade skills that AI cannot replace. Taken during summer intervals and post-graduation to prevent any conflict with college exams or academic deadlines.
+                              </p>
+
+                              <div className="overflow-x-auto rounded-xl border border-[#78966A]/30">
+                                <table className="w-full text-left text-xs font-sans-ui">
+                                  <thead className="bg-[#2A3F35] text-white font-mono text-[10px] uppercase tracking-wider">
+                                    <tr>
+                                      <th className="p-2.5 sm:p-3">Year / Course</th>
+                                      <th className="p-2.5 sm:p-3">Hours</th>
+                                      <th className="p-2.5 sm:p-3">Timing</th>
+                                      <th className="p-2.5 sm:p-3">AI Vulnerability</th>
+                                      <th className="p-2.5 sm:p-3">Role in Stack</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody className="divide-y divide-[#78966A]/15 font-sans-ui bg-white">
+                                    {tesdaLineup.map((c, cIdx) => (
+                                      <tr key={cIdx} className="hover:bg-[#FAF9F5] transition-colors">
+                                        <td className="p-2.5 sm:p-3 font-semibold text-[#18261E]">
+                                          <span className="font-mono text-[10px] text-[#8F5A0E] mr-1.5">{c.year}</span>
+                                          <span>{c.course}</span>
+                                        </td>
+                                        <td className="p-2.5 sm:p-3 font-mono font-bold text-[#2A3F35]">
+                                          {c.hours}h
+                                        </td>
+                                        <td className="p-2.5 sm:p-3 text-[11px] text-[#4F6354]">
+                                          {c.timing}
+                                        </td>
+                                        <td className="p-2.5 sm:p-3">
+                                          <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold ${
+                                            c.aiRisk.includes('Very Low') || c.aiRisk.includes('Low')
+                                              ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                                              : c.aiRisk.includes('Highest')
+                                              ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                                              : 'bg-blue-100 text-blue-800 border border-blue-300'
+                                          }`}>
+                                            {c.aiRisk}
+                                          </span>
+                                        </td>
+                                        <td className="p-2.5 sm:p-3 text-[11px] text-[#324538]">
+                                          {c.roleInStack}
+                                        </td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
+
+                              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25 text-[11px] font-sans-ui text-[#2A3C30] space-y-1">
+                                <strong>Tuition Reality:</strong> ₱0 out-of-pocket tuition when enrolled via TESDA Regional Training Centers / TTIs under the Universal Access to Quality Tertiary Education Act (RA 10931). Assessment fees (~₱1,000–₱1,500) apply only upon taking the National Certificate (NC II) exam.
+                              </div>
+                            </div>
+
+                            {/* 2. Remote Work Pipeline — 6-Project Closed Portfolio */}
+                            <div className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-[#2A3F35]/30 shadow-md space-y-4">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#78966A]/20 pb-3">
+                                <div className="flex items-center space-x-2">
+                                  <Briefcase className="w-4 h-4 text-[#D4A359]" />
+                                  <h4 className="text-sm sm:text-base font-display font-semibold text-[#14241B]">
+                                    Remote Work Pipeline — 6-Project Closed Portfolio
+                                  </h4>
+                                </div>
+                                <span className="text-[11px] font-mono text-[#8F5A0E] bg-[#FAF6E8] px-2.5 py-1 rounded-lg border border-[#E5B26E]/40 font-bold">
+                                  Scarcity Rule: Close Portfolio at 6
+                                </span>
+                              </div>
+
+                              <p className="text-xs font-serif-body text-[#324538] leading-relaxed">
+                                Build these 6 specific high-signal assets before pitching clients. Never dilute client time during midterms or finals. Specialization beats generic VA bidding.
+                              </p>
+
+                              {/* Projects Grid */}
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                {remoteWorkPortfolio.map((item) => (
+                                  <div
+                                    key={item.rank}
+                                    className="p-3 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 hover:border-[#2D5A3C] transition-all space-y-1 shadow-xs"
+                                  >
+                                    <div className="flex items-center justify-between">
+                                      <span className="text-[10px] font-mono font-bold text-[#8F5A0E] bg-[#FAF6E8] px-2 py-0.5 rounded border border-[#E5B26E]/30">
+                                        Asset #0{item.rank} · {item.category}
+                                      </span>
+                                    </div>
+                                    <h5 className="text-xs font-semibold text-[#18261E]">
+                                      {item.project}
+                                    </h5>
+                                    <p className="text-[11px] font-serif-body text-[#4E6253] leading-relaxed">
+                                      {item.whyItMatters}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+
+                              {/* Pay Tiers */}
+                              <div className="pt-2">
+                                <span className="text-[11px] font-mono uppercase text-[#2A3F35] font-bold block mb-2">
+                                  Student Freelancing Pay Tiers (Realistic Market Ceiling)
+                                </span>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                  {remotePayTiers.map((tier, tIdx) => (
+                                    <div key={tIdx} className="p-2.5 rounded-lg bg-[#FAF8F2] border border-[#78966A]/25 flex items-center justify-between text-xs">
+                                      <div>
+                                        <span className="font-medium text-[#18261E] block text-[11px]">{tier.stage}</span>
+                                        <span className="text-[10px] text-[#6B7B6C]">{tier.note}</span>
+                                      </div>
+                                      <span className="font-mono font-bold text-[#2A3F35] shrink-0 ml-2">{tier.pay}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -493,38 +633,38 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Scripture Pillar Cards */}
-            <div className="p-5 rounded-2xl bg-white border border-[#78966A]/25 space-y-3 shadow-sm">
-              <span className="text-xs font-mono font-bold text-[#3F6248] uppercase tracking-wider flex items-center space-x-1.5">
-                <BookOpen className="w-4 h-4 text-[#E5B26E]" />
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border-2 border-[#2A3F35]/30 space-y-4 shadow-md">
+              <span className="text-xs font-mono font-bold text-[#14241B] uppercase tracking-wider flex items-center space-x-1.5 pb-2 border-b border-[#78966A]/20">
+                <BookOpen className="w-4 h-4 text-[#D4A359]" />
                 <span>Biblical Cornerstones</span>
               </span>
               <div className="space-y-3 text-xs">
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">Proverbs 16:3</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">Proverbs 16:3</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “Commit thy works unto the LORD, and thy thoughts shall be established.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     Plans held loosely and offered honestly to God outlast plans gripped in anxious self-reliance.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">Proverbs 21:5</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">Proverbs 21:5</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     Every correction in this Blueprint happened because diligence was chosen over haste.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">Colossians 3:23</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">Colossians 3:23</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “And whatsoever ye do, do it heartily, as to the Lord, and not unto men.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     All work done as an offering, not just a wage.
                   </p>
                 </div>
@@ -532,38 +672,38 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
             </div>
 
             {/* Stoic Scaffolding Cards */}
-            <div className="p-5 rounded-2xl bg-white border border-[#78966A]/25 space-y-3 shadow-sm">
-              <span className="text-xs font-mono font-bold text-[#3F6248] uppercase tracking-wider flex items-center space-x-1.5">
-                <Scale className="w-4 h-4 text-[#E5B26E]" />
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border-2 border-[#2A3F35]/30 space-y-4 shadow-md">
+              <span className="text-xs font-mono font-bold text-[#14241B] uppercase tracking-wider flex items-center space-x-1.5 pb-2 border-b border-[#78966A]/20">
+                <Scale className="w-4 h-4 text-[#D4A359]" />
                 <span>Stoic Tools for the Grind</span>
               </span>
               <div className="space-y-3 text-xs">
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">The Dichotomy of Control (Epictetus)</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">The Dichotomy of Control (Epictetus)</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “Some things are in our power, and others are not.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     Control research, daily hours, honest numbers, and character. Hold external outcomes with an open hand.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">On Suffering in Advance (Seneca & Marcus Aurelius)</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">On Suffering in Advance (Seneca & Marcus Aurelius)</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “We suffer far more often in imagination than we ever do in reality.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     Dread usually costs more sleep than the actual hardship does. Name the fear, plan against it, set it down.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 space-y-1">
-                  <span className="font-mono text-[#3F6248] font-semibold">A Filipino Proverb Worth Keeping</span>
-                  <p className="italic font-serif-body text-[#253326]">
+                <div className="p-3.5 rounded-xl bg-[#FCFDFB] border border-[#78966A]/30 space-y-1 shadow-xs">
+                  <span className="font-mono text-[#2A3F35] font-bold">A Filipino Proverb Worth Keeping</span>
+                  <p className="italic font-serif-body text-[#18261E]">
                     “Ang hindi marunong lumingon sa pinanggalingan ay hindi makararating sa paroroonan.”
                   </p>
-                  <p className="text-[11px] text-[#6B7B6C]">
+                  <p className="text-[11px] text-[#4E6253]">
                     Never let the Saudi salary or capital make you forget the boy who worked 7 AM merchandising while graduating with honors.
                   </p>
                 </div>
@@ -666,6 +806,43 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
               </div>
             </div>
           </div>
+
+          {/* Saudi Arabia 0% Expat Income Tax Reality Card */}
+          <div className="p-5 sm:p-6 rounded-2xl bg-white border-2 border-[#2A3F35]/30 shadow-md space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#78966A]/20 pb-2.5">
+              <div className="flex items-center space-x-2">
+                <Landmark className="w-4 h-4 text-[#D4A359]" />
+                <h4 className="text-sm sm:text-base font-display font-semibold text-[#14241B]">
+                  Saudi Arabia Tax Reality — 0% Expat Personal Income Tax
+                </h4>
+              </div>
+              <span className="text-[10px] font-mono text-[#2A3F35] bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-full font-bold">
+                100% Retained Take-Home
+              </span>
+            </div>
+
+            <p className="text-xs font-serif-body text-[#324538] leading-relaxed">
+              Under current Saudi tax regulations (Zakat, Tax and Customs Authority - ZATCA), individual foreign expatriates pay <strong>0% personal income tax</strong> on employment earnings. Corporate tax applies only to entities, and Zakat applies only to Saudi/GCC nationals. 
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25">
+                <span className="text-[10px] font-mono uppercase text-[#6B7B6C] block">Gross vs Net</span>
+                <span className="text-xs font-bold text-[#18261E]">Gross = Net Pay</span>
+                <p className="text-[11px] text-[#4E6253] mt-0.5">No personal income withholding deductions by the state.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25">
+                <span className="text-[10px] font-mono uppercase text-[#6B7B6C] block">GOSI Contribution</span>
+                <span className="text-xs font-bold text-[#18261E]">2% Employer-Covered</span>
+                <p className="text-[11px] text-[#4E6253] mt-0.5">Occupational hazard insurance is paid entirely by the sponsoring employer.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25">
+                <span className="text-[10px] font-mono uppercase text-[#6B7B6C] block">Solvency Guarantee</span>
+                <span className="text-xs font-bold text-[#18261E]">₱10,072,450 Intact</span>
+                <p className="text-[11px] text-[#4E6253] mt-0.5">Every forecasted riyal translates directly to Philippines capital deployment.</p>
+              </div>
+            </div>
+          </div>
         </section>
       )}
 
@@ -686,20 +863,20 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
             {capitalAllocations.map((alloc, aIdx) => (
               <div
                 key={aIdx}
-                className="p-4 rounded-2xl bg-white border border-[#78966A]/25 space-y-2 shadow-xs hover:border-[#78966A] transition-colors"
+                className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-[#2A3F35]/25 space-y-2.5 shadow-md hover:border-[#2A3F35] transition-colors"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-display font-medium text-[#253326]">
+                  <span className="text-xs font-display font-bold text-[#14241B]">
                     {alloc.category}
                   </span>
-                  <span className="text-xs font-mono font-bold text-[#2A3F35]">
+                  <span className="text-xs font-mono font-bold text-[#2A3F35] bg-[#FAF8F2] px-2 py-0.5 rounded border border-[#78966A]/25">
                     ₱{(alloc.amount / 1000000).toFixed(2)}M
                   </span>
                 </div>
-                <p className="text-xs font-sans-ui text-[#4E5C4F] leading-relaxed">
+                <p className="text-xs font-sans-ui text-[#2C3E30] leading-relaxed">
                   {alloc.description}
                 </p>
-                <div className="pt-1 text-[11px] font-serif-body text-[#8F5A0E] italic border-t border-[#78966A]/10">
+                <div className="pt-2 text-[11px] font-serif-body text-[#8F5A0E] italic border-t border-[#78966A]/20">
                   {alloc.notes}
                 </div>
               </div>
@@ -707,20 +884,20 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
           </div>
 
           {/* Weighted Scenario Selector */}
-          <div className="p-5 rounded-2xl bg-[#FAF9F5] border border-[#78966A]/25 space-y-4">
-            <span className="text-xs font-mono font-bold text-[#3F6248] uppercase tracking-wider block">
+          <div className="p-5 sm:p-6 rounded-2xl bg-white border-2 border-[#2A3F35]/30 space-y-4 shadow-md">
+            <span className="text-xs font-mono font-bold text-[#14241B] uppercase tracking-wider block border-b border-[#78966A]/20 pb-2">
               Simulated Outcome Models (Scenarios A through D)
             </span>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               {portfolioScenarios.map((sc, scIdx) => (
                 <button
                   key={scIdx}
                   onClick={() => setSelectedScenarioIdx(scIdx)}
-                  className={`p-3 rounded-xl text-left transition-all cursor-pointer border ${
+                  className={`p-3.5 rounded-xl text-left transition-all cursor-pointer border-2 ${
                     selectedScenarioIdx === scIdx
-                      ? 'bg-[#2A3F35] text-white border-[#E5B26E] shadow-sm'
-                      : 'bg-white text-[#253326] border-[#78966A]/20 hover:bg-[#F3EEDC]'
+                      ? 'bg-[#2A3F35] text-white border-[#E5B26E] shadow-md ring-2 ring-[#E5B26E]/40'
+                      : 'bg-[#FCFDFB] text-[#14241B] border-[#78966A]/30 hover:bg-[#FAF8F2]'
                   }`}
                 >
                   <div className="flex items-center justify-between text-[10px] font-mono mb-1">
@@ -782,29 +959,29 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
             {blueprintRisks.map((risk, rIdx) => (
               <div
                 key={rIdx}
-                className="p-4 rounded-2xl bg-white border border-[#78966A]/25 space-y-2 shadow-xs"
+                className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-[#2A3F35]/25 space-y-3 shadow-md"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <h4 className="text-xs font-display font-medium text-[#253326] leading-snug">
+                  <h4 className="text-xs sm:text-sm font-display font-semibold text-[#14241B] leading-snug">
                     {risk.risk}
                   </h4>
                   <span
-                    className={`px-2 py-0.5 rounded-full text-[9px] font-mono uppercase font-bold flex-shrink-0 ${
+                    className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase font-bold flex-shrink-0 ${
                       risk.severity === 'Critical'
-                        ? 'bg-rose-100 text-rose-800 border border-rose-200'
+                        ? 'bg-rose-100 text-rose-800 border border-rose-300'
                         : risk.severity === 'High'
-                        ? 'bg-amber-100 text-amber-800 border border-amber-200'
-                        : 'bg-emerald-100 text-emerald-800 border border-emerald-200'
+                        ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                        : 'bg-emerald-100 text-emerald-800 border border-emerald-300'
                     }`}
                   >
                     {risk.severity}
                   </span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 text-xs text-[#4E5C4F]">
-                  <strong className="text-[#3F6248] font-mono text-[10px] uppercase block mb-0.5">
+                <div className="p-3 rounded-xl bg-[#FCFDFB] border border-[#78966A]/25 text-xs text-[#2A3C30] space-y-1">
+                  <strong className="text-[#2A3F35] font-mono text-[10px] uppercase block font-bold">
                     Mitigation Protocol
                   </strong>
-                  {risk.mitigation}
+                  <p className="leading-relaxed">{risk.mitigation}</p>
                 </div>
               </div>
             ))}
@@ -843,31 +1020,31 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
               return (
                 <div
                   key={lIdx}
-                  className={`rounded-2xl border transition-all overflow-hidden ${
-                    isSelected ? 'bg-white border-[#E5B26E] shadow-md' : 'bg-[#FAF9F5] border-[#78966A]/20'
+                  className={`rounded-2xl border-2 transition-all overflow-hidden shadow-md ${
+                    isSelected ? 'bg-white border-[#E5B26E] ring-2 ring-[#E5B26E]/40' : 'bg-white border-[#2A3F35]/25'
                   }`}
                 >
                   <button
                     onClick={() => setExpandedLetterIdx(isSelected ? null : lIdx)}
-                    className="w-full p-4 sm:p-5 flex items-center justify-between text-left cursor-pointer hover:bg-black/[0.02]"
+                    className="w-full p-4 sm:p-5 flex items-center justify-between text-left cursor-pointer hover:bg-[#FAF8F2] transition-colors"
                   >
                     <div className="flex items-center space-x-3 min-w-0">
                       <div className="w-8 h-8 rounded-full bg-[#FAF6E8] border border-[#E5B26E]/40 text-[#8F5A0E] flex items-center justify-center flex-shrink-0">
                         <Feather className="w-4 h-4" />
                       </div>
                       <div className="min-w-0">
-                        <h4 className="text-sm font-display font-medium text-[#253326] truncate">
+                        <h4 className="text-sm font-display font-semibold text-[#14241B] truncate">
                           {letter.target}
                         </h4>
-                        <span className="text-[11px] font-mono text-[#78966A]">
+                        <span className="text-[11px] font-mono text-[#3F6248] font-medium">
                           {letter.stage}
                         </span>
                       </div>
                     </div>
                     {isSelected ? (
-                      <ChevronUp className="w-4 h-4 text-[#78966A] flex-shrink-0" />
+                      <ChevronUp className="w-4 h-4 text-[#2A3F35] flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-[#78966A] flex-shrink-0" />
+                      <ChevronDown className="w-4 h-4 text-[#2A3F35] flex-shrink-0" />
                     )}
                   </button>
 
@@ -877,12 +1054,12 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="px-5 pb-5 pt-2 border-t border-[#78966A]/15 space-y-3"
+                        className="px-5 pb-5 pt-2 border-t-2 border-[#78966A]/20 space-y-3 bg-white"
                       >
-                        <div className="p-4 rounded-xl bg-[#FAF9F5] border border-[#78966A]/15 text-xs sm:text-sm font-serif-body text-[#253326] leading-relaxed italic">
+                        <div className="p-4 rounded-xl bg-[#FCFDFB] border border-[#78966A]/25 text-xs sm:text-sm font-serif-body text-[#18261E] leading-relaxed italic shadow-xs">
                           {letter.content}
                         </div>
-                        <div className="p-3 rounded-xl bg-[#FAF6E8] text-[11px] font-mono text-[#614518] border border-[#E5B26E]/30">
+                        <div className="p-3 rounded-xl bg-[#FAF6E8] text-[11px] font-mono text-[#614518] border border-[#E5B26E]/30 font-medium">
                           {letter.verse}
                         </div>
                       </motion.div>
@@ -994,6 +1171,85 @@ export const SovereignArchitectView: React.FC<SovereignArchitectViewProps> = ({
 
               <div className="p-3 bg-[#FAF9F5] border-t border-[#78966A]/15 text-[11px] font-serif-body text-[#6B7B6C] italic leading-relaxed">
                 “Aim for honors. Do not let its absence define whether the four years meant anything. A 2.50-average graduate who can actually build things beats a Latin-Honors graduate with no real skill in almost every hiring room that matters.”
+              </div>
+            </div>
+          </div>
+
+          {/* Phase Timeline at a Glance Table */}
+          <div className="rounded-2xl border-2 border-[#2A3F35]/30 bg-white overflow-hidden shadow-md">
+            <div className="p-4 bg-[#2A3F35] text-white flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div className="flex items-center space-x-2">
+                <Layers className="w-4 h-4 text-[#D4A359]" />
+                <h4 className="font-display font-semibold text-sm sm:text-base">
+                  Phase Timeline at a Glance (Phases 1 to 7)
+                </h4>
+              </div>
+              <span className="text-[10px] font-mono text-[#D4A359] uppercase tracking-wider">
+                Full Trajectory View · Age 17 to 30+
+              </span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs font-sans-ui">
+                <thead className="bg-[#FAF8F2] border-b border-[#78966A]/20 font-mono text-[10px] uppercase text-[#3F6248] tracking-wider">
+                  <tr>
+                    <th className="p-3">Phase & Name</th>
+                    <th className="p-3">Years</th>
+                    <th className="p-3">Age</th>
+                    <th className="p-3">Core Strategic Focus</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#78966A]/15 font-sans-ui">
+                  {timelineGlance.map((item, idx) => (
+                    <tr key={idx} className="hover:bg-[#FAF9F5] transition-colors">
+                      <td className="p-3 font-semibold text-[#18261E]">
+                        Phase {item.phase}
+                      </td>
+                      <td className="p-3 font-mono text-[11px] text-[#2A3F35]">
+                        {item.years}
+                      </td>
+                      <td className="p-3 font-mono text-[11px] text-[#8F5A0E] font-bold">
+                        {item.age}
+                      </td>
+                      <td className="p-3 text-[11px] text-[#324538]">
+                        {item.focus}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Update Log — September 2026 */}
+          <div className="p-5 rounded-2xl bg-white border-2 border-[#2A3F35]/30 shadow-md space-y-3">
+            <div className="flex items-center space-x-2 border-b border-[#78966A]/20 pb-2.5">
+              <FileText className="w-4 h-4 text-[#D4A359]" />
+              <h4 className="font-display font-semibold text-sm sm:text-base text-[#14241B]">
+                Document Revision & Update Log — September 2026
+              </h4>
+            </div>
+
+            <p className="text-xs font-serif-body text-[#324538] leading-relaxed">
+              Synthesized and updated one month prior to BSIT matriculation following real-world research across Gulf labor decrees, TESDA regional course offerings, and remote freelancing benchmarks:
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25 space-y-1">
+                <span className="font-mono font-bold text-[#2A3F35] block text-[11px]">1. TESDA Sequence Realigned</span>
+                <p className="text-[11px] text-[#4E6253]">EIM NC II (196h), EPAS NC II (260h), and Technical Drafting NC II (148h) isolated to summers. CSS NC II moved to post-grad to prevent academic conflict.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25 space-y-1">
+                <span className="font-mono font-bold text-[#2A3F35] block text-[11px]">2. Remote Work Closed Portfolio</span>
+                <p className="text-[11px] text-[#4E6253]">Constrained to exactly 6 high-signal assets (led by Excel ABM accounting tracker). Enforced realistic market pay tiers.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25 space-y-1">
+                <span className="font-mono font-bold text-[#2A3F35] block text-[11px]">3. Saudi Expat 0% Tax Verified</span>
+                <p className="text-[11px] text-[#4E6253]">Confirmed ZATCA zero personal income tax on expat salaries. 2% GOSI hazard is employer-covered. ₱10.07M solvency math holds 100% intact.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#FAF8F2] border border-[#78966A]/25 space-y-1">
+                <span className="font-mono font-bold text-[#2A3F35] block text-[11px]">4. Direct IT Specialization Route</span>
+                <p className="text-[11px] text-[#4E6253]">Discarded high-risk electrician crossover in favor of direct legal Saudi IT entry, generating +₱2.98M more in net capital and full SCE registration safety.</p>
               </div>
             </div>
           </div>

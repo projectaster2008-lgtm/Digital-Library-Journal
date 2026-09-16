@@ -1343,4 +1343,577 @@ And Jesus Christ is that Rock, our Rock, for he is the word... :)`,
     status: 'PUBLISHED',
     readingTimeMinutes: 2,
   },
+
+  // ─── VOLUME II · DEVOTION XII: ESAU SOLD HIS BIRTHRIGHT / JACOB AND ESAU ───
+  {
+    id: 'vol2-devotion-12-esau-sold-his-birthright',
+    slug: 'vol2-devotion-12-esau-sold-his-birthright',
+    title: 'Esau Sold His Birthright / The Story of Jacob and Esau',
+    devotionNumber: 'Devotion XII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-08-30',
+    year: 2026,
+    month: 'August',
+    day: 30,
+    isTranscribedOriginal: true,
+    scriptures: ['Genesis 25:34', 'Genesis 22:1', 'Genesis 15', 'Genesis 25:23', 'Genesis 25:29', 'Genesis 32:22-32', 'Hebrews 12:16-17'],
+    scriptureVerseText: '“Thus Esau despised his birthright.” — Genesis 25:34 · “See to it that no one is sexually immoral or unholy like Esau, who sold his birthright for a single meal. For you know that afterward, when he desired to inherit the blessing, he was rejected, for he found no chance to repent, though he sought it with tears.” — Hebrews 12:16-17',
+    topics: ['birthright and blessing', 'instant gratification', 'spiritual inheritance', 'diligence', 'surrender', 'wrestling with god'],
+    mood: 'Contemplative',
+    excerpt: 'Birthright = Longterm responsibility, Spiritual inheritance and identity and calling. Blessing = is the fruit, makita the visible ones. Esau fell into instant gratification: enjoy now, suffer later...',
+    openingThought: 'A handwritten study on Abraham’s covenant, the contrast between Jacob and Esau, and why we must never trade our eternal birthright for a bowl of temporary stew.',
+    content: `ESAU SOLD HIS BIRTHRIGHT / THE STORY OF JACOB AND ESAU
+Scripture Readings: Genesis 25:34, Genesis 22:1-, Genesis 15, Genesis 25:23, Genesis 25:29, Genesis 32:22-32, Hebrews 12:16-17
+
+1. The Covenant Line:
+• Abraham Covenant — Genesis 15 & Genesis 22:1
+• Isaac — The promised son
+• Jacob and Esau — Twins born to Isaac and Rebekah
+Genesis 25:23: "Two nations are in your womb... the older shall serve the younger."
+
+2. Core Definitions:
+• Birthright = Longterm responsibility, Spiritual inheritance, identity, and calling.
+• Blessing = Is the fruit, "makita" the visible ones.
+
+3. The Encounter (Genesis 25:29-34):
+Esau was a skillful hunter, a man of the field. Jacob was a quiet man, staying among the tents. One day Jacob was cooking a stew; Esau arrived from the countryside completely famished and exhausted.
+Esau said, "Let me swallow some of that red stew, for I am famished."
+Jacob replied, "First sell me your birthright."
+Esau said, "Look, I am at the point of death; what use is a birthright to me?"
+Jacob made him swear, and Esau sold his birthright for bread and lentil stew. He ate, drank, arose, and went on his way. Thus Esau despised his birthright.
+
+Jacob = "Ya'aqob" (Heel-grabber, one who takes the place of another).
+
+4. The Warning of Hebrews 12:16-17:
+"See that no one is sexually immoral, or is godless like Esau, who for a single meal sold his inheritance rights as the oldest son. Afterward, as you know, when he wanted to inherit this blessing, he was rejected. Even though he sought the blessing with tears, he could not change what he had done."
+
+5. Personal Reflection & Modern Trap:
+Esau's fatal mistake was instant gratification:
+"Enjoy now, suffer later, rather than suffer now and Enjoy later."
+
+He wanted immediate sensory relief at the cost of his long-term covenant future. How often do we make the exact same trade today?
+• In relationships: Demanding emotional or physical intimacy right now rather than guarding sacred timing.
+• In academics and work: Procrastinating for cheap dopamine, trading long-term mastery for short-term distractions.
+• In spiritual life: Wanting the blessings without the birthright! Wanting the reward without carrying the responsibility!
+
+6. Wrestling with God (Genesis 32:22-32):
+Jacob was flawed, but he hungered for the spiritual reality. At Peniel, Jacob wrestled with God until daybreak and refused to let go: "I will not let you go unless you bless me!"
+God asked him, "What is your name?" He answered, "Jacob."
+Then God said, "Your name shall no longer be called Jacob, but Israel, for you have striven with God and with men, and have prevailed."
+
+Commit to pursue the birthright. Suffer now in quiet discipline, prayer, and devotion, so that God's eternal purpose will be fulfilled in your life.`,
+    lesson: 'Never trade your spiritual birthright (long-term responsibility, identity, and eternal calling) for temporary stew (instant gratification). Like Jacob at Peniel, wrestle with God in prayer until His blessing transforms you.',
+    prayer: 'Heavenly Father, forgive me for the moments I acted like Esau, chasing instant comfort and disregarding the weight of my spiritual calling. Grant me the patience to endure present discipline, to hold fast to Your covenant, and to seek Your blessing above all earthly stews. In Jesus\' name, Amen.',
+    closingThought: 'Blessings are the visible fruit, but the birthright is the eternal responsibility. Suffer now in faithfulness so that you may rejoice forever in Christ.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 4,
+  },
+
+  // ─── VOLUME II · DEVOTION XIII: MATTHEW 16:24 / TOTAL SURRENDER ───
+  {
+    id: 'vol2-devotion-13-matthew-16-total-surrender',
+    slug: 'vol2-devotion-13-matthew-16-total-surrender',
+    title: 'Matthew 16:24 / Total Surrender',
+    devotionNumber: 'Devotion XIII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-01',
+    year: 2026,
+    month: 'September',
+    day: 1,
+    isTranscribedOriginal: true,
+    scriptures: ['Matthew 16:24', 'Matthew 11:28'],
+    scriptureVerseText: '“Then Jesus told his disciples, “If anyone would come after me, let him deny himself and take up his cross and follow me.”” — Matthew 16:24 · “Come to me, all who labor and are heavy laden, and I will give you rest.” — Matthew 11:28',
+    topics: ['total surrender', 'discipleship', 'denying self', 'the cross', 'rest', 'two player game'],
+    mood: 'Vulnerable',
+    excerpt: 'Following Jesus is not just an intellectual belief, but total surrender upon Him. "If anyone would come after me" is an open invitation from God Himself—never forced...',
+    openingThought: 'A handwritten sermon note dissecting the three calls of Matthew 16:24 and realizing that Christian life is a 2-player game with Jesus holding the controller.',
+    content: `MATTHEW 16:24 / TOTAL SURRENDER
+Scripture Readings: Matthew 16:24, Matthew 11:28
+
+"Then Jesus told his disciples, 'If anyone would come after me, let him deny himself and take up his cross and follow me.'" (Matthew 16:24)
+
+Following Jesus is not just an intellectual belief, but a total surrender upon Him. When we dissect this verse, we see three profound movements:
+
+1. "If anyone would come after me..."
+• An open invitation from God Himself.
+• God does not force anyone; it is a free choice of the human will to partake in His kingdom and walk the narrow road.
+
+2. "...Let him deny himself..."
+• Total surrender to God.
+• Surrendering fleshly desires, pride, worldly ambitions, and selfish entitlement.
+• Submitting our trials, emotional hurts, and anxieties to His sovereign care. Denying yourself means saying, "Not my will, but Yours be done."
+
+3. "...And take up his cross and follow me."
+• Taking up the cross means embracing the weight of our daily responsibilities, trials, and persecutions without complaining.
+• But notice: we do not carry it alone in despair. In Matthew 11:28, Jesus promises: "Come to me, all who labor and are heavy laden, and I will give you rest."
+• When we follow Him, our heavy yoke is exchanged for His gentle companionship.
+
+Personal Insight:
+Life was never designed to be a 1-player game where you struggle in isolation. It is a 2-players game: You and Jesus, with Jesus holding the primary controller. When you let go of trying to control every outcome and let Him guide, total surrender brings unshakeable peace.`,
+    lesson: 'Discipleship begins with accepting God’s open invitation, proceeds through daily denying self, and culminates in carrying our cross alongside Jesus, who carries the heaviest load.',
+    prayer: 'Lord Jesus, I surrender my life into Your hands. I deny my selfish ambitions, my anxious need to control, and my fleshly impulses. I take up my cross today to follow You, resting in Your promise that Your yoke is easy and Your burden is light. Amen.',
+    closingThought: 'Life is a 2-players game: You and Jesus. Surrender the controller into His hands and walk in His rest.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── VOLUME II · DEVOTION XIV: PSALM 34:4 / I SOUGHT THE LORD ───
+  {
+    id: 'vol2-devotion-14-psalm-34-i-sought-the-lord',
+    slug: 'vol2-devotion-14-psalm-34-i-sought-the-lord',
+    title: 'Psalm 34:4 / I Sought the Lord (Past, Present, & Future)',
+    devotionNumber: 'Devotion XIV',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-03',
+    year: 2026,
+    month: 'September',
+    day: 3,
+    isTranscribedOriginal: true,
+    scriptures: ['Psalm 34:4', 'Matthew 11:28', 'Matthew 6:25', 'Philippians 4:6'],
+    scriptureVerseText: '“I sought the Lord, and he heard me, and delivered me from all my fears.” — Psalm 34:4 · “Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.” — Philippians 4:6',
+    topics: ['testimony', 'anxiety', 'healing', 'emotional numbness', 'faithfulness', 'peace'],
+    mood: 'Grateful',
+    excerpt: 'As I reflect throughout my life, I realized unsa jud kamaayo sa atong buhing Dios. Listening to the worship song "Trust in God," the words of Psalm 34:4 pierced my soul...',
+    openingThought: 'A deeply personal three-movement testimony: navigating physical panic in childhood, overcoming emotional numbness during college and work, and trusting God with tomorrow.',
+    content: `PSALM 34:4 / I SOUGHT THE LORD
+Scripture Readings: Psalm 34:4, Matthew 11:28, Matthew 6:25, Philippians 4:6
+
+"I sought the Lord, and he heard me, and delivered me from all my fears." (Psalm 34:4)
+
+As I reflect throughout my life, I realized unsa jud kamaayo sa atong buhing Dios. Listening to the worship song "Trust in God," the line "I sought the Lord, and He heard and He answered" echoed deep within my heart. This led me to trace God's faithfulness across three dimensions of my life: Past, Present, and Future.
+
+1. PAST: The Valley of Darkness & Emotional Numbness
+• Physical Helplessness: I remember a terrifying moment in my past—a night when I was struggling to breathe (*balisod ug ginhawa*). My parents were far away, and I was left alone in the house with my younger siblings (*mga manghud*). I was paralyzed, unable to move or reach anyone. In absolute terror and weakness, all I could do was pray hard with every ounce of my being. God heard my cry and sustained my breath.
+• Emotional Numbness: Later in life, I reached a breaking point while balancing demanding academic requirements and work at the expense of my health. My mind and body became completely drained. I turned into someone "Emotionally Numb." I stopped listening to rebukes from family, ignored advice from my girlfriend, and acted tough on the outside while rotting on the inside. I thought I could manage life alone. But God broke through my pride and showed me that life is not a solo struggle—it is a 2-player game where Jesus holds the controller.
+
+2. PRESENT: A Living Testament of Sovereign Grace
+Today, I am a living testament of God's goodness and unfailing love. Every trial, every panic attack, and every emotional collapse was used by God as a crucible to shape my humility, patience, and compassion. I am not here by my own strength; I stand because He answered when I sought Him.
+
+3. FUTURE: Walking Forward Without Anxiety
+Looking toward tomorrow, I hold onto two unshakeable scriptures:
+• Matthew 6:25: "Do not be anxious about your life, what you will eat or what you will drink, nor about your body..."
+• Philippians 4:6: "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+
+Whatever storms, financial hurdles, or relationship milestones lie ahead, I know the conclusion: I will seek the Lord, and He will hear, and He will deliver me from all my fears.`,
+    lesson: 'God’s faithfulness in our past crises is the bedrock of our present peace and our future courage. When we seek Him in desperate prayer, He hears, answers, and delivers us from paralyzing fear.',
+    prayer: 'O Lord, my faithful Deliverer, thank You for holding my breath when I was paralyzed in the dark, and for breaking my pride when I grew emotionally numb. I surrender my past regrets, my present labors, and my future worries into Your hands. Thank You for hearing me whenever I call. In Jesus\' name, Amen.',
+    closingThought: '“I sought the Lord, and he heard me, and delivered me from all my fears.” — Psalm 34:4',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── VOLUME II · DEVOTION XV: EZEKIEL 37:1-19 / THE VALLEY OF DRY BONES ───
+  {
+    id: 'vol2-devotion-15-ezekiel-37-valley-of-dry-bones',
+    slug: 'vol2-devotion-15-ezekiel-37-valley-of-dry-bones',
+    title: 'Ezekiel 37:1-19 / The Valley of Dry Bones',
+    devotionNumber: 'Devotion XV',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-05',
+    year: 2026,
+    month: 'September',
+    day: 5,
+    isTranscribedOriginal: true,
+    scriptures: ['Ezekiel 37:1-19'],
+    scriptureVerseText: '“Prophesy over these bones, and say to them, O dry bones, hear the word of the Lord... Behold, I will cause breath to enter you, and you shall live. And I will lay sinews upon you, and will cause flesh to come upon you... and you shall know that I am the Lord.” — Ezekiel 37:4-6',
+    topics: ['breath of god', 'restoration', 'holy spirit', 'dry bones', 'hope', 'word of god'],
+    mood: 'Hopeful',
+    excerpt: 'A valley full of dry bones—empty, bleached, and completely without hope. God’s Word has power beyond mere physical miracles; it resurrects that which is beyond repair...',
+    openingThought: 'A sermon reflection on the sovereign breath of God, the revival of dead bones, and why religious discipline without the Holy Spirit remains lifeless form.',
+    content: `EZEKIEL 37:1-19 / THE VALLEY OF DRY BONES
+Scripture Reading: Ezekiel 37:1-19
+
+1. The Vision of Helplessness:
+The hand of the Lord set Ezekiel in the middle of a valley; it was full of bones. They were very many on the surface of the valley, and they were very dry. God asked him: "Son of man, can these bones live?"
+Ezekiel gave the only true answer of humility: "O Lord God, you know."
+
+2. The Power of God's Spoken Word:
+God told Ezekiel to prophesy to the bones: "O dry bones, hear the word of the Lord!"
+As Ezekiel prophesied, there was a sound, a rattling, and the bones came together, bone to its bone. Sinews and flesh came upon them, and skin covered them. But there was no breath in them!
+
+3. Form Without Breath is Still a Dead Body:
+This is the most crucial spiritual revelation:
+You can have the bone structure, the muscles, the skin, and the external form—yet still be completely dead!
+In our Christian walk:
+• We can possess biblical knowledge.
+• We can maintain strict moral disciplines.
+• We can attend church, recite scriptures, and have all the proper outward religious habits.
+Yet inside, without the breath (Ruach / Holy Spirit) of God, we are still dry bones walking! True spiritual life is not built by human self-effort or religious mechanics; it is birthed solely by the breath of the Living God.
+
+4. The Calling of the Wind:
+Then God said: "Prophesy to the breath; prophesy, son of man, and say to the breath, Thus says the Lord God: Come from the four winds, O breath, and breathe on these slain, that they may live."
+The breath came into them, and they lived and stood on their feet, an exceedingly great army!
+
+5. Application:
+Are there areas in your life, your marriage, your emotional state, or your church that feel like bleached, dry bones? Never say, "It is too late." When God speaks His Word and pours out His Spirit, even what is beyond human repair rises to victorious life.`,
+    lesson: 'External form, knowledge, and moral discipline without the breath of the Holy Spirit are just dead bodies. We must invite the Holy Spirit to breathe life into our dry bones so we may stand as His living army.',
+    prayer: 'Holy Spirit, breath of God, breathe upon my soul. Forgive me for relying on my own dry religious routines and human discipline. Fill me with Your living presence, resurrect what was dead in me, and make me a vibrant vessel of Your glory. Amen.',
+    closingThought: 'Form without breath is a dead body. Pray for the Holy Spirit to breathe upon your valley today.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 3,
+  },
+
+  // ─── VOLUME II · DEVOTION XVI: SPIRITUAL WARFARE / TAKING THE ARMOR ───
+  {
+    id: 'vol2-devotion-16-ephesians-6-spiritual-warfare',
+    slug: 'vol2-devotion-16-ephesians-6-spiritual-warfare',
+    title: 'Spiritual Warfare: Overcoming Attachment & Taking the Whole Armor',
+    devotionNumber: 'Devotion XVI',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-07',
+    year: 2026,
+    month: 'September',
+    day: 7,
+    isTranscribedOriginal: true,
+    scriptures: ['Ephesians 6:12-18'],
+    scriptureVerseText: '“For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. Therefore take up the whole armor of God...” — Ephesians 6:12-13',
+    topics: ['spiritual warfare', 'armor of god', 'attachment', 'conviction', 'discipline', 'surrender'],
+    mood: 'Vulnerable',
+    excerpt: 'We do not wrestle against flesh and blood... "Pride kicks in... that\'s the reason why you failed last night because of this girl you became attached, as if the world revolves around her... don\'t you dare give up!"',
+    openingThought: 'A raw, handwritten midnight self-conviction on unhealthy emotional idolatry, facing failure honestly, and taking up the six pieces of the armor of God.',
+    content: `SPIRITUAL WARFARE: OVERCOMING ATTACHMENT & TAKING THE ARMOR
+Scripture Reading: Ephesians 6:12-18
+
+"For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness..." (Ephesians 6:12)
+
+Main Spiritual Truth:
+You can try to wrestle against the flesh by yourself, thinking you can win through sheer willpower. But pride kicks in... and pride leads to a devastating fall.
+
+Personal Midnight Conviction (Written in Raw Honesty):
+"You call upon God, yet your heart is still closed. That's the reason why you failed last night: because of this girl you have become attached to, as if the whole world revolves around her! A misaligned goal of hers can suddenly shatter your reality. And what happens? You allow yourself to be vulnerable to stress, pressure starts to bother you, and overthinking rises to another level where you cannot even sleep. You end up failing yourself, failing her, and failing God...
+
+But of course... that doesn't stop you, right? The race? The spiritual journey?
+Don't you dare give up! God is working right now, I'm certain of it. Maybe that situation, that FAILURE, is something that has a role, something that has a divine purpose. You failed because you were unprepared and relying on your own flesh. But this time, it's time to change the game. You are going to be a conqueror through Christ!"
+
+The Whole Armor of God (Ephesians 6:14-18):
+Therefore, take up the whole armor of God, that you may be able to withstand in the evil day:
+1. Belt of Truth: Fastening the absolute truth of God's Word around your waist, destroying self-deception and emotional illusions.
+2. Breastplate of Righteousness: Guarding your heart and emotional core with Christ's imputed purity, not your own flawed morality.
+3. Shoes of Readiness: Feet fitted with the readiness given by the gospel of peace—standing firm and immovable.
+4. Shield of Faith: Extinguishing all the flaming darts of anxiety, shame, and demonic accusation.
+5. Helmet of Salvation: Protecting the mind, thoughts, and thought-patterns from obsessive loops and overthinking.
+6. Sword of the Spirit: Which is the living, active Word of God—your only offensive weapon in the battle.
+
+Praying at all times in the Spirit with all prayer and supplication.`,
+    lesson: 'Emotional idolatry and relying on human willpower leave us vulnerable to spiritual collapse. When failure hits, do not quit the race; recognize God’s refining purpose, repent of self-reliance, and put on the whole armor of God.',
+    prayer: 'Lord, forgive me for letting my heart get entangled in unhealthy attachment and self-centered pride. Forgive me for failing You and failing those I love. Today, I pick myself up, put on the whole armor of God, and stand firm in Christ. You are the center of my universe, not any earthly affection. Amen.',
+    closingThought: 'Failure is not the end of your race; it is God’s classroom. Put on the armor of God and fight the good fight of faith.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 4,
+  },
+
+  // ─── VOLUME II · DEVOTION XVII: PRAY AND LOVE ───
+  {
+    id: 'vol2-devotion-17-pray-and-love-john-13',
+    slug: 'vol2-devotion-17-pray-and-love-john-13',
+    title: 'Pray and Love: Love Beyond Religious Boundaries',
+    devotionNumber: 'Devotion XVII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-09',
+    year: 2026,
+    month: 'September',
+    day: 9,
+    isTranscribedOriginal: true,
+    scriptures: ['Philippians 4:6', 'John 13:34'],
+    scriptureVerseText: '“Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.” — Philippians 4:6 · “A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.” — John 13:34',
+    topics: ['love', 'prayer', 'unconditional love', 'grace', 'humility', 'relationships'],
+    mood: 'Contemplative',
+    excerpt: 'Sometimes I neglect the power of prayer and treat love as conditional... I tend to listen to feelings and emotions rather than God. People are more than their religions, values, and beliefs...',
+    openingThought: 'A soul-searching devotional on deconstructing conditional affection, stopping the habit of holding silent grudges, and choosing biblical love and ceaseless prayer.',
+    content: `PRAY AND LOVE: LOVE BEYOND BOUNDARIES
+Scripture Readings: Philippians 4:6, John 13:34
+
+"A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another." (John 13:34)
+
+Personal Reflection:
+Sometimes I neglect the power of prayer and treat love as conditional. When things don't go according to my expectations:
+• I tend to listen to fleeting feelings and raw emotions rather than listening to God.
+• I catch myself holding silent grudges, keeping score, and acting on the outside as if nothing bothers me while harboring resentment within.
+
+A Deep Realization:
+I realized that what I have been missing most is pure Love and authentic Prayer.
+People are human beings first—they are so much more than their religious labels, differing denominations, family values, or personal flaws! God created humanity out of boundless love. If God loved us while we were still sinners and enemies of grace, who am I to measure out affection based on whether someone conforms to my comfort?
+
+We ought to love one another unconditionally with Agape grace. And we must bring everything—every frustration, every doctrinal difference, every financial worry—to God in prayer. Because He listens, He genuinely cares, and His love never fails.`,
+    lesson: 'Love is not a transactional reward for good behavior; it is an unconditional command modeled after Christ. When you feel resentment creeping in, surrender your emotions in prayer and choose to love people beyond their flaws and labels.',
+    prayer: 'Father, melt the coldness in my heart. Teach me not to love with conditions or to nurse hidden grudges. Give me eyes to see people as You see them—precious souls created in Your image. Teach me to pray without ceasing and to love as Jesus loved. Amen.',
+    closingThought: 'People are more than their religions and opinions—they are souls to be loved and prayed for.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
+
+  // ─── VOLUME II · DEVOTION XVIII: JOHN 16:22 / FROM SORROW TO JOY ───
+  {
+    id: 'vol2-devotion-18-john-16-from-sorrow-to-joy',
+    slug: 'vol2-devotion-18-john-16-from-sorrow-to-joy',
+    title: 'John 16:22 / From Sorrow to Joy',
+    devotionNumber: 'Devotion XVIII',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-11',
+    year: 2026,
+    month: 'September',
+    day: 11,
+    isTranscribedOriginal: true,
+    scriptures: ['John 16:22'],
+    scriptureVerseText: '“So also you have sorrow now, but I will see you again, and your hearts will rejoice, and no one will take your joy from you.” — John 16:22',
+    topics: ['joy', 'hope', 'sovereignty', 'sorrow to joy', 'eternal peace'],
+    mood: 'Peaceful',
+    excerpt: 'Good news and steadfast hope: sorrow, desperation, sadness, and overthinking are temporary. Joy in Christ is permanent and eternal. God is bigger than my problems...',
+    openingThought: 'A reassuring meditation on the permanence of Christian joy over temporary seasons of tears, knowing that God knew us before we were formed in the womb.',
+    content: `JOHN 16:22 / FROM SORROW TO JOY
+Scripture Reading: John 16:22
+
+"So also you have sorrow now, but I will see you again, and your hearts will rejoice, and no one will take your joy from you." (John 16:22)
+
+The Gospel Truth:
+This verse is filled with good news and unbreakable hope. It acknowledges reality: "you have sorrow now." The Bible never asks us to pretend that tears, heartaches, and seasons of distress do not exist. But notice the divine promise:
+Sorrow, desperation, sadness, and midnight overthinking are strictly TEMPORARY.
+Joy, on the other hand, is PERMANENT and ETERNAL because it is anchored in the resurrected Christ!
+
+"No one will take your joy from you."
+Circumstances can steal your temporary happiness, but no human being, no failed expectation, and no difficult trial can rob you of the deep joy found in Jesus.
+
+Personal Reassurance:
+God is infinitely bigger than my problems. He is the Sovereign Potter who knew me and knit me together before I was even formed in the womb of my mother. If He holds the stars and orchestrated my existence, He will surely guide my footsteps from sorrow into overflowing rejoicing.`,
+    lesson: 'Earthly trials bring temporary sorrow, but the joy of the Lord is an unshakeable inheritance that no circumstance, person, or devil can take away.',
+    prayer: 'Lord Jesus, when sorrow and anxiety threaten to cloud my mind, remind me of Your eternal promise. Thank You that joy is coming in the morning, and that nothing in all creation can take Your joy from my heart. Amen.',
+    closingThought: '“No one will take your joy from you.” — Rest in the permanent joy of Jesus today.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 2,
+  },
+
+  // ─── VOLUME II · DEVOTION XIX: WHAT A BACKSLIDER DOES & GOD'S HEART ───
+  {
+    id: 'vol2-devotion-19-gods-heart-toward-backsliders',
+    slug: 'vol2-devotion-19-gods-heart-toward-backsliders',
+    title: "What a Backslider Does & God's Heart Toward Backsliders",
+    devotionNumber: 'Devotion XIX',
+    volume: 'Volume II',
+    collection: 'Personal Devotions Volume II',
+    author: 'Clint Aldwin Maurin',
+    type: 'devotional',
+    date: '2026-09-14',
+    year: 2026,
+    month: 'September',
+    day: 14,
+    isTranscribedOriginal: true,
+    scriptures: [
+      'Jeremiah 3:6-7',
+      'Proverbs 14:14',
+      'Jeremiah 3:8',
+      'Jeremiah 17:9',
+      'Jeremiah 5:6',
+      'Hosea 11:7',
+      'Jeremiah 8:5',
+      'Jeremiah 3:11-12',
+      'Jeremiah 3:22',
+      'Hosea 14:4',
+    ],
+    scriptureVerseText: '“Return, faithless Israel, declares the Lord. I will not look on you in anger, for I am merciful... only acknowledge your guilt.” — Jeremiah 3:12-13 · “I will heal their backsliding; I will love them freely, for my anger has turned from them.” — Hosea 14:4',
+    topics: ['repentance', 'backsliders', 'prodigal son', 'restoration', 'grace', 'healing'],
+    mood: 'Hopeful',
+    excerpt: '10 Biblical Points on Backsliders: 7 characteristics of drifting away into rebellion, and the 3-fold revelation of God’s compassionate heart yearning to heal and restore...',
+    openingThought: 'A complete 10-point handwritten sermon study contrasting the tragic path of the backslider with the relentless, prodigal-welcoming heart of God.',
+    content: `WHAT A BACKSLIDER DOES & GOD'S HEART TOWARD BACKSLIDERS
+Scripture Study: Jeremiah 3, Jeremiah 5, Jeremiah 8, Jeremiah 17, Proverbs 14, Hosea 11, Hosea 14
+
+PART I: WHAT A BACKSLIDER DOES (7 TRAGIC STEPS)
+1. Backsliders will leave God (Jeremiah 3:6-7)
+• They turn their backs on the intimate fellowship they once enjoyed, wandering away to follow their own idols.
+2. Backsliders will want to live life their own way (Proverbs 14:14)
+• "The backslider in heart will be filled with the fruit of his own ways." They refuse correction and insist on their own wisdom.
+3. Backsliders will forget consequences (Jeremiah 3:8)
+• Blinded by present desires, they ignore the spiritual, emotional, and relational wreckage that sin always produces.
+4. Backsliders do not fear God (Jeremiah 17:9)
+• "The heart is deceitful above all things, and desperately sick." They rationalize compromise and lose the holy reverence of the Lord.
+5. Backsliders can increase their rebellion (Jeremiah 5:6)
+• Drifting is never static; small compromises compound into deeper stubbornness and open rebellion against God’s truth.
+6. Backsliders can shut off their ears to God (Hosea 11:7)
+• "My people are bent on turning away from me." They harden their conscience against the quiet conviction of the Holy Spirit.
+7. Backsliders can stay backslidden (Jeremiah 8:5)
+• "Why then has this people turned away in perpetual backsliding? They hold fast to deceit; they refuse to return."
+
+PART II: GOD'S HEART TOWARD BACKSLIDERS (3 GLORIOUS PROMISES)
+8. God wants backsliders to return to Him (Jeremiah 3:11-12)
+• "Return, faithless Israel, declares the Lord. I will not look on you in anger, for I am merciful, declares the Lord; I will not be angry forever."
+• God is not waiting with a club to crush you; He is standing with outstretched arms like the Father of the Prodigal Son.
+9. God wants to heal backsliders (Jeremiah 3:22)
+• "Return, O faithless sons; I will heal your faithlessness."
+• Backsliding is a soul sickness, and Christ is the Great Physician who binds up every broken, guilty wound.
+10. God has a deep, boundless love for backsliders (Hosea 14:4)
+• "I will heal their backsliding; I will love them freely, for my anger has turned from them."
+• Unmerited, free, overflowing Agape love that welcomes the repentant child home.`,
+    lesson: 'Backsliding begins in the quiet compromise of the heart, but no one is too far gone for the mercy of God. When we acknowledge our guilt and return, our Heavenly Father runs to meet us with healing and unconditional grace.',
+    prayer: 'O Lord God of mercy, search my heart. If there is any backsliding, any secret rebellion, or any coldness toward You, forgive me and heal my faithlessness. I return to Your open arms today, trusting in Your promise to love me freely. In the precious name of Jesus, Amen.',
+    closingThought: '“I will heal their backsliding; I will love them freely.” (Hosea 14:4) — Come home to the Father’s heart.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 4,
+  },
+
+  // ─── RELATIONSHIP JOURNAL · THE CHRONICLE OF GRACE & LOYALTY ───
+  {
+    id: 'chronicle-of-grace-and-loyalty',
+    slug: 'the-chronicle-of-grace-and-loyalty',
+    title: 'The Chronicle of Grace & Loyalty: A Word-by-Word Relationship Journal',
+    type: 'journal',
+    collection: 'Relationship Journal',
+    volume: 'Relationship Journal Archive',
+    author: 'Me & Jamaica (Maica)',
+    date: '2026-07-22',
+    year: 2026,
+    month: 'July',
+    day: 22,
+    isTranscribedOriginal: true,
+    isFeatured: true,
+    scriptures: ['Ephesians 5:1', '1 Corinthians 13:4-8', 'Proverbs 16:3', 'Colossians 3:23', 'Galatians 6:2'],
+    scriptureVerseText: '“Be imitators of God, therefore, as dearly loved children and walk in the way of love, just as Christ loved us.” — Ephesians 5:1-2 · “Love is patient, love is kind... It always protects, always trusts, always hopes, always perseveres.” — 1 Corinthians 13:4,7',
+    topics: ['nag-unongay', 'relationship', 'treasure and keys', 'agape', 'diskarte', 'loyalty', 'forgiveness', 'boundaries'],
+    mood: 'Vulnerable',
+    excerpt: 'A Word-by-Word Relationship Journal & Spiritual Dialogue Archive recorded in our shared voice (Me & Jamaica). Capturing raw conversations, late-night tears, Pangilatan mountain reunion, and the sacred proof of Nag-unongay...',
+    openingThought: 'PREAMBLE: THE ANCHOR OF OUR SOULS — This journal is our living anchor. It captures the raw, unfiltered conversations, late-night tears, mountain reunions, practical dreams, and sacred reflections shared between us.',
+    content: `THE CHRONICLE OF GRACE & LOYALTY
+A Word-by-Word Relationship Journal & Spiritual Dialogue Archive
+Recorded & Authored in Our Shared Voice • Me & Jamaica (Maica)
+May 30, 2026 – July 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PREAMBLE: THE ANCHOR OF OUR SOULS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This journal is our living anchor. It captures the raw, unfiltered conversations, late-night tears, mountain reunions, practical dreams, and sacred reflections shared between us. Every word recorded here is our actual voice—preserving Maica's exact messages in Bisaya and English, alongside the deep psychological, philosophical, and spiritual reflections that hold our hearts together across the miles. Here lies the proof of Nag-unongay—standing by each other in the quiet, heavy trenches.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 1: May 30, 2026 — The Crucible & The Late-Night Call
+Surrendering Control, Facing the Doctrinal Wall, and the Midnight Farewell
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+For a month and a half following graduation, our communication had turned heavy and cold. Distance was stretching our days, and life was pressing down hard on both ends. Maica was carrying immense family responsibilities as the eldest sister—working far from home, struggling with financial burdens, and wrestling with deep spiritual questions within her Jehovah's Witness faith. I was processing my own distant withdrawal as a Christian. I felt a breakup was inevitable due to our doctrinal differences, yet my heart refused to let go. Then, on Saturday evening, May 30, 2026, Maica sent the message that shattered my quiet evening:
+
+MAICA: "Hi lovey, Good evening Sorry sa late kaau na reply, naa lng jdkoy g muni² hehe and Yas Karun naa Koy e sulti Lovey and sorry kaau Daan lovey ahmm naa koy importante tell nimo and I hope nga makasabot raka. Sorry daan lovey kay lisod jud ni para sa akoa and maybe sa imoha pd... Actually, ikaw jud akong gusto forever (but naa lay mga situation na dli ta Makabalo or dli natu ma control). Anyways thankful kaayo ko nga naka ila taka. Thank you kay but-an ka nga bf, kugihan, caring, ug labi na kay nag alagad pud ka sa Ginoo. Proud kaayo ko nimo lovey, and padayon jud sa imong dreams ug sa imong pag serve niya. Lovey, to be honest lng kanang every time mo ingon ko nga mo una kog sleep, usahay wala pa jud ko katulog ana. Mag basa ko Bible and usahay makahilak nalang ko silently kada gabie Kay daghan kaayo kog questions sa akong mind. Especially sa among family situation.... Usahay mag tan-aw ko sa akong mama ug mga manghud then ma pressure ko kay gusto kaayo nako sila matabangan someday. Murag as the ate, dako kaayo kog responsibility sa ilaha.... Nag mag pray lang ko kang Jehovah ug mangutana ko, 'unsa jud akong purpose? Nganong ing Ani? bzta, dghna uy why??' Honestly lovey, naa pa jud ko sa discovery nga part sa akong life and yas wla jd ko kasabut maybe soon ipa sabut Rani ni jehovah nako for now gubot pa. Ginapangita pa nako unsa jud ang gusto ni Jehovah para sa akoa ug unsaon nako pag mahimong mas close sa iyaha... Maong karon lovey… maybe i-stop sa natu ni, focus nlng sa ta sa Ginoo and also sa atung tagsa² sa family ug sa pag ayo sa akong kaugalingon spiritually, and sa Akong self... Sorry kaayo lovey, Karon rajud ko naka courage ug sulti nimo ani.. sorry JD kaau... Maybe dili pa jud ni ang right time para sa atoa.... Thank you kaayo sa tanan lovey, sa love, care, patience, ug support. Dili jud nako na malimtan. Na safe place ka nako sa daghang panahon ug thankful jud ko ana. Amping pirmi ha, eventhough atung relationship dli magpa dayun buy still padayon gihapon ta sa pag alagad sa Ginoo Kay diha natu JD Makita Ang true love sa Ginoo. Again thankful gihapon ko kay na part ka sa akong life ug naka tabang ka sa akong spiritual journey. I'll always pray nga i-bless ka ni Jehovah ug ma achieve nimo imong dreams... PADAYUN Ta sa pag served lovey Thank u sa tanan nimong effort lovey, na appreciate kaau to nako, and sorry if ing Ani ko...."
+
+Reading those words, my chest tightened. I couldn't accept a farewell written over text. I started calling her phone repeatedly. She didn't answer until the 7th call, deep in the Saturday midnight hour. When her voice came through, my core was laid completely bare. I asked her directly: 'Is there a chance? Can we start again? Can we try again?'
+She was weeping silently on the other end, stuck blaming herself for causing me pain. She revealed two perspectives she had sought out before writing:
+• Her Churchmates: Warned her that differing beliefs often create an irreconcilable divide.
+• Her Mom: Highly admired me—calling me rare for serving in the church, being patient, financially grounded, and protective. Her mom believed a wife should follow her husband, but Maica feared her motives would warp into pleasing me rather than God.
+As midnight stretched into dawn, she asked through her tears: 'What if this happens again in the future and I just keep hurting you? What if it is God's will that we meet again later, just not right now?' I saw a young woman overwhelmed by family duty, living far from home, working as a helper, and completely alone with her doubts. The hardest blow came when she whispered: 'Maybe you'll find someone better than me, someone aligned with you who goes to your church.' I cried. But I refused to let bitterness take root. I sent her this final text:
+
+ME: "Goodbye Jamaica, Thank u sa memories, ikaw ang the best, heheh, honestly daghn pata kaayo ko e sulti, but u said it namn many times, i try to fight for us, but yess, spiritual nani nga battle atong gi atubang, so yes naka sabot rako heheh, i wont force, but remember ikaw, jud ang pinaka the best nga nahitabo sa akoa, hehehe, hopefully nga mag padayun ta sa pag served pud sa Ginoo, and as always, I always pray for u and Ur family.. heheh, thank u, thank u so much lovey, and im sorry, naa koy mga pag kulang, im sorry that im not the one nga maka lead nimo sa True Jesus Christ, but i always pray for u nga, mag minister si Jesus Christ nimo, u don't know what i mean if it said sa words, but soon u will know ra once maka encounter naka heheh, because fr lang, the experience of my encounter is grabe ka nindot, i was hoping to share it with u.. but i don't have that rights, heheha, back then, mindset nako sauna was, to lead u sa truth, and i was wrong, it is him who leads diay heheh, i was hoping sa great testimony while besides u, but maybe u find with urself nalang, and im happy if that will happened, i will always pray sa inyuha, So this is Goodbye na hehehe, Thank u Jamaica sa memories"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 2: May 31, 2026 — The Mountain Reconciliation at Pangilatan
+Lifting the Heavy Cloud, Dissecting Pity vs. Love, and Choosing Absolute Transparency
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Sunday morning brought an overwhelming grief. I couldn't rest. I messaged Maica, asking if we could meet at Pangilatan—the mountain we used to frequent—just to see each other one last time, with no demands. We agreed to meet after our respective church services. When I arrived and saw her standing there, all the heavy dread evaporated. I looked at her, she looked at me, and we both burst into smiles. The dark cloud from Saturday midnight dissolved. We rode up the mountain road together in comfortable silence. Sitting on the mountain peak, looking out over the landscape, we began talking effortlessly. She confessed she wasn't ready to let go either. I realized my past emotional walls had been built because I was evaluating her through rigid doctrinal filters rather than seeing her heart—a girl who deeply loves God. Late that night, we reviewed the miracle of our day:
+
+ME: "Cute mo raba kanina, i never see nga u react in that way... like kuan ba, i thought nga hopeless ra, my goal ganiha is to 'See u ra' thats it... and i cant believe that it turns out to this way. First palang, pag lili nako nimo, gakatawa nako, even while ga drive ko padung didto sa pangilatan, gakatawa ko hahah, pag kita nako nimo ato, I almost forget about last night..."
+MAICA: "Bitw hahaha naa kos luyo nmo, feel nako mura rajd wlay nahitabo pag Gabie HAHAAH, batia, ana MN JD ka, kataw an ramn ko nmo hahaha"
+ME: "Bwhahha lagi, honestly kato nga time, reminds the feeling of katong gikan ta sa school mag hangout. Mo stay rata ko positive... But i want reassurance ba, cuz we cant pretend, u said those things and its real... Did I force you?? Or overwhelm u emotionally ganiha? Cuz I still want to love you, to care for you amidst everything u said last night... That's why I fought heheheh"
+MAICA: "Lovey, if nag stay lng deay ka nako or imo Ning fight atung relationship tungod lng sa ma worried ka or about sa Akung fam na layu ko, I think lahi na Siya, lain kaau if ni stay ka nga Ang reasons is na looy ka... Actually dli kana nga reasons Akong gpa ngita, feel nako gd if na looy Ra, lahi na kaysa sa love JD eheh bzta... Sayang if wla deay na na tarung natug talk katung naa patas personal..."
+ME: "I mean lovey, nag stay ko is because all that memories we have, naka build natag connection... But i stay because sa love... We already talked this ganiha, but nag show rako empathy nimo, because that empathy has care, and care has love!"
+MAICA: "Okay Ra kasabut rako... And kani remember this nga wla ka ni Force nako... Ako JD Ning decision namo fight or padayun... Since nag kita lng ta atu katung ni smile plang ka nako sa layu, lahi rajd kaau, important JD kaau kas Akong life and I really² love u JD... Actually katung decision nako pag Gabie is dli JD mo sugot Akong heart, but lahi sd Ang sa Akung mind... I love u..."
+ME: "That's all i want to hear... That's more than enough, thank u... Healthy reassurance ra, because I want to understand the deeper part ba hehehe."
+MAICA: "Sorry if na misunderstand nako..."
+ME: "I feel the same way pud hehehe, everything u described, we both feel it, and that's why nga nganong worth fighting ni hehehe Lahi rajud ganiha. I love you lovey."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 3: June 15, 2026 — Practical Dreams & The Husband Blueprint
+The All-Rounder Mindset, 'Diskarte', and Fusing Practical Skills with High EQ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Following our mountain reunion, our communication transformed into an open stream of shared visions. On June 15, Maica shared her heart about her work as an 'all-rounder' taking on diverse practical tasks. She wasn't just earning a wage; her mind was actively translating present labor into future family value. She revealed her childhood dream husband criteria—a vision that deeply resonated with my own values:
+
+MAICA: "Yeah, Sakto ka hahaha thankful Gani kaau ko Ani hahah, suweldoan MN ko lovey tas ganahan lng ko ani ba Kay naa sd Koy ma learn... Ganahan ko Ani hahaha all around ba haha dghan nahibaloan mga bulohatonon haha... Magamit MN sd ni in the future gd labi na mag tukod kag family heheh... And Ako sang pinaka ganahan Ani is Akong mga katabi Kay mga edaran na, something nana say family ba, ganahan kaau ko makig tabi ing ana Kay daghan Sila Ihatag ma advice and experiences nila... Tas Kabalo ka lovey hahaha since pag Bata plang nako hahaha Akong ganahan JD ma husband Kay dapat same sd nako hahaha dli literal nga same, Bali kanang kabalo sd tanan sa trabaho ba tas naa diskarte and dapat Gani labwan ko HAHAHAHA bzta skl so maoto, wla lng... Nindut sd if Bali Ang bana is Kabalo Siya sa kanang USO Gani Karun technology tapos Ang asawa Kay sa practical haha Peru mas nice kamong duha kabalo Tanan hahaha tinabangay ba hahaha ninduta ana haha open mong duha ba hahaha, best friends hahaha bzta imagination Ra nako hahahahaha..."
+ME: "Wow, hehehh, nindot jud lagi heheheh... Nindot bitaw na nga mag desire ka ana ba, hunger ka sa learnings ug thirsty ka sa skills especially when it comes on practical. Ang naka biggest green flag pajud is u are not just thinking and desiring about learnings for yourself, but nag aim pud ka to be useful magamit sa future and especially kana jud oh, sa building family! Green flag nayan hahahah... And choya kaha sa if that person exist (bana), kanang same mog mindset about the future, and has the same practical skills, and that way naa jud moy compatibility, open up, and shared responsibilities as pillars sa family... Proud ko nimo lovey!"
+MAICA: "Lagy lovey hehe, awa na sobraan na noon kog share nmo haha bzta... Kana lovey hahah green flag tapos naay emotional intelligence hahahhah bzta hahahahaha... Choy kaau bitw hahaha. Thank u so MUCH lovey!"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 4: June 21–22, 2026 — Affection, 'Treasure & Keys', and Agape Love
+Navigating Boundaries, De-escalating Guilt, and Framing Love as a Decision of the Will
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+On June 21, we met face-to-face and shared deep physical affection—kissing and close physical intimacy while keeping our clothes on and maintaining absolute boundary control. The next morning, knowing how her religious background could trigger a wave of vulnerability, I initiated a check-in over text to parse her emotions and protect her peace:
+
+ME: "Lovey... Kani lang, desperate kaayu ko makabaw nga 'What do u feel?' Do u have a name na? Kay lets talk about ur feelings first. Maminaw rako lovey hehehe."
+MAICA: "Lovey sorry, Wala JD ko kasabut JD, Peru katu feel nako lovey na safe ko tapos comfortable kaau ko atu tapos exciting lng pd hehe, so maoto nga na ing atu pd ko Peru sorry lovey"
+ME: "Important man pud ang intimacy sa relationship... But I was afraid nga after na kay ma feel guilty ka ba... And thats why ni beg ko ato nimo, nga what are my intentions gani, para dli pud ta ma lead sa misunderstanding. That's why nga nag prayer ko ato cause sayud jud ko nga unsa imo ma feel after—assurance for u and intercession pud from God."
+MAICA: "Lovey, honest lng JD no, katu Akong g una nimo ug answer katung feel nako nga safety ko, comfortable, actually mixed emotions to Ako lovey... While nag huna² ko atu nah questions kos Akong self ngano ma buhat ko to... And you know lovey, I'm so thankful nga ing ana ka, nangutana JD ka nako. Kana lng is nag show JD ug respect sa akoa. Salamat kaau sa Imong assurance lovey... Ni unong JD ka nako lovey! Don't tell me wla sd ka Kabalo unsa ng ni unong? Haha Peru Yas... Thank u kaau lovey ha"
+
+The following day, June 22, I sent her a lengthy follow-up letter to fully articulate my intentions and outline three core words for her state that night: Vulnerable (dropping her guard), Fragile (sensitive to hurt), and Open (granting deep access). I introduced the Treasure and Keys metaphor, anchoring our relationship in Agape Love (Ephesians 5:1):
+
+ME: "Lovey, 'What u feel? Safe, Comfortable, Trust' and sa akong gi add pud 'Vulnerable, Fragile and Open.' Ako siya e compress and turn into something... I would say nga You have Given me the Keys. And keys? So naa diay something naka lock nga ablihanan... Yess! Ang naka lock is something nindot, a TREASURE. Lovey, kato nga moment nga ni tan aw ko sa imong eyes, i feel in love even more, and I see treasures. You are that treasure lovey! So valuable nga ikaw ra ang maka give. I am happy to receive the keys, yet dli pako ka open sa treasure kay im not worthy to carry it yet pa heheheh... But sa karon, I really value the keys, akong pangalagaan! And the treasure is valuable and at the same time vulnerable and fragile... So that's why kani nga treasure is worth protecting at all cost! And lovey, I want to clarify: forcing and intentions are different. What I'm doing is NOT force. It is my INTENTION, MY WILL, MY DECISION nga mo buhat ko ana! Because will is something pud—kay sa will pwede nato e reject ang usa ka tao, but that same will pwede pud ta mo love, mo care and to choose to be with that person. LOVE IS A CHOICE! If kana lang akong buhaton, mo choose nimo always, mo protect pud in order to love you... And I want to emphasize my choice to be realistic: tao lamang pud ako, but HE loves us. This is not Just You and Me lang, but YOU AND ME AND GOD. Honestly lovey, kabalo ka sa isa sa 4 Greek words for love: 'AGAPE'—meaning ultimate, supernatural Love that only God can give, his Sacrifice, Unconditional Love, Boundless Grace, and faithfulness. Ephesians 5:1 says 'be Imitators of God.' Ill do my part, but God carries what I cannot."
+
+CORE METAPHOR: TREASURE AND KEYS
+• Her Trust = The Keys handed to his care.
+• Her Soul & Purity = The Treasure, priceless and fragile.
+• His Duty = Holding the keys with honor, protecting the lock until sacred timing, and anchoring their boundary in God.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 5: June 27, 2026 — Deconstructing Modern Commitment (1 Cor 13)
+Analyzing Viral Breakups, Pleasure vs. Love, and Defining Commitment as Daily Choice
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+On June 27, Maica brought up public relationship scandals—an 8-year influencer breakup and a coast guard officer who abandoned his family for a 3-month affair. She handed me a psychological puzzle: 'Curious ko, ngano deay ing ana na?' Instead of reacting with gossip, I paused, processed deeply, and deconstructed the mechanics of true love vs. fleeting impulse:
+
+MAICA: "Ako lng g imagine ba, dugay na Sila ba... 7yrs grabe na kaau na, kasal na sana. And same sd Katung balita, Katung coast guard nga nag cheat sa iyang asawa... Mas g choose ni boy Ang katung 3 months lng Niya na kaila? Wla MN ko nang judge sa boy, but Ako curious ko, ngano deay ing ana na?"
+ME: "Nangutana ka nako lovey nga 'Ngano diay ngin ana'? Ang kanang lalaki, at first place sa 8yrs relationship, 'If mag talk tag Love', its NOT love, its pleasure and affection... Ang root cause is the pleasure itself, and nanay consequences ang uncontrolled pleasures. Dli tanan pleasures is naay love, while tanan love naajuy pleasures! If love nimo ang person, u should be aware and know pud sa mga consequences and that same love dapat nimo siyang protektahan ana! Balik ta sa clear instructions: 1 Corinthians 13. Love is patient... Willing ba sila magpadayun for 40-50 years? Ilang gi answer 'dli', so its not love. Love is Kind... If love is Kind, then why mo cheat? Love is a choice, choosing everyday each other... How you gonna prove your love? Through obedience and loyalty pud hehehe."
+MAICA: "Wow heheh, speechless mn ko sa imong mga g reply lovey, like bzta hahah biha ah... Salamat sa pag share lovey, important na kaau ni para nako hehe, na appreciate kaau nako! Padayun lng lovey..."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 6: July 4, 2026 — The Morning Jog & Unmasked Peace
+Real-World Confirmation, Secure Attachment, and Anticipating Our 10th Month
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+On July 4, we met early in the morning for a casual jogging session and spent time relaxing together before heading home. While resting, physical closeness happened naturally again. But this time, the atmosphere was completely transformed. There was no lingering anxiety, no fear, and no vulnerability hangover. She was deeply passionate, fully present, and completely relaxed—with both of us holding our established boundaries with total ease. Our high-EQ checks and spiritual intercession in June had completely cleared out the fear of shame. We walked away from that morning with secure attachment, looking forward to our upcoming 10th-month anniversary on July 22, 2026.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chapter 7: July 2026 — Midnight Deep Processing: Nag-unongay & Overcoming Shame
+Radical Masculine Ownership, Closing Past Vulnerabilities, and Standing in the Trenches
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Late one night, a sudden wave of vulnerability hit Maica. She texted me near midnight, struggling with lingering social fears that she was 'hugaw' (dirty) or 'weak' after our physical closeness. Someone had shared stories with her about men who use women and then gossip (*tsimis*) to their friends, discarding them like garbage. This fear triggered a memory of my past carelessness regarding a mutual acquaintance named Edziel. What unfolded was our most profound demonstration of Nag-unongay:
+
+MAICA: "Lovey, sorry JD if ing Ani ko... Tan aw nako sa Akung self is hugaw na, lovey katung intimacy... Feel lng nako nga weak ko, hugaw, sag unsa nlng naa sakung mind... I need reassurance lng, nga the same Ra japon, respect japon... Naa lng nag share nako, nga Ang uban dw laki after nila ma kuan, mag break na ila dayun e tsimis sa ila barkada and e throw Ang girl na murag basura... I know dka ing ana, right lovey? Respect dba sa atung privacy?"
+ME: "Lovey, mangayog pud kog pasaylo lovey... Sala nako as lalaki, nga u feel that way. Sorry talaga ako ang source lovey, and ayaw ka guilty kay ako pud naa koy sala, ur feelings are valid. I named it for u dba? First is 'Guilt', then 'Used', then na kuan nimo as 'Hugaw'... I understand, I respect! And why would I break after ato? I love you, I want to protect you and grow with u! Why would I chismiss it? We have privacy lovey, Im bound to keep it, promise! And 'NOOO'! E throw nga murag basura? Dli lovey! I never, never jud naka think ana... You are valuable, important ka sa aking life. Everything is atoa ra, kita ra... And I know why naka tell ka about chissmis—nag doubt ka because sa katong kay Edziel. Sorry talaga, careless ako. But ayaw na ka worry, mistake to nako. I already blocked Edziel, gi delete nako iyang convo! I am willing to change out of obedience and love!"
+MAICA: "Lovey salamat kaau sa pag understand... And lovey, promise me plss, ayw Kauna imong self plss, dsad ko ganahan mag ing ana sd ka... Kita MN nag Kuan lovey so katu KITA SDUHA MO SOLVE! And katu mo grow together... Ni unong JD ka nako lovey! Kani Karun tawag Ani is NAG-UNONGAY ba..."
+ME: "Kana! Mag sinabtanay ta lovey, dli lang pud ako mo understand but kita duha, and kita rapud mo solve pud. Dli lang ako, but KITA DUHA!"
+MAICA: "Uhhhh Lovey, Salamat kaau sa Imong pagka understanding... I Love you"
+
+CULTURAL & EMOTIONAL BEDROCK: NAG-UNONGAY
+• Definition: To stick together, endure emotional weight, and refuse to abandon one another in the quiet, heavy trenches.
+• Application: Not a physical act or sound, but the highest cultural expression of loyalty, shared problem-solving ('Kita Duha'), and staying awake at midnight until peace is fully restored.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Epilogue: The Lexicon of Our Love
+The Architectural Terms Shaping Our Shared Journey
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Nag-unongay (Enduring Loyalty): A Bisayan concept meaning to remain steadfastly by each other's side through emotional storms, vulnerability, and heavy processing, refusing to let the other person suffer alone.
+2. Treasure & Keys (Sacred Trust): A metaphor framing her trust as the 'Keys' and her soul/purity as a priceless 'Treasure'—worth protecting at all costs rather than exploiting for short-term desire.
+3. Diskarte & The Husband Blueprint: Her vision of a future husband who combines practical resourcefulness (diskarte), technological awareness, and emotional best-friendship—a role he actively fulfills through high EQ.
+4. Agape Choice (Ephesians 5:1): Love defined not as a fleeting chemical feeling, but as a daily, deliberate decision of the will to stay, protect, and obey God's design for relational integrity.
+5. Vulnerable, Fragile, & Open: The three-fold state of dropping one's defensive guards during intimacy, requiring non-judgmental aftercare, intercessory prayer, and absolute confidentiality.
+6. Phileo (Deep Friendship & Teammate System): The foundational bond of companionship where two partners act as best friends, sharing transparent goals and lifting each other up when one is weary.
+
+JOURNAL CONCLUSION:
+This chronicle stands as an unshakeable testimony of our growth. From the heartbreak of May 30 to the mountain reunion at Pangilatan, through the practical blueprints of June and the deep midnight intercessions of July—we have proven that distance, religious divides, and human anxieties cannot break a bond anchored in Agape and Nag-unongay.
+'Kita duha mo solve... Kita duha mo grow together.'`,
+    lesson: 'Distance, religious divides, and human anxieties cannot break a bond anchored in Agape and Nag-unongay: standing steadfastly by each other in the quiet, heavy trenches.',
+    prayer: 'Father, thank You for the grace of Nag-unongay. Guard our purity, our boundaries, and our covenant. Teach us to choose love daily not by fleeting feelings, but by obedient will and mutual honor in Jesus Christ. Amen.',
+    closingThought: '“Kita duha mo solve... Kita duha mo grow together.” — Unyielding loyalty and sacred trust anchored in God.',
+    status: 'PUBLISHED',
+    readingTimeMinutes: 12,
+  },
 ];

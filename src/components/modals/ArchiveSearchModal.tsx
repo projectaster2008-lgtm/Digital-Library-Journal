@@ -38,7 +38,13 @@ export const ArchiveSearchModal: React.FC<ArchiveSearchModalProps> = ({
 
   if (!isOpen) return null;
 
+  const isVaultUnlocked = typeof window !== 'undefined' && localStorage.getItem('sovereign_architect_unlocked') === 'true';
+
   const results = entries.filter((e) => {
+    // Zero preview leak: completely exclude Sovereign Architect blueprint if locked
+    if (!isVaultUnlocked && (e.id === 'sovereign-architect-master' || e.type === 'blueprint')) {
+      return false;
+    }
     if (typeFilter !== 'all' && e.type !== typeFilter) return false;
     if (!query.trim()) return true;
     const q = query.toLowerCase();

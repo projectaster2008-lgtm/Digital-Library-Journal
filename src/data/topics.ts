@@ -26,5 +26,6 @@ export const archiveTopics: Topic[] = [
   { id: 'stewardship', name: 'Stewardship & Legacy', description: 'Honoring God with resources, building generational assets, and faithful management of talents.' },
   { id: 'diligence', name: 'Diligence Over Haste', description: 'Choosing the patient, legal, and thorough path over dangerous shortcuts and anxious speculation.' },
   { id: 'stoicism-faith', name: 'Stoicism & Faith', description: 'Dichotomy of control, managing imagined suffering, and grounding practical discipline in Scripture.' },
-  { id: 'risk-management', name: 'Risk Shield & Humility', description: 'Naming risks in daylight, planning against failure, and holding outcomes under James 4:13–15.' }
+  { id: 'risk-management', name: 'Risk Shield & Humility', description: 'Naming risks in daylight, planning against failure, and holding outcomes under James 4:13–15.' },
+  { id: 'relationship', name: 'Relationship & Nag-unongay', description: 'Covenant loyalty, grace, intentional listening, vulnerability, and walking together through life and trials under God.' }
 ];

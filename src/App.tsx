@@ -118,6 +118,16 @@ export function App() {
   };
 
   const handleSelectEntry = (entry: ArchiveEntry) => {
+    // Zero preview leak: if vault is locked, redirect to blueprint tab for password entry
+    if (entry.id === 'sovereign-architect-master' || entry.type === 'blueprint') {
+      const isUnlocked = localStorage.getItem('sovereign_architect_unlocked') === 'true';
+      if (!isUnlocked) {
+        setCurrentTab('blueprint');
+        setActiveReadingEntry(null);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+    }
     setActiveReadingEntry(entry);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
